@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 420" width="960" height="420" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadowL">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowLight" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+    <linearGradient id="harmGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="420" rx="8" fill="#f8f9fa"/>
+  <rect x="1" y="1" width="958" height="418" rx="7" fill="none" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="600" letter-spacing="1.5">THE RECURSIVE LIABILITY TRAP</text>
+  <line x1="180" y1="50" x2="780" y2="50" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- USER node -->
+  <rect x="60" y="115" width="120" height="70" rx="6" fill="#e8f5e9" stroke="#27ae60" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="120" y="145" text-anchor="middle" fill="#1b7a3d" font-size="11" font-weight="600" letter-spacing="1">USER</text>
+  <text x="120" y="165" text-anchor="middle" fill="#4a7a5a" font-size="10">Deploys Agent</text>
+
+  <!-- Arrow User -> Agent A -->
+  <line x1="180" y1="150" x2="245" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <text x="212" y="140" text-anchor="middle" fill="#7f8c8d" font-size="9" font-style="italic">spawns</text>
+
+  <!-- AGENT A node -->
+  <rect x="250" y="115" width="120" height="70" rx="6" fill="#e3f2fd" stroke="#2980b9" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="310" y="145" text-anchor="middle" fill="#1a5a7a" font-size="11" font-weight="600" letter-spacing="1">AGENT A</text>
+  <text x="310" y="165" text-anchor="middle" fill="#4a7a9a" font-size="10">Business Process</text>
+
+  <!-- Arrow Agent A -> Agent B -->
+  <line x1="370" y1="150" x2="435" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <text x="402" y="140" text-anchor="middle" fill="#7f8c8d" font-size="9" font-style="italic">spawns</text>
+
+  <!-- AGENT B node -->
+  <rect x="440" y="115" width="120" height="70" rx="6" fill="#fff8e1" stroke="#e67e22" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="500" y="145" text-anchor="middle" fill="#a85a00" font-size="11" font-weight="600" letter-spacing="1">AGENT B</text>
+  <text x="500" y="165" text-anchor="middle" fill="#8a7a4a" font-size="10">Specialist Task</text>
+
+  <!-- Arrow Agent B -> Agent C -->
+  <line x1="560" y1="150" x2="625" y2="150" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <text x="592" y="140" text-anchor="middle" fill="#7f8c8d" font-size="9" font-style="italic">spawns</text>
+
+  <!-- AGENT C node -->
+  <rect x="630" y="115" width="120" height="70" rx="6" fill="#fce4ec" stroke="#c0392b" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="690" y="145" text-anchor="middle" fill="#8a1a1a" font-size="11" font-weight="600" letter-spacing="1">AGENT C</text>
+  <text x="690" y="165" text-anchor="middle" fill="#8a4a4a" font-size="10">Narrow Function</text>
+
+  <!-- Arrow Agent C -> HARM -->
+  <line x1="750" y1="150" x2="815" y2="150" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowLight)"/>
+  <text x="782" y="140" text-anchor="middle" fill="#c0392b" font-size="9" font-weight="600">causes</text>
+
+  <!-- HARM node -->
+  <rect x="820" y="110" width="100" height="80" rx="6" fill="url(#harmGradL)" filter="url(#shadowL)"/>
+  <text x="870" y="145" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" letter-spacing="1">HARM</text>
+  <text x="870" y="163" text-anchor="middle" fill="#ffd5d0" font-size="9">Privacy Breach</text>
+  <text x="870" y="176" text-anchor="middle" fill="#ffd5d0" font-size="9">Contract Violation</text>
+
+  <!-- Diminishing visibility indicators -->
+  <text x="120" y="205" text-anchor="middle" fill="#27ae60" font-size="10" opacity="0.9">Full Visibility</text>
+  <text x="310" y="205" text-anchor="middle" fill="#2980b9" font-size="10" opacity="0.7">Partial Awareness</text>
+  <text x="500" y="205" text-anchor="middle" fill="#e67e22" font-size="10" opacity="0.5">Limited Knowledge</text>
+  <text x="690" y="205" text-anchor="middle" fill="#c0392b" font-size="10" opacity="0.4">No Oversight</text>
+
+  <!-- Attribution Gap bracket -->
+  <line x1="70" y1="240" x2="70" y2="260" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="70" y1="260" x2="910" y2="260" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="910" y1="240" x2="910" y2="260" stroke="#c0392b" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Central question on the bracket -->
+  <rect x="340" y="275" width="280" height="36" rx="4" fill="#fce4ec" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="480" y="298" text-anchor="middle" fill="#c0392b" font-size="15" font-weight="700" letter-spacing="2">WHO IS RESPONSIBLE?</text>
+
+  <!-- Explanatory annotations -->
+  <text x="480" y="340" text-anchor="middle" fill="#7f8c8d" font-size="11">The original user may not know Agent C exists. They did not design it, configure it, or authorise it.</text>
+  <text x="480" y="358" text-anchor="middle" fill="#7f8c8d" font-size="11">Under current law, liability likely falls back to the user — but "likely" is not good enough.</text>
+
+  <!-- Section label -->
+  <text x="480" y="392" text-anchor="middle" fill="#bdc3c7" font-size="10" letter-spacing="3">CHAIN-OF-LIABILITY PROBLEM</text>
+
+  <!-- Watermark -->
+  <image x="840" y="370" width="100" height="40" opacity="0.12" preserveAspectRatio="xMidYMid meet" href="../shared/images/realistSecLogoTransparent2.png"/>
+</svg>

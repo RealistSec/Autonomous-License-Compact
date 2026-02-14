@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 340" width="960" height="340" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadowL">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrowLight" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#95a5a6"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#27ae60"/>
+    </marker>
+    <linearGradient id="killGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="340" rx="8" fill="#f8f9fa"/>
+  <rect x="1" y="1" width="958" height="338" rx="7" fill="none" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="600" letter-spacing="1.5">LEASE &amp; KILL SWITCH FLOW</text>
+  <line x1="180" y1="50" x2="780" y2="50" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Dashed vertical divider lines from step labels -->
+  <line x1="105" y1="88" x2="105" y2="250" stroke="#e8ecef" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="290" y1="88" x2="290" y2="250" stroke="#e8ecef" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="475" y1="88" x2="475" y2="250" stroke="#e8ecef" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="735" y1="88" x2="735" y2="250" stroke="#f0d5d5" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Step labels row -->
+  <text x="105" y="78" text-anchor="middle" fill="#95a5a6" font-size="10" font-weight="600" letter-spacing="1.5">STEP 1</text>
+  <text x="290" y="78" text-anchor="middle" fill="#95a5a6" font-size="10" font-weight="600" letter-spacing="1.5">STEP 2</text>
+  <text x="475" y="78" text-anchor="middle" fill="#95a5a6" font-size="10" font-weight="600" letter-spacing="1.5">STEP 3</text>
+  <text x="735" y="78" text-anchor="middle" fill="#c0392b" font-size="10" font-weight="600" letter-spacing="1.5" opacity="0.5">STEP 4-5</text>
+
+  <!-- Step 1: Agent requests token / Gateway checks licence -->
+  <rect x="40" y="100" width="130" height="55" rx="6" fill="#e3f2fd" stroke="#2980b9" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="105" y="123" text-anchor="middle" fill="#1a5a7a" font-size="10" font-weight="600">Agent Requests</text>
+  <text x="105" y="138" text-anchor="middle" fill="#1a5a7a" font-size="10" font-weight="600">Token</text>
+
+  <!-- Arrow Step 1a -> Gateway -->
+  <line x1="105" y1="155" x2="105" y2="175" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+
+  <!-- Gateway check -->
+  <rect x="40" y="180" width="130" height="50" rx="6" fill="#e8f5e9" stroke="#27ae60" stroke-width="1.5" filter="url(#shadowL)"/>
+  <text x="105" y="202" text-anchor="middle" fill="#1b7a3d" font-size="10" font-weight="600">API Gateway</text>
+  <text x="105" y="217" text-anchor="middle" fill="#4a7a5a" font-size="9">Checks Licence</text>
+
+  <!-- Arrow Gateway -> Step 2 -->
+  <line x1="170" y1="205" x2="220" y2="205" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <text x="195" y="197" text-anchor="middle" fill="#27ae60" font-size="9" font-weight="600">VALID</text>
+
+  <!-- Step 2: 15-min Lease -->
+  <rect x="225" y="180" width="130" height="50" rx="6" fill="#e3f2fd" stroke="#2980b9" stroke-width="1.5" filter="url(#shadowL)"/>
+  <text x="290" y="201" text-anchor="middle" fill="#1a5a7a" font-size="10" font-weight="600">15-min Lease</text>
+  <text x="290" y="216" text-anchor="middle" fill="#4a7a9a" font-size="9">Signed JWT</text>
+
+  <!-- Arrow Step 2 -> Step 3 -->
+  <line x1="355" y1="205" x2="405" y2="205" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowLight)"/>
+  <text x="380" y="197" text-anchor="middle" fill="#7f8c8d" font-size="9" font-style="italic">granted</text>
+
+  <!-- Step 3: Agent Operates -->
+  <rect x="410" y="180" width="130" height="50" rx="6" fill="#e8f5e9" stroke="#27ae60" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="475" y="201" text-anchor="middle" fill="#1b7a3d" font-size="10" font-weight="600">Agent Operates</text>
+  <text x="475" y="216" text-anchor="middle" fill="#4a7a5a" font-size="9">Active Session</text>
+
+  <!-- Normal operation loop-back: Agent Operates -> Agent Requests Token -->
+  <path d="M 450 180 L 450 127 L 170 127" stroke="#27ae60" stroke-width="1.5" fill="none" stroke-dasharray="6,3" marker-end="url(#arrowGreen)"/>
+  <text x="310" y="121" text-anchor="middle" fill="#27ae60" font-size="9" font-style="italic">lease expires -- renew</text>
+
+  <!-- Arrow Step 3 -> revocation zone -->
+  <line x1="540" y1="205" x2="595" y2="205" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <text x="567" y="197" text-anchor="middle" fill="#c0392b" font-size="8" font-style="italic">incident</text>
+
+  <!-- ==== REVOCATION BOUNDING BOX ==== -->
+  <rect x="585" y="135" width="355" height="115" rx="8" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.35"/>
+  <text x="762" y="155" text-anchor="middle" fill="#c0392b" font-size="9" font-weight="600" letter-spacing="2" opacity="0.6">REVOCATION ZONE</text>
+
+  <!-- Step 4: Kill Switch Activated -->
+  <rect x="610" y="175" width="130" height="60" rx="6" fill="url(#killGrad)" filter="url(#shadowL)"/>
+  <text x="675" y="200" text-anchor="middle" fill="#fff" font-size="10" font-weight="700" letter-spacing="0.5">KILL SWITCH</text>
+  <text x="675" y="217" text-anchor="middle" fill="#ffd5d0" font-size="9">Licence Revoked</text>
+
+  <!-- Arrow Step 4 -> Step 5 -->
+  <line x1="740" y1="205" x2="790" y2="205" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+
+  <!-- Step 5: Renewal Denied -->
+  <rect x="795" y="170" width="125" height="60" rx="6" fill="#fce4ec" stroke="#c0392b" stroke-width="1.5" filter="url(#shadowL)"/>
+  <text x="858" y="193" text-anchor="middle" fill="#8a1a1a" font-size="10" font-weight="600">Renewal Request</text>
+  <text x="858" y="209" text-anchor="middle" fill="#c0392b" font-size="11" font-weight="700">403 FORBIDDEN</text>
+  <text x="858" y="224" text-anchor="middle" fill="#8a4a4a" font-size="9">Agent Halts</text>
+
+  <!-- Explanatory annotations -->
+  <text x="440" y="270" text-anchor="middle" fill="#7f8c8d" font-size="11">Short-lived cryptographic leases act as a heartbeat. Revoke the licence and the lease is simply not renewed.</text>
+  <text x="440" y="288" text-anchor="middle" fill="#7f8c8d" font-size="11">No physical access required. Cut off the API, cut off the agent. Instantly.</text>
+
+  <!-- Section label -->
+  <text x="440" y="318" text-anchor="middle" fill="#bdc3c7" font-size="10" letter-spacing="3">OCSP FOR AGENTS</text>
+
+  <!-- Watermark -->
+  <image x="840" y="295" width="100" height="40" opacity="0.12" preserveAspectRatio="xMidYMid meet" href="../shared/images/realistSecLogoTransparent2.png"/>
+</svg>

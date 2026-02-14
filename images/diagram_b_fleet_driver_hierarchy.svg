@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 420" width="960" height="420" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadowL">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="fleetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a5276"/>
+      <stop offset="100%" stop-color="#2471a3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="420" rx="8" fill="#f8f9fa"/>
+  <rect x="1" y="1" width="958" height="418" rx="7" fill="none" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="435" y="38" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="600" letter-spacing="1.5">THE FLEET &amp; DRIVER HIERARCHY</text>
+  <line x1="180" y1="50" x2="690" y2="50" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Layer 3: Apprentice / Sandbox (Top - smallest) -->
+  <rect x="240" y="75" width="420" height="70" rx="6" fill="#f5f5f5" stroke="#bdc3c7" stroke-width="1.5" filter="url(#shadowL)"/>
+  <text x="450" y="105" text-anchor="middle" fill="#7f8c8d" font-size="11" font-weight="600" letter-spacing="1">APPRENTICE / SANDBOX</text>
+  <text x="450" y="125" text-anchor="middle" fill="#95a5a6" font-size="10">The Learner -- No licence required, sandbox access only</text>
+
+  <!-- Layer 2: Principal Operator Licence (Middle) -->
+  <rect x="160" y="160" width="580" height="70" rx="6" fill="#e3f2fd" stroke="#2980b9" stroke-width="2" filter="url(#shadowL)"/>
+  <text x="450" y="190" text-anchor="middle" fill="#1a5a7a" font-size="11" font-weight="600" letter-spacing="1">PRINCIPAL OPERATOR LICENCE</text>
+  <text x="450" y="210" text-anchor="middle" fill="#4a7a9a" font-size="10">The Driver -- Competency assessed, KYC verified, deploys to production</text>
+
+  <!-- Layer 1: Corporate Operating Permit (Base - widest) -->
+  <rect x="80" y="245" width="740" height="70" rx="6" fill="url(#fleetGrad)" filter="url(#shadowL)"/>
+  <text x="450" y="275" text-anchor="middle" fill="#fff" font-size="11" font-weight="600" letter-spacing="1">CORPORATE OPERATING PERMIT</text>
+  <text x="450" y="295" text-anchor="middle" fill="#aed6f1" font-size="10">The Fleet -- Holds insurance, accountable for deployed systems</text>
+
+  <!-- Hierarchy arrows -->
+  <line x1="450" y1="145" x2="450" y2="160" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="450" y1="230" x2="450" y2="245" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Insurance Wrapper bracket (right side) -->
+  <line x1="855" y1="75" x2="855" y2="315" stroke="#27ae60" stroke-width="2.5"/>
+  <line x1="840" y1="75" x2="855" y2="75" stroke="#27ae60" stroke-width="2.5"/>
+  <line x1="840" y1="315" x2="855" y2="315" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="875" y="200" text-anchor="middle" fill="#27ae60" font-size="12" font-weight="600" letter-spacing="1" transform="rotate(90, 875, 200)">INSURANCE WRAPPER</text>
+
+  <!-- Explanatory annotations -->
+  <text x="435" y="347" text-anchor="middle" fill="#7f8c8d" font-size="11">Juniors write the code. Licensed operators deploy it. The corporation insures it.</text>
+  <text x="435" y="365" text-anchor="middle" fill="#7f8c8d" font-size="11">The same model used in civil engineering, architecture, and logistics for centuries.</text>
+
+  <!-- Section label -->
+  <text x="435" y="395" text-anchor="middle" fill="#bdc3c7" font-size="10" letter-spacing="3">FLEET &amp; DRIVER MODEL</text>
+
+  <!-- Watermark -->
+  <image x="840" y="370" width="100" height="40" opacity="0.12" preserveAspectRatio="xMidYMid meet" href="../shared/images/realistSecLogoTransparent2.png"/>
+</svg>
