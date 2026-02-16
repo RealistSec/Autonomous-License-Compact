@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/realistSecLogoTransparent2.png" alt="RealistSec Logo" width="200">
+  <img src="images/realistSecLogo.svg" alt="RealistSec Logo" width="200">
   
   # The Autonomous License Compact: A Protocol for Insurable AI
 
@@ -25,6 +25,8 @@ When I first raised this publicly, the question I posed was simple: *Do we need 
 
 Having sat with this for a while, I believe the answer to both is **yes**, and a working model for how to do it already exists.
 
+Autonomous AI is the most powerful unregulated capability ever made available to the public. Whether you think that description is accurate or alarmist, the framework below will give you something concrete to argue with.
+
 ---
 
 ## The Chain-of-Liability Problem
@@ -42,7 +44,7 @@ Consider the following scenario, because it is not hypothetical, it is already t
 Now ask the question that no legal system in the world has a clean answer for: **Who is responsible?**
 
 <div align="center">
-  <img src="images/diagram_a_recursive_liability_light.svg" alt="Diagram showing User spawning Agent A, which spawns Agent B, which spawns Agent C, with Agent C triggering an incident and dashed liability lines tracing back through the chain" width="720">
+  <img src="images/diagram_a_recursive_liability_light.svg" alt="Diagram showing User spawning Agent A, which spawns Agent B, which spawns Agent C, with Agent C triggering an incident and dashed liability lines tracing back through the chain" width="920">
   <br><em>Figure 1: The attribution gap in recursive agent spawning.</em></br></br>
 </div>
 
@@ -58,14 +60,14 @@ This is the **chain-of-liability problem**, and it is the single most urgent gap
 
 Here is the thing: we do not need to invent a regulatory framework from scratch. We just need to look at what is already working, and adapt it.
 
-In the **United Kingdom**, the **Financial Conduct Authority (FCA)** now mandates that any platform offering complex crypto assets must administer a **crypto appropriateness assessment** with KYC. This is a mandatory regulatory quiz and ID check that tests a consumer's knowledge and experience before they are permitted to invest. The principle is straightforward:
+In the **United Kingdom**, the [**Financial Conduct Authority (FCA)** now mandates](https://www.fca.org.uk/publications/policy-statements/ps22-10-strengthening-our-financial-promotion-rules-high-risk-investments-firms-approving-financial-promotions) that any platform offering complex crypto assets must administer a **crypto appropriateness assessment** with [KYC](https://www.fca.org.uk/publication/policy/ps19-22.pdf). This is a mandatory regulatory quiz and ID check that tests a consumer's knowledge and experience before they are permitted to invest. The principle is straightforward:
 
 > *If you cannot demonstrate that you understand the risks, you should not be allowed to take them, at least not without friction and informed consent.*
 
 The specifics of that system:
 
 - **Mandatory assessment** before purchasing complex crypto assets without advice
-- **KYC** identity verification paired with Zero-Knowledge Proofs
+- [**KYC**](https://www.fca.org.uk/firms/financial-crime/money-laundering-terrorist-financing) identity verification which can be paired with [Zero-Knowledge Proofs](https://ethereum.org/zero-knowledge-proofs/)
 - Tests **knowledge and experience** to ensure the consumer understands the risks
 - **Failing twice** triggers a **24-hour cooling-off period**
 - A **maximum of six attempts** before access is restricted
@@ -154,7 +156,7 @@ In software terms: the junior writes the agent. The **Principal Operator** revie
 This is not a new concept for engineering. It is how civil engineering, architecture, and medicine have worked for centuries. **The person closest to the work does the work. The person with the credential takes the responsibility.**
 
 <div align="center">
-  <img src="images/diagram_b_fleet_driver_hierarchy.svg" alt="Three-tier hierarchy diagram showing Corporate Operating Permit at the base, Principal Operator Licence in the middle, and Apprentice Sandbox at the top, with an Insurance Wrapper bracket spanning all layers" width="720">
+  <img src="images/diagram_b_fleet_driver_hierarchy.svg" alt="Three-tier hierarchy diagram showing Corporate Operating Permit at the base, Principal Operator Licence in the middle, and Apprentice Sandbox at the top, with an Insurance Wrapper bracket spanning all layers" width="920">
   <br><em>Figure 2: The tiered liability model mirrors civil engineering and logistics.</em>
 </div>
 
@@ -240,9 +242,9 @@ The mechanism is simple. Providers split their API endpoints:
 
 Every API call to the autonomous endpoint checks the licence. No valid licence, no access. The enforcement happens at the **API gateway**, not on the user's device. This is not speculative. It is how API access control already works for every paid service on the internet.
 
-We don't need new tech for this. We just need OCSP for Agents (Online Certificate Status Protocol). Just as a browser checks if a website's SSL certificate has been revoked before loading the page, the Model API checks the Licence Key status before processing the token. It is a millisecond-latency check that already exists in every secure networking protocol.
+We don't need new tech for this. We just need OCSP for Agents ([Online Certificate Status Protocol](https://datatracker.ietf.org/doc/html/rfc6960)). Just as a browser checks if a website's SSL certificate has been revoked before loading the page, the Model API checks the Licence Key status before processing the token. It is a millisecond-latency check that already exists in every secure networking protocol.
 
-To avoid latency on every single token generation, we use short-lived cryptographic leases (similar to signed JWTs with a 15-minute expiry). The agent effectively has a 'heartbeat'. It checks in, gets a cryptographically signed pass for 15 minutes of compute, and operates freely. If the status changes, the lease is simply not renewed. This balances absolute control with system resilience, if the licensing server blinks, the global fleet does not stall immediately.
+To avoid latency on every single token generation, we use short-lived cryptographic leases (similar to signed [JWTs](https://datatracker.ietf.org/doc/html/rfc7519) with a 15-minute expiry). The agent effectively has a 'heartbeat'. It checks in, gets a cryptographically signed pass for 15 minutes of compute, and operates freely. If the status changes, the lease is simply not renewed. This balances absolute control with system resilience, if the licensing server blinks, the global fleet does not stall immediately.
 
 Does this catch everyone? No. Someone running a fully self-hosted open-source model locally is outside this mechanism. But that edge case does not invalidate the framework any more than the existence of unlicensed drivers invalidates the driving test. You regulate where it is practical. The API gateway is practical.
 
@@ -267,7 +269,7 @@ Here is how it works:
 > **Step four.** The agent effectively dies, because its brain has been cut off.
 
 <div align="center">
-  <img src="images/diagram_c_lease_kill_switch_flow.svg" alt="Sequence diagram showing five steps: Agent requests token, API Gateway issues 15-min lease, Agent operates, Kill Switch activated with licence revoked, Agent requests renewal and receives 403 Forbidden then halts" width="720">
+  <img src="images/diagram_c_lease_kill_switch_flow.svg" alt="Sequence diagram showing five steps: Agent requests token, API Gateway issues 15-min lease, Agent operates, Kill Switch activated with licence revoked, Agent requests renewal and receives 403 Forbidden then halts" width="920">
   <br><em>Figure 3: High-frequency enforcement via cryptographic leasing.
   </br></br>
   </em>
@@ -291,25 +293,25 @@ The **UK** is well-positioned to lead here, and the infrastructure is closer to 
 
 The **FCA** model for crypto appropriateness assessments is already live, tested, and iterating. A parallel framework for autonomous **AI** could be administered by the **FCA** itself (for financial use cases), **Ofcom** (for communications and content), or a new dedicated **AI regulator**. The UK has form for being an early mover on financial regulation that later becomes international standard.
 
-The **Online Safety Act** already establishes the principle of **credentialed access**, that platforms must verify user attributes before granting access to restricted content and services. We already use age assurance for restricted content online. Extending this same credentialed access model to autonomous **AI** capabilities is not a radical leap. It is a logical extension of existing law.
+The [**Online Safety Act**](https://www.legislation.gov.uk/ukpga/2023/50/contents/enacted) already establishes the principle of **credentialed access**, that platforms must verify user attributes before granting access to restricted content and services. We already use age assurance for restricted content online. Extending this same credentialed access model to autonomous **AI** capabilities is not a radical leap. It is a logical extension of existing law.
 
-The identity verification question is real, but it is solved. The **UK** already has federated digital identity infrastructure through banking ID verification (**Open Banking**), **GOV.UK Verify** (now superseded by **GOV.UK One Login**), and private sector solutions compliant with **UK Digital Identity and Attributes Trust Framework (DIATF)**. You do not need a government surveillance database. You need the same level of identity assurance that is already required to open a bank account or trade crypto. This is not new. It is just being applied to a new domain.
+The identity verification question is real, but it is solved. The **UK** already has federated digital identity infrastructure through [banking ID verification (**Open Banking**)](https://standards.openbanking.org.uk/security-profiles/), [**GOV.UK Verify** (now superseded by **GOV.UK One Login**](https://www.sign-in.service.gov.uk/)), and private sector solutions compliant with [**UK Digital Identity and Attributes Trust Framework (DIATF)**.](https://www.gov.uk/government/publications/uk-digital-identity-and-attributes-trust-framework-04/uk-digital-identity-and-attributes-trust-framework-gamma-04-pre-release) You do not need a government surveillance database. You need the same level of identity assurance that is already required to open a bank account or trade crypto. This is not new. It is just being applied to a new domain.
 
 The "competency quiz is useless if I can just make a new anonymous account" objection falls apart here. **You cannot make a new anonymous account if the platform requires identity verification to issue a licence.** This is exactly how the **FCA** crypto rules work today. Verified identity, assessed competence, then access.
 
 ### The United States
 
-The **US** presents a more fragmented picture. Federal regulation moves slowly, and there is significant political resistance to anything perceived as constraining innovation. However, **state-level action** is likely, **California**, **New York**, and **Colorado** have all shown appetite for **AI** regulation, and a licensing framework could emerge through state consumer protection law before any federal standard exists.
+The **US** presents a more fragmented picture. Federal regulation moves slowly, and there is significant political resistance to anything perceived as constraining innovation. However, **state-level action** is likely, [**California**,](https://legiscan.com/CA/text/SB1047/id/3019694) [**New York**](https://www.nysenate.gov/legislation/bills/2025/S6953B), and [**Colorado** ](https://leg.colorado.gov/bills/sb24-205)have all shown appetite for **AI** regulation, and a licensing framework could emerge through state consumer protection law before any federal standard exists.
 
 The more probable path in the **US** is through **liability precedent**. The first major lawsuit involving an autonomous **AI** chain-of-liability scenario will force the courts to establish principles that legislation has not. This is how **American** regulatory systems often work, reactively rather than proactively. A pre-existing licensing framework would give the courts something to reference rather than having to build from nothing.
 
 The **Grand Bargain** is particularly relevant here. **American** providers are already self-restricting their most powerful models out of legal fear. A framework that offers **safe harbour** in exchange for compliance is something their legal teams will actively lobby for, not against.
 
-The **Fleet & Driver** model also maps cleanly onto the existing US **Professional Engineer (PE)** licensing system. American engineers already understand the concept of a licensed individual stamping designs that others produce. Extending this to autonomous **AI** deployment is a smaller conceptual leap in the **US** than in most other jurisdictions.
+The **Fleet & Driver** model also maps cleanly onto the existing US [**Professional Engineer (PE)** licensing system](https://ncees.org/licensure/why-licensure-matters/). American engineers already understand the concept of a licensed individual stamping designs that others produce. Extending this to autonomous **AI** deployment is a smaller conceptual leap in the **US** than in most other jurisdictions.
 
 ### International Precedent
 
-This is where it gets interesting. If the **UK** establishes a licensing framework first, it creates a gravitational pull, much as **GDPR** did for data protection. Any **AI** provider wanting to operate in a jurisdiction with licensing requirements must comply. This means a single country's framework can shape the behaviour of providers globally.
+This is where it gets interesting. If the **UK** establishes a licensing framework first, it creates a gravitational pull, much as [**GDPR**](https://eur-lex.europa.eu/eli/reg/2016/679/oj) did for data protection. Any **AI** provider wanting to operate in a jurisdiction with licensing requirements must comply. This means a single country's framework can shape the behaviour of providers globally.
 
 The principle is simple: **if you want to offer autonomous AI services in this country, your users must be licensed.** The same way you cannot offer complex financial products without ensuring your customers understand what they are buying.
 
@@ -361,7 +363,7 @@ However, this misses the strategic goal. The objective is not to police every la
 
 ### "This will stifle innovation"
 
-This is the objection you hear every time regulation is proposed for anything. It was said about seat belts, financial regulation, drone licensing, and **GDPR**. In every case, responsible innovation continued, and in many cases, improved, because the regulatory framework created trust and market confidence.
+This is the objection you hear every time regulation is proposed for anything. It was said about seat belts, financial regulation, [drone licensing](https://www.caa.co.uk/drones/getting-started-with-drones-and-model-aircraft/registering-to-fly-drones-and-model-aircraft/), and **GDPR**. In every case, responsible innovation continued, and in many cases, improved, because the regulatory framework created trust and market confidence.
 
 A licensing requirement does not prevent innovation. It prevents *uninformed deployment*. Those are very different things.
 
@@ -391,9 +393,9 @@ Open-source self-hosting remains a gap, as noted above. But the fact that some e
 
 ### "Anyone can just create a new account"
 
-Not if the licence requires identity verification. This is not a new problem. The **FCA** already solved it for crypto. **KYC (Know Your Customer)** rules require verified identity before access to restricted financial products. The same infrastructure, federated digital identity, banking-grade verification, applies here without requiring a centralised government database. One identity, one licence. Creating a new anonymous account to bypass the assessment becomes as difficult as opening a fraudulent bank account, which is to say, not impossible, but a criminal act with consequences.
+Not if the licence requires identity verification. This is not a new problem. The **FCA** already solved it for crypto. [**KYC (Know Your Customer)**](https://www.fca.org.uk/publication/policy/ps19-22.pdf) rules require verified identity before access to restricted financial products. The same infrastructure, federated digital identity, banking-grade verification, applies here without requiring a centralised government database. One identity, one licence. Creating a new anonymous account to bypass the assessment becomes as difficult as opening a fraudulent bank account, which is to say, not impossible, but a criminal act with consequences.
 
-For those rightly worried about privacy, Zero-Knowledge Proofs (ZKPs) offer the bridge. It is technically feasible to allow a user to cryptographically prove 'I hold a valid, insured Tier 3 Licence' to an API provider without revealing 'I am John Smith, born in London' for every transaction. We can demand verification without building a surveillance state.
+For those rightly worried about privacy, [Zero-Knowledge Proofs (ZKPs)](https://ethereum.org/zero-knowledge-proofs/) offer the bridge. It is technically feasible to allow a user to cryptographically prove 'I hold a valid, insured Tier 3 Licence' to an API provider without revealing 'I am John Smith, born in London' for every transaction. We can demand verification without building a surveillance state.
 
 ### "Who writes the assessment?"
 
