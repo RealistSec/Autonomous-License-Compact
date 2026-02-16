@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/realistSecLogo.svg" alt="RealistSec Logo" width="200">
+  <a href="https://realistsec.com/?utm_source=AutonomousLicenseCompactGH"><img src="images/realistSecLogo.svg" alt="RealistSec Logo" width="200"></a>
   
   # The Autonomous License Compact: A Protocol for Insurable AI
 
@@ -452,7 +452,7 @@ The capability has arrived. The regulation has not. The rational response is to 
 
 <div align="center">
   
-*Originally published as a thought piece by [RealistSec](https://github.com/RealistSec). Contributions and discussion welcome.*
+*Originally [published on GitHub](https://github.com/RealistSec/Autonomous-License-Compact) a thought piece by [RealistSec](https://realistsec.com/?utm_source=AutonomousLicenseCompactGH). Contributions and discussion welcome.*
 
 </div>
 <div align="center">
