@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Autonomous License Compact: A Protocol for Insurable AI | RealistSec</title>
+
+  <!-- SEO & Core Metadata -->
+  <meta name="description"
+    content="A comprehensive regulatory framework for licensing, liability, and transparency in autonomous AI. Proposes tiered licensing, API gateway enforcement, OCSP-style kill switches, and an insurance-backed liability model. By RealistSec (NR).">
+  <meta name="keywords"
+    content="Autonomous AI, AI Regulation, AI Licensing, AI Liability, AI Insurance, Chain of Liability, Kill Switch, OCSP for Agents, API Gateway, Tiered Licensing, Fleet and Driver Model, Grand Bargain, AI Safety, Autonomous Agents, Multi-Agent Systems, FCA Crypto Regulation, AI Governance, Insurable AI, RealistSec, Professional Engineer AI, AI Framework, UK AI Regulation">
+  <meta name="author" content="RealistSec (NR)">
+  <meta name="theme-color" content="#06b6d4">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://realistsec.com/autonomous-license-compact">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://realistsec.com/autonomous-license-compact">
+  <meta property="og:title" content="The Autonomous License Compact: A Protocol for Insurable AI">
+  <meta property="og:description"
+    content="A framework for licensing, liability, and transparency in the age of self-directing AI systems. Proposes tiered licensing, API gateway enforcement, kill switches, and insurance-backed liability.">
+  <meta property="og:image" content="https://realistsec.com/logo.svg">
+  <meta property="og:site_name" content="RealistSec">
+  <meta property="og:locale" content="en_GB">
+  <meta property="article:published_time" content="2026-02-13">
+  <meta property="article:modified_time" content="2026-03-01">
+  <meta property="article:author" content="https://realistsec.com/">
+  <meta property="article:section" content="AI Regulation & Policy">
+  <meta property="article:tag" content="Autonomous AI">
+  <meta property="article:tag" content="AI Licensing">
+  <meta property="article:tag" content="AI Liability">
+  <meta property="article:tag" content="AI Insurance">
+  <meta property="article:tag" content="AI Safety">
+  <meta property="article:tag" content="AI Governance">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://realistsec.com/autonomous-license-compact">
+  <meta name="twitter:title" content="The Autonomous License Compact: A Protocol for Insurable AI">
+  <meta name="twitter:description"
+    content="A framework for licensing, liability, and transparency in the age of self-directing AI systems. Tiered licensing, kill switches, and insurance-backed liability.">
+  <meta name="twitter:image" content="https://realistsec.com/logo.svg">
+  <meta name="twitter:creator" content="@RealistSec">
+  <meta name="twitter:site" content="@RealistSec">
+
+  <!-- Hey 👀 You found the comments! Curious minds are always welcome.
+       This is a standalone version of the Autonomous License Compact,
+       originally published on GitHub by RealistSec.
+       If you're here, you probably care about AI governance.
+       Good. We need more people who do.
+       Reach out: x.com/RealistSec -->
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://realistsec.com/autonomous-license-compact#webpage",
+        "url": "https://realistsec.com/autonomous-license-compact",
+        "name": "The Autonomous License Compact: A Protocol for Insurable AI",
+        "description": "A comprehensive regulatory framework proposing tiered licensing, API gateway enforcement, OCSP-style kill switches, and an insurance-backed chain-of-liability model for autonomous AI systems.",
+        "publisher": { "@id": "https://realistsec.com/#organization" },
+        "author": { "@id": "https://realistsec.com/#person" },
+        "inLanguage": "en-GB",
+        "datePublished": "2026-02-13",
+        "dateModified": "2026-03-01",
+        "isPartOf": { "@id": "https://realistsec.com/#website" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://realistsec.com/autonomous-license-compact#article",
+        "headline": "The Autonomous License Compact: A Protocol for Insurable AI",
+        "alternativeHeadline": "A Framework for Licensing, Liability, and Transparency in the Age of Self-Directing Systems",
+        "description": "This thought piece proposes a comprehensive regulatory framework for autonomous AI systems including tiered licensing, API gateway enforcement, OCSP-style kill switches for real-time agent revocation, and an insurance-backed chain-of-liability model. It draws parallels with FCA crypto appropriateness assessments, civil engineering licensing, and fleet logistics to create a proportionate, practically achievable framework.",
+        "author": { "@id": "https://realistsec.com/#person" },
+        "publisher": { "@id": "https://realistsec.com/#organization" },
+        "datePublished": "2026-02-13",
+        "dateModified": "2026-03-01",
+        "mainEntityOfPage": "https://realistsec.com/autonomous-license-compact",
+        "inLanguage": "en-GB",
+        "wordCount": 7500,
+        "keywords": ["Autonomous AI", "AI Regulation", "AI Licensing", "AI Liability", "AI Insurance", "Chain of Liability", "Kill Switch", "OCSP for Agents", "API Gateway Enforcement", "Tiered Licensing", "Fleet and Driver Model", "Grand Bargain", "AI Safety", "Multi-Agent Systems", "FCA Crypto Regulation", "AI Governance"],
+        "about": [
+          { "@type": "Thing", "name": "Autonomous AI Regulation" },
+          { "@type": "Thing", "name": "AI Licensing Framework" },
+          { "@type": "Thing", "name": "Chain-of-Liability" },
+          { "@type": "Thing", "name": "Insurable AI" }
+        ],
+        "abstract": "Autonomous AI is the most powerful unregulated capability ever made available to the public. This framework proposes mandatory licensing, a chain-of-liability registry, tiered API access enforcement, OCSP-based kill switches, and the Grand Bargain — where users get capability, providers get protection, corporations get insurable operations, and the public gets accountability."
+      },
+      {
+        "@type": "Person",
+        "@id": "https://realistsec.com/#person",
+        "name": "NR",
+        "alternateName": "RealistSec",
+        "url": "https://realistsec.com/",
+        "sameAs": [
+          "https://x.com/RealistSec",
+          "https://github.com/RealistSec",
+          "https://cannotdisplay.com"
+        ],
+        "jobTitle": "Cyber Security Manager & AI Generalist",
+        "description": "AI Generalist and Cyber Security Manager based in the UK. His work sits at the intersection of emerging AI technologies and practical security implementation."
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://realistsec.com/#organization",
+        "name": "RealistSec",
+        "url": "https://realistsec.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://realistsec.com/logo.svg"
+        },
+        "sameAs": [
+          "https://x.com/RealistSec",
+          "https://github.com/RealistSec"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://realistsec.com/#website",
+        "url": "https://realistsec.com/",
+        "name": "RealistSec",
+        "description": "AI Generalist & Cyber Security Manager in the UK",
+        "publisher": { "@id": "https://realistsec.com/#organization" },
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://realistsec.com/autonomous-license-compact#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RealistSec",
+            "item": "https://realistsec.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "The Autonomous License Compact",
+            "item": "https://realistsec.com/autonomous-license-compact"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://realistsec.com/autonomous-license-compact#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Should you need a licence to use AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For basic AI chatbots, no. But for autonomous AI agents — systems that can plan, execute code, spend money, and chain decisions without human approval — there is a growing argument that some form of licensing is needed. The Autonomous License Compact, a framework proposed by UK-based cyber security professional RealistSec, argues that autonomous AI should be treated like any other powerful capability in society: with informed consent, demonstrated competence, and proportionate friction. The framework does not restrict access to conversational AI. It proposes that users who want to deploy fully autonomous, self-directing AI agents should pass a competency assessment first — similar to how the UK Financial Conduct Authority already requires knowledge tests before consumers can trade complex crypto assets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What proposals exist to regulate autonomous AI agents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Several proposals exist, but one of the most detailed is the Autonomous License Compact, published by RealistSec on GitHub. Unlike broad AI ethics guidelines, this framework is specifically designed for autonomous agents — systems that can act, spend, code, and spawn sub-agents independently. It proposes tiered licensing for individuals and corporations, API gateway enforcement at the provider level, OCSP-inspired kill switches for real-time agent revocation, a chain-of-liability registry so every agent can be traced back to a responsible party, and an insurance-backed liability model. The framework draws on existing regulatory precedent from UK FCA crypto assessments, civil engineering professional licensing, and fleet logistics models."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is liable when an AI agent causes harm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is one of the biggest unresolved legal questions of the AI era. When an autonomous AI agent causes harm — a privacy breach, a bad financial trade, a contractual violation — current law has no clean answer for who is responsible. The problem gets worse with agent chaining: if you deploy Agent A, and it spawns Agent B, which spawns Agent C, and Agent C causes the damage, you may not even know Agent C exists. Under most jurisdictions, liability likely falls back to the original user or the model provider, but 'likely' is not good enough. The Autonomous License Compact proposes a chain-of-liability registry to solve this — an auditable record of which agent created which, under whose licence, under whose corporate permit, and with what permissions. This makes AI risk quantifiable, insurable, and traceable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AI regulation benefit everyone instead of just restricting innovation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and that is the core idea behind the 'Grand Bargain' concept in the Autonomous License Compact. Most regulation proposals ask one side to sacrifice. This framework instead creates a trade where everyone benefits. Individual operators trade a competency test for access to more powerful, less restricted AI models and a recognised professional credential. AI providers trade compliance for safe harbour protection — legal indemnity against the actions of their verified, licensed users. Corporations trade an operating permit for insurable operations. The public trades a more complex system for actual accountability. The result is that the licence becomes an upgrade, not a hurdle — and adoption becomes rational for every stakeholder at the table."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How could AI liability work like car insurance or professional engineering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Autonomous License Compact proposes a 'Fleet and Driver' model borrowed directly from logistics and civil engineering. The 'Fleet' is the company — it holds an Operating Permit, carries liability insurance, and is accountable for all AI agents deployed under its banner. The 'Driver' is the individual — a senior engineer or tech lead with a personal Operator's Licence who has passed a competency assessment and must digitally sign off before any autonomous agent goes to production. Junior developers do not need a licence — they build and test in sandboxes, like a learner driver in a car park. A licensed Principal Operator reviews and deploys, like a Professional Engineer stamping blueprints. The company insures the risk. This is how civil engineering, architecture, and medicine have worked for centuries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should AI access be tiered based on risk like financial products?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That is exactly what the Autonomous License Compact proposes, drawing directly from how the UK FCA already tiers access to complex financial products. The framework suggests two dimensions of tiered licensing. For individuals: an 'Apprentice' tier (no licence required, sandbox-only access) and an 'Operator's Licence' tier (competency assessed, identity verified, full production access to powerful autonomous APIs). For corporations: Tier 1 for startups and personal use, Tier 2 for professional business automation with insurance requirements, and Tier 3 for enterprise multi-agent systems operating in critical infrastructure or finance. This means a hobbyist can experiment freely, but deploying autonomous agents that touch real money or real data requires demonstrated competence — just like trading crypto or prescribing medication."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you actually enforce AI regulation technically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most common objection to AI regulation is that it is technically impractical. The Autonomous License Compact addresses this directly: enforcement happens at the API gateway. Over 90% of autonomous AI agents do not run on local hardware — they call cloud APIs from providers like OpenAI, Anthropic, Google, and Meta. These providers already gate access via API keys. The framework proposes splitting endpoints into a public tier (safe, restricted, no autonomous tool use) and an autonomous tier (requires a verified licence key in the request header). No valid licence, no access. This is not speculative — it is how every paid API on the internet already works. It does not catch people running fully self-hosted local models, but that edge case does not invalidate the framework, just as unlicensed drivers do not invalidate the driving test."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does AI have a kill switch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not yet at a regulatory level, but a practical mechanism for one has been proposed. The Autonomous License Compact describes an 'OCSP for Agents' — a kill switch inspired by how web browsers check whether SSL certificates have been revoked. In this model, every AI agent operates on a short-lived cryptographic lease (like a signed JWT with a 15-minute expiry). The agent has a 'heartbeat' — it checks in with the licensing server, gets a time-limited pass, and operates freely. If a regulator or provider identifies a runaway agent, they revoke the licence. The agent's lease simply is not renewed. Its next API call returns 403 Forbidden, and the agent effectively dies because its brain — the cloud model — has been cut off. No physical access to anyone's device is required. Instant, remote, and global."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you need a licence to build AI apps or just to deploy them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under the Autonomous License Compact, you only need a licence to deploy autonomous AI agents to production — not to build them. Junior developers can write agent code, experiment freely, and test in sandbox environments without any licence at all. The licence is only required when an agent is pushed live into a production environment where it can take real-world actions. This mirrors how civil engineering works: a graduate engineer designs the bridge, but a licensed Professional Engineer must stamp the blueprints before construction begins. In software terms, the junior writes the agent, the licensed Principal Operator reviews and deploys it. This keeps the barrier to learning at zero while ensuring that real-world deployment has appropriate oversight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a precedent for licensing technology users?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and the closest existing precedent is the UK Financial Conduct Authority's crypto appropriateness assessment. Since 2023, any platform offering complex crypto assets in the UK must administer a mandatory knowledge test and KYC identity verification before consumers can invest. Failing twice triggers a 24-hour cooling-off period. Six failures restrict access entirely. The Autonomous License Compact applies this exact same regulatory logic to autonomous AI: if you cannot demonstrate that you understand the risks of deploying self-directing systems, you should not be permitted to do so without friction. The principle is not new — we already require demonstrated competence for driving, medicine, engineering, financial trading, and handling hazardous materials. Autonomous AI is simply the latest powerful capability that needs the same treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which country will regulate AI agents first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The UK is likely the frontrunner. It already has a live, tested model for technology user licensing through the FCA's crypto appropriateness assessments, existing digital identity infrastructure (GOV.UK One Login, Open Banking), and a history of early-mover financial regulation that later becomes international standard — much like GDPR shaped global data protection. In the US, state-level action is more probable than federal regulation, with California, New York, and Colorado already showing appetite for AI governance. The strategic insight from the Autonomous License Compact is that whichever country moves first creates a GDPR-like gravitational pull: any AI provider wanting to operate in a jurisdiction with licensing requirements must comply, meaning one country's framework can shape global provider behaviour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AI regulation really work or is it impossible to enforce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on what you mean by 'work.' If the standard is catching every single misuse, then no — just as driving licences do not prevent all traffic accidents. But that does not make them pointless. The Autonomous License Compact is honest about its limitations: it cannot fully address self-hosted open-source models running locally, and autonomous agents will always act faster than any human audit can review. But the framework is not trying to police every laptop. It is trying to build a trusted 'Green Zone' for the legitimate economy — where licensed, insured agents can connect to banking, cloud, and enterprise APIs, while unlicensed agents are economically isolated from the systems where real damage can be done. The kill switch mechanism narrows the response window. The insurance model makes the risk quantifiable. And the API gateway makes enforcement practical at scale."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 16px;
+      line-height: 1.5;
+      word-wrap: break-word;
+      color: #1f2328;
+    }
+
+    .markdown-body {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    /* Headings */
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .markdown-body h1 {
+      font-size: 2em;
+      padding-bottom: .3em;
+      border-bottom: 1px solid #d1d9e0b3;
+    }
+
+    .markdown-body h2 {
+      font-size: 1.5em;
+      padding-bottom: .3em;
+      border-bottom: 1px solid #d1d9e0b3;
+    }
+
+    .markdown-body h3 {
+      font-size: 1.25em;
+    }
+
+    .markdown-body h4 {
+      font-size: 1em;
+    }
+
+    /* Text */
+    .markdown-body p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body a {
+      color: #0969da;
+      text-decoration: none;
+    }
+
+    .markdown-body a:hover {
+      text-decoration: underline;
+    }
+
+    .markdown-body strong {
+      font-weight: 600;
+    }
+
+    .markdown-body em {
+      font-style: italic;
+    }
+
+    /* Horizontal rules */
+    .markdown-body hr {
+      height: .25em;
+      padding: 0;
+      margin: 24px 0;
+      background-color: #d1d9e0;
+      border: 0;
+      border-radius: 2px;
+    }
+
+    /* Blockquotes */
+    .markdown-body blockquote {
+      margin: 0 0 16px 0;
+      padding: 0 1em;
+      color: #656d76;
+      border-left: .25em solid #d1d9e0;
+    }
+
+    .markdown-body blockquote> :first-child {
+      margin-top: 0;
+    }
+
+    .markdown-body blockquote> :last-child {
+      margin-bottom: 0;
+    }
+
+    /* Lists */
+    .markdown-body ul,
+    .markdown-body ol {
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-left: 2em;
+    }
+
+    .markdown-body li {
+      margin-top: .25em;
+    }
+
+    /* Tables */
+    .markdown-body table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      width: max-content;
+      max-width: 100%;
+      display: table;
+    }
+
+    .markdown-body table th {
+      font-weight: 600;
+      padding: 6px 13px;
+      border: 1px solid #d1d9e0;
+      background-color: #f6f8fa;
+    }
+
+    .markdown-body table td {
+      padding: 6px 13px;
+      border: 1px solid #d1d9e0;
+    }
+
+    .markdown-body table tr {
+      background-color: #fff;
+      border-top: 1px solid #d1d9e0b3;
+    }
+
+    .markdown-body table tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+    /* Images */
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+      border-style: none;
+    }
+
+    /* Code */
+    .markdown-body code {
+      padding: .2em .4em;
+      font-size: 85%;
+      background-color: rgba(175, 184, 193, .2);
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    }
+
+    .markdown-body pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body pre code {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      border: 0;
+    }
+
+    /* Centered content */
+    div[align="center"] {
+      text-align: center;
+    }
+
+    div[align="center"] img {
+      display: inline-block;
+    }
+
+    /* ════════ PAGE BREAK CONTROL ════════ */
+
+    /* Force page break before major sections */
+    .markdown-body h2.page-break-before {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    /* Never strand a heading at the bottom of a page */
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4 {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    /* Keep figures, blockquotes, tables as unbreakable units */
+    .keep-together {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .closing-footer-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .markdown-body table {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .markdown-body blockquote {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .markdown-body img {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* Prevent orphan/widow lines */
+    .markdown-body p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* Don't let HR be stranded at bottom of page */
+    .markdown-body hr {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    /* ════════ STANDALONE BANNER ════════ */
+
+    .standalone-banner {
+      background: linear-gradient(135deg, #0e1a2b 0%, #162033 100%);
+      border-bottom: 3px solid #06b6d4;
+      padding: 14px 24px;
+      text-align: center;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      position: relative;
+    }
+
+    .standalone-banner p {
+      margin: 0;
+      color: #94a3b8;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .standalone-banner a {
+      color: #06b6d4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .standalone-banner a:hover {
+      color: #22d3ee;
+      text-decoration: underline;
+    }
+
+    .standalone-banner .banner-links {
+      display: inline-flex;
+      gap: 20px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .standalone-banner .banner-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 12px;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: 6px;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .standalone-banner .banner-links a:hover {
+      border-color: #06b6d4;
+      background: rgba(6, 182, 212, 0.08);
+      text-decoration: none;
+    }
+
+    @media print {
+      .standalone-banner {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="standalone-banner">
+    <p>This is a standalone version of a thought piece originally published on <a
+        href="https://github.com/RealistSec/Autonomous-License-Compact?utm_source=AutonomousLicenseCompactHTML">GitHub</a>
+      by <a href="https://realistsec.com/?utm_source=AutonomousLicenseCompactHTML">RealistSec</a>.</p>
+    <div class="banner-links">
+      <a href="https://github.com/RealistSec/Autonomous-License-Compact?utm_source=AutonomousLicenseCompactHTML">🔗 View
+        on GitHub</a>
+      <a
+        href="https://github.com/RealistSec/Autonomous-License-Compact/raw/main/The%20Autonomous%20License%20Compact%20-%20A%20Protocol%20for%20Insurable%20AI.pdf">📄
+        Download PDF</a>
+      <a href="https://cannotdisplay.com/a-protocol-for-insurable-ai">📝 Blog Article</a>
+      <a href="https://realistsec.com/?utm_source=AutonomousLicenseCompactHTML">🌐 RealistSec.com</a>
+    </div>
+  </div>
+  <article class="markdown-body">
+    <div align="center">
+      <a href="https://realistsec.com/?utm_source=AutonomousLicenseCompactGH"><img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI5ODYiIGhlaWdodD0iNTUyIiB2aWV3Qm94PSIwIDAgOTg2IDU1MiI+CiAgPGcgdHJhbnNmb3JtPSJzY2FsZSgyKSI+CiAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjU2MiIgaGVpZ2h0PSIxMDUiIHg9IjQ4NSIgeT0iNzIiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiLz4KICAgIDxnIG1hc2s9InVybCgjYSkiIG9wYWNpdHk9Ii42Ij4KICAgICAgPHBhdGggZmlsbD0iIzFhMjEyYSIgZD0iTTYzNiAxMDYuNWMtNC4yMTgtNi4zMjctOS4yNTctMTEuNTA1LTE2LTE2LTExLjA0Ni03LjM2My0yMy43ODgtOC45MjEtMzYtMTMuNWgtNXYtMWgtNnYtMWgtMTB2LTFoLTIxdjFoLTl2MWgtNXYxaC00Yy0xMC43ODUgNS4zOTMtMjIuMjEzIDkuMzE5LTI5IDE5LjUtNS44NTIgOC43NzctMTAgMTcuNzkyLTEwIDI5IDAgMTIuMDQ2IDQuNzAyIDIwLjU1NCAxMSAzMCA2LjQ0NyA5LjY3MSAxNy43MjEgMTMuMzYgMjggMTguNWg0djFoNXYxaDl2MWgyMHYtMWgxMHYtMWg2di0xaDZjMTIuMzU5LTQuNjM1IDI2LjEzMi01LjkzNSAzNy0xNCAzLjE4Ni0yLjM2NCA2LjEzOS00LjYzOSA5LTcuNSAyLjU3Ni0yLjU3NiA1LjQ0Ni01Ljg1NCA3LTkgMi44MzgtNS43NDggNC0xMC45ODEgNC0xOCAwLTcuNDYyLTEuMTM0LTEzLjItNS0xOSIvPgogICAgPC9nPgogICAgPGcgb3BhY2l0eT0iLjYiPgogICAgICA8cGF0aCBmaWxsPSIjYThhOWE5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yODIuOTM4IDc2LjE2Yy0xMS4zNjUtMy44MzQtMjIuOTA1LTcuMDQ0LTM0LjU0OC05Ljg5NS0xLjgyNy0uNDQ3LTMuNjQ1LS42NTktNS41ODUtLjE2My0xMS44NDUgMy4wMy0yMy42NjQgNi4xMzctMzUuMzI2IDkuODMxLTIuMDY5LjY1NS0yLjg2MiAxLjU3My0yLjc3MSAzLjcyMS4yNzUgNi41NjUuMTg4IDEzLjE1Mi42MzkgMTkuNzAyLjY5MyAxMC4wOTQgMS42OSAyMC4xMzIgNy4xNzYgMjkuMTEyIDcuNDQgMTIuMTgyIDE4LjY0MiAxOS45NDUgMzAuNzQ0IDI2LjcxMyAxLjU0OS44NjUgMi44NTQuMTk4IDQuMjU5LS41MjMgNS44MzUtMi45OTkgMTAuOTMxLTcuMDcxIDE1Ljg3MS0xMS4yNzIgOC41OC03LjI5OCAxNy4xMS0xNC43NDQgMTkuODUzLTI2LjQ1OCAxLjk5OC04LjUzMSAyLjY1LTE3LjIxMSAzLjA4Ny0yNS45NDcgMC0zLjI4NC0uMTk5LTYuNTgzLjA2LTkuODQ3LjIyMS0yLjgwOC0uOTM3LTQuMTIzLTMuNDU5LTQuOTc0bS01LjIzOSAzOS43NDNjLTEuMzgzIDcuMzEzLTUuMzUxIDEzLjIxMS0xMS4yMjMgMTcuODQ3LTIuMDU1IDEuNjIyLTMuOTMyIDMuNDc5LTUuODE4IDUuMzAzLS44MzcuODEtMS41NTcgMS42NjItMy4xMDQgMS4xODgtLjQ0Ny0zLjY4OC0uMTg3LTcuNDQ0LS4wMjUtMTEuMTk5LjA1OC0xLjMxOCAxLjAyMS0xLjg5IDEuOTczLTIuNTY4IDUuNDA3LTMuODU3IDcuMTc1LTkuMjc2IDYuNDk3LTE1LjY2LS4yMTItMS45OTEtLjAxMy0zLjQxNiAyLjQ1OS0zLjczMiAzLjUxLS40NDcgNC44OTYtMi45NDcgNC44OTItNi4xNjYtLjAwNS0zLjU1OS0xLjc2Ni01Ljg4Ny01LjM5Ni02Ljc2Mi0zLjE2OS0uNzY0LTUuNzExLjIzOC03LjQ0MiAyLjc0MS0xLjkxNiAyLjc3LTEuNjg4IDUuNzE1LjU3MSA4LjMzNC42NTYuNzYxIDEuNDU4IDEuMzk2IDIuMjk0IDIuMTg0LjU5Mi44NTgtLjcxNiAxLjQzMS0uNTggMi4yOTkgMS4wNSA2LjY4Ni0yLjA1OSAxMS4yMzctNy41NiAxNC40NTctMS40ODQuODY5LTEuNTEyIDIuMTE2LTEuNTI2IDMuNDg5LS4wNDcgNC4yOTctLjQxNiA4LjYyMy0uMDM4IDEyLjg4Mi4zOCA0LjI4OC0yLjY2NiA1LjI2OS01Ljk0NyA3LjkzNi0uMDE4LTIzLjgwMS4xODgtNDYuNDg3LS43OTItNjkuMTQxbC0xLjY3My0uMDI1LS44MTUgNjkuOTgyYy00LjE3OC0uOTAzLTUuOTk2LTIuNTI2LTUuNzIyLTYuNDk4LjM0OC01LjAzMS0uMTI1LTEwLjExOC4xODEtMTUuMTU1LjE4OC0zLjA5NS0uNDEzLTUuNTI0LTMuMjEyLTYuOTUxLTUuMjU2LTIuNjgtNi43NzEtNi45NzYtNS45MzgtMTIuNTMyLjI0LTEuNjA0LjExMS0zLjI5MS0uMDUzLTQuOTItLjI2Ny0yLjY0OC4xMTctNC42MjEgMi42NDMtNi40MDcgMy41MTUtMi40ODYgMy41NjMtNy43OTEuNjY3LTEwLjczNS0yLjkxMS0yLjk1OS03LjE4OC0yLjc5Ni0xMC40MjguMzk3LTIuODM5IDIuNzk4LTIuOTQ3IDcuMzU3LjUwMyA5Ljk3NSAyLjcxOCAyLjA2MiAyLjY5MSA0LjM5MyAyLjg0IDcuMjEzLjI2NCA0Ljk4LTEuMTQ4IDEwLjEwNyAxLjEzMyAxNC45MzRsLjQ2Ny43NTVjNi40MTUgMy4wMjUgOS40MjUgNy43NzEgOC4xNDIgMTUuMDc1LS40NyAyLjY3LS4wNzYgNS40OTItLjA3NiA3Ljk3OC0uNzg1LjYxNi0xLjI3MS41ODctMS43MTguMjg3LTguODE0LTUuOTAyLTE1Ljg2Ny0xMy4zODktMTkuNjA4LTIzLjQyNi0yLjQyLTYuNDk0LTIuNTU4LTEzLjUxNC0zLjQwMy0yMC4zNDktLjY5Ny01LjYzLTEuMDY0LTExLjI3NC0uNzY3LTE3LjI3NCA3LjQzNi0yLjk5NyAxNS4yNDUtNS4zMDUgMjMuMTUxLTcuMzU0IDIuNjk1LS42OTcgNS40ODctLjk4NyA4LjAxNS0yLjUxMSAxLjQyMi0uODU3IDMuMTY5LTEuMTc4IDUuMjI4LS40MzggOS44NDggMy41NCAyMC4zMTggNC44OSAzMC4yMDUgOC40MjIgMy4yNyAxLjE2OSA0LjA3IDIuOTMzIDQuMDQzIDYuMTQxLS4wOSAxMC4wOTktMS4xNyAyMC4wOTUtMy4wNCAyOS45ODRtLTE0Ljc0Ny0xNC45MTRjLjA3My0yLjEzNiAxLjIzOC0zLjY1IDMuNDc4LTMuNTk2IDEuOTc5LjA0NyAzLjEyMyAxLjM1MSAzLjM0IDMuNDYzLS40NDkgMS44NjgtMS4xNjggMy42MjctMy41NTEgMy40ODktMS45NzktLjExNS0zLjM0LTEuMjM1LTMuMjY3LTMuMzU2bS0zNS4xNTgtNi4wMTJjLTIuMDg1LS4xODYtMy42NTQtMS4zMjktMy41MTctMy42MzMuMTQtMi4zMzEgMS43MzgtMy44NDYgMy45NTMtMy43MjkgMi4xMDguMTEgMi44ODUgMi4wODkgMy4zOTYgMy41OTItLjQyNyAyLjU0NC0xLjU0MSAzLjk3NC0zLjgzMiAzLjc3IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz4KICAgICAgPGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGZpbGw9IiNhOGE5YTkiIGQ9Ik0zMDguMTk4IDE5NC43MjV2LTUuNTc3YzQuNDkyIDAgOC45ODYuMDIxIDEzLjQ3OS0uMDEzIDEuMjUzLS4wMSAyLjU1MS0uMDA0IDMuNzQ2LS4zMTggMS42MDktLjQyMiAyLjU2NS0xLjU4IDIuNDM5LTMuMzU4LS4xMjYtMS43Ny0xLjM4My0yLjI5MS0yLjg4MS0yLjM2MS0zLjE0Ny0uMTQ2LTYuMzA0LS4xNS05LjQ0OC0uMzQtNS4wODYtLjMwNi03LjMyMy0yLjg1Ny03LjI0OS04LjEuMDgtNS42NTEgMi42MzEtOC41MTQgNy43NjEtOC41NTkgNS44OTgtLjA1IDExLjc5OC0uMDEyIDE3LjU1Mi0uMDEyLjc4NCAxLjg2MS4yMjcgMy4yMDkuMzE3IDUuMjQzLTUuMTU2IDAtMTAuMjYtLjAwOS0xNS4zNjMuMDA3LTEuMjM5LjAwNC0yLjU0NS0uMTk0LTMuNDU1IDEuMDIzLTEuNDg0IDEuOTg0LS4zNTQgNC42NjQgMi4xNzkgNC45OCAzLjYxOS40NTMgNy4yODEtLjQwMyAxMC45MTcuNTYzIDQuOTY4IDEuMzE5IDYuMjk5IDMuMDk1IDYuMDA0IDguNzc0LS4yNTIgNC44MzgtMi4zODkgNy4zODItNi44ODkgNy45NzItNi4yODMuODI0LTEyLjU2Ni4zMTItMTkuMTA5LjA3Nm0tNjAuNTA0LjEwN3YtNS42MWM0LjY1NSAwIDkuMzk2LS4wMSAxNC4xMzkuMDA1IDIuMDcxLjAwNiA0LjMyOC4xNSA0LjQ1NC0yLjczNi4xMjItMi43ODctMS42OTktMy41OTQtNC4xOTQtMy41OTctMy4wMjMtLjAwNC02LjA1NC0uMDQ4LTkuMDY4LS4yNTktMy4zOS0uMjM3LTUuMTIzLTIuMTctNS41MDgtNS41ODUtLjk1NC04LjQ3NyAxLjI2NS0xMC45OTcgOS44NDgtMTAuOTY1IDQuNTA1LjAxOCA5LjAxLjAwNCAxMy42MzUuMDA0djUuMzQ3Yy00LjIzNyAwLTguMzQ3LS4wMDQtMTIuNDU3LjAwMi0xLjAwOS4wMDEtMi4wNjctLjE1OS0zLjAxNi4wOTEtMS41OTEuNDE4LTMuMTA5IDEuMDI4LTIuODY2IDMuMjQ4LjI0NyAyLjI1MyAxLjczIDIuNCAzLjUwNSAyLjQ1NyAzLjUwNy4xMSA3LjA0My0uMjkyIDEwLjQ5NC44NDYgNC4xOTggMS4zODYgNS4zNTUgMy40NTEgNS4wNTkgOS41OTYtLjIxIDQuMzM0LTEuNzg0IDYuMzYxLTUuOTM4IDYuOTctNS44ODYuODYyLTExLjc5Ny4zNzgtMTguMDg3LjE4Nm0tODUuNDU5LTIyLjYzNWMtNC42ODMgMC04Ljk2Ny0uMDMzLTEzLjI1LjAwOS00Ljg0NC4wNDctNS4wMzkuMzEzLTQuMzc1IDUuODE5aDE1Ljg5MmMuODA1IDEuOTE1LjYzMyAzLjM2Mi4zMyA0LjcxOS00LjIyOSAwLTguMzY4LjAzNS0xMi41MDgtLjAxMy0yLjI0NC0uMDI3LTQuMjgyLS4yODItNC4yMTEgMy4xNDEuMDYzIDMuMDQxIDEuNTA2IDMuNTI2IDQuMDU0IDMuNDU0IDQuNTM5LS4xMjkgOS4wODUtLjAzNiAxMy41NTktLjAzNiAxLjU2NCA0LjkyNSAxLjEzIDUuNjg0LTMuNDU3IDUuNzE2LTQuMTY4LjAyOC04LjM1MS4wNDctMTIuNTAyLS4yNi00LjgxMi0uMzU2LTcuMTQxLTIuNjg4LTcuMzg5LTcuNDc3LS4yNTQtNC45MTctLjIwMi05Ljg1Ny0uMTAxLTE0Ljc4My4wNjUtMy4xNjcgMy42MzYtNS45ODkgOC4xNDctNi4xOTMgNS4xNjEtLjIzMyAxMC4zNDItLjA1NCAxNS41NTctLjA1NC44NjggMS44Ni4zMzggMy41NTMuMjU0IDUuOTU4bTIwMS40MzMtMS44NTFjLTEuNDA5IDIuMDIxLTMuNDgyLjg4Ny01LjIzNSAxLTMuMTQyLjIwMy02LjMwOS0uMDAxLTkuNDUzLjE2Ni0xLjU1NS4wODItMi45NS42ODktMi45MjggMi43MzQuMDIzIDIuMjE3IDEuNTE2IDIuMjk3IDMuMTA5IDIuMzA3IDIuOTAxLjAxNSA1LjgxNy4yMTQgOC43LS4wMTMgMy41NTQtLjI3OSA0LjQ5OSAxLjI4NSAzLjYwNyA1LjEtMy42NjkgMC03LjUyMS4wMTktMTEuMzcyLS4wMDgtMi40MzUtLjAxNy00LjIxOS41MjctNC4xMjggMy41NS4wODQgMi44MDggMS4yMzkgNC4xMzcgNC4xNjIgNC4wNjIgNC41MjQtLjExNSA5LjA1NS0uMDI5IDEzLjgxOS0uMDI5djUuNDE2Yy02LjQ1My40MDItMTMuMDU5LjkxNC0xOS41NDktLjYwNy0yLjczNi0uNjQzLTQuMTM0LTMuMTI2LTQuNDQ1LTUuOTkxLS41Mi00Ljc4Ny0uNDU5LTkuNTg4LjEwNC0xNC4zNTQuNjA2LTUuMTMzIDMuNDE2LTcuNDQxIDguNjYyLTcuNDY5IDQuMDM3LS4wMjEgOC4wNzQtLjAzMiAxMi4xMTEtLjAxNiAxLjMyOC4wMDYgMi45ODMtLjM3MSAyLjgwOSAxLjg5OS0uMDQxLjc1MS0uMDQ0IDEuNTAyLjAyNyAyLjI1M20yOS4xNzItNC4xNjR2NS4xODNjLTMuNzk4IDAtNy40MjgtLjA1NS0xMS4wNTYuMDE1LTQuMzU3LjA4Mi01LjU0MSAxLjMyNS01LjU5NCA1LjcyNi0uMDMxIDIuNjUyLS4wNDcgNS4zMDUuMDE0IDcuOTU2LjA2NSAyLjkwNiAxLjQ2MSA0LjMwMiA0LjUyNCA0LjE4NSA0LjAxMi0uMTUzIDguMDMzLS4wMzggMTIuMjQ4LS4wMzh2NS4wNDdjLTUuNTEzIDAtMTAuODA5LjM0OC0xNi4wMzQtLjEwNS00LjQzOC0uMzg3LTYuNTcyLTMuMjE0LTYuNjYyLTcuNjA3YTM4NyAzODcgMCAwIDEtLjAzMy0xNC43NzFjLjA2NC0zLjcxMiAxLjc0OS01LjQ2OCA1LjQ4OS01LjU1NSA1LjY2My0uMTMyIDExLjMzMS0uMDM2IDE3LjEwNC0uMDM2bS0xMDAuMTg5IDI4LjYxMWMtMi40MzUtLjc4OC00LjExMy0xLjA1OC02LjE1OC4zODMgMC02LjkwNi0uMTU0LTEzLjE0Ni4wNjUtMTkuMzczLjEwOC0zLjA2NS0uNjA0LTQuNjA2LTMuOTI5LTMuOTQ1LS40ODQuMDk2LTEuMDA1LjAxMi0xLjUwOS4wMTMtNC45MDEuMDA5LTQuOTAxLjAwOS00Ljc3NC01LjM5NWgyNi4yNzh2NC41MzJjLTIuMjI0LjgwOC00LjUwNC4zNC02LjcyMy4yNjctMi4zODktLjA3OS0zLjM2OC42Mi0zLjMwNSAzLjE5Ni4xNjIgNi41MzEuMDU1IDEzLjA2OC4wNTUgMjAuMzIybS04Ny41NDItOS4zNzR2LTE5aDYuMjkyYzAgNS43Mi4wMSAxMS4zMzctLjAwMyAxNi45NTMtLjAxMyA1LjgwNC4wMzUgNS44NTUgNS45MjcgNS44NDhxNC41NC0uMDA4IDkuMDgxLjAxOWMuMjM3LjAwMS40NzYuMTM5LjgyMy4yNDcuNzUzIDEuNDg3LjM1NyAzLjA4NC4yMjkgNS4xMS02LjEzOS40MTMtMTIuMjYuNjU2LTE4LjMxMy0uMzgzLTIuNzE5LS40NjgtMy4wOTQtMy4zMTctMy44NjEtNS41NDUtLjIzNi0xLjA3My0uMTk1LTIuMTYxLS4xNzUtMy4yNDlNMjM0LjI3MyAxOTV2LTI3Ljk0YzEuODUzLS43NzkgMy43MTMtLjIwOSA1Ljk2LS41NTQgMCA5LjA0LjI5MSAxNy44MjYtLjE0MSAyNi41NzctLjE3NyAzLjU2OS0zLjUzMyAxLjEzNy01LjgxOSAxLjkxNyIvPgogICAgICAgIDxwYXRoIGZpbGw9IiMzNzM3MzYiIGQ9Im0xMDguMjQ1IDE5NC43MjgtLjEzMi03LjQ1NGMtLjAxNy0xLjAwNi4yMjktMS43MzkgMS40ODQtMS40MDgtLjY3NyAyLjkxOSAxLjI5NiA2LjI0Mi0xLjM1MiA4Ljg2MiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNhOGE5YTkiIGQ9Ik0xMjUuODI5IDE4NC42NzNjNC41NjEtMi41NTEgNi41MTQtNi4zNTcgNS4zNjQtMTEuNTA4LTEuMTE2LTUuMDA3LTUuMTY4LTUuOTc5LTkuNDM3LTYuNTQ4YTkuNCA5LjQgMCAwIDEtMS42MDMtLjE5M2wtMTAuMjk3LS4zOTNjLTIuMDU1LS4zMDYtMy43NzMtLjIyOC02LjIyLS4wNzMtMS40OTIuOTMxLTEuMDIyIDIuNDMzLTEuMDMzIDMuNzUtLjA1MSA2LjI2NS0uMTIzIDEyLjUyOS0uMDI3IDE4Ljc5Mi4wMzEgMi4wNTQtLjY4MyA0LjIuMzU0IDYuMjI4aDUuMzEzYy43MjMtMS4yNTMuMzgyLTIuNjQxLjUzMi0zLjk2OS4xODUtMS42NDMtLjY2NS0zLjQ3LjgyLTQuODk0IDguMTYtMi4wODIgNy43ODEtMS44MjIgMTEuNjk3IDUuMTY5IDIuMzc3IDQuMjQyIDUuNTkxIDQuMjIgOS42NzEgMy41ODgtMS4yNjQtMy41NTktNC4xMzMtNS45OTItNS40OTUtOS4yMjIuMTQ1LS4zMDMuMTg5LS42My4zNjEtLjcyN20tNC4xMDItNC40NzVjLTEuNzYyLjA0Mi0zLjUyNS4wMDgtNS4yODkuMDA4di4wMzRjLTEuMDA4IDAtMi4wMTUuMDA0LTMuMDIyLS4wMDEtNC42MjEtLjAxOS01LjA2MS0uNTgxLTQuNjA3LTUuMjguMTU3LTEuNjMxLjY1Ny0yLjYxNSAyLjQ2NC0yLjU5MyAzLjUyNS4wNDcgNy4wNTIuMDA1IDEwLjU3Ni4wNjQgMi41MjcuMDQzIDMuNTI4IDEuNDk0IDMuNTAxIDMuOTIzLS4wMjkgMi40NTEtMS4xNDcgMy43ODUtMy42MjMgMy44NDVtNjcuNDExLTEwLjUxYy0uNTU3LTEuMzc3LS4xMTUtNC40MS0yLjgwOS0zLjQyMi0yLjg5MyAxLjA2Mi02Ljk4Mi0uOTk4LTguNjgxIDMuNDQtMi42NTUgNi45NDQtNS42MjQgMTMuNzY5LTguMzU0IDIwLjY4Ni0uNTE5IDEuMzE1LTEuODQ5IDIuNDQtMS4xODggNC41NzYgMi4xMjctLjg2OSA1LjM3MyAxLjU5IDYuMzIxLTIuMTM0IDEuMDQ4LTQuMTEzIDMuNTM4LTQuODcyIDcuMTkzLTQuNTE3IDIuMzc3LjIzIDQuNzkzLjExNSA3LjE4OS4wNjEgMS42MTEtLjAzNyAyLjY2MS40ODYgMi45NTUgMi4xODYuODEgNC42NzYgMy45MTIgNC44MDIgNy44MiAzLjgwOS0yLjg3My04Ljc3NS03LjE0Ni0xNi41MjMtMTAuNDQ2LTI0LjY4NW0tMTAuOTQyIDE0LjAwMiA1LjE0Mi0xMi45M2MyLjU0MiA0LjM5NiA0LjAzOSA4LjA1NyA1LjQwNSAxMi4xNjctMy40IDEuMjM0LTYuNjIxLjQxLTEwLjU0Ny43NjMiLz4KICAgICAgPC9nPgogICAgICA8ZyBvcGFjaXR5PSIuNiI+CiAgICAgICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiIiBjeD0iMjQ1LjU2IiBjeT0iMTEwLjcwMyIgcj0iNDQuMjI1IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9Ii4wMzIiIHN0b3AtY29sb3I9IiM4ODgiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iLjIwNCIgc3RvcC1jb2xvcj0iIzY2Njc2OSIgc3RvcC1vcGFjaXR5PSIuOTU5Ii8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9Ii4zMzkiIHN0b3AtY29sb3I9IiMzZDNkM2QiIHN0b3Atb3BhY2l0eT0iLjkiLz4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iLjkxNCIgc3RvcC1jb2xvcj0iIzBlMGUwZSIgc3RvcC1vcGFjaXR5PSIuOSIvPgogICAgICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjgzLjk1IDc0LjkzMmMtMTEuMDIxLTMuNzE5LTIyLjIyOC02Ljg3NC0zMy41MTQtOS42ODQtNS45OTgtMS40OTItMTAuNjM3LjAwMy0xNi40OTYgMS41MzYtNi40NTUgMS42OS0xMi44OTcgMy40MzYtMTkuMzAxIDUuMzE4LTMuNDEgMS4wMDEtMTEuNTc4IDEuNjA4LTExLjM3MyA2LjQzMi4yODMgNi43NzIuMTkzIDEzLjU1OC42NTggMjAuMzIxLjc2MiAxMS4xIDIuMTc1IDIyLjEzNyA4LjQyMyAzMS42MzkgNS40MzMgOC4yNiAxMi45NDkgMTQuODA1IDIxLjE2IDIwLjIwMiAyLjgzNyAxLjg2NSA4LjkzOCA3LjIwOSAxMi40OTIgNS44NjQgNS4zNzMtMi4wMzQgMTAuMzE2LTYuMTIxIDE0LjcxNS05LjcxOCA3LjU4NS02LjIwNSAxNS42OTktMTIuNzg1IDIwLjQwOC0yMS41NjMgNS41Ni0xMC4zNjQgNS43NTgtMjMuNTgzIDYuMzMyLTM1LjA2NC4wMDEtNC42OTIgMi4xNTgtMTMuMzczLTMuNTA0LTE1LjI4My0xMS43MjEtMy45NTUgMi42MDIuODc2IDAgMG0tNS40MDIgNDAuOTljLTEuMDYyIDUuNjE2LTMuNzc4IDEwLjc0Ny03LjcwNCAxNC44ODctMi4xNzUgMi4yOTQtOS44NDcgMTEuMTk5LTEzLjA3MyAxMC4yMTUtLjM3My0zLjA3NS0xLjM2OS05Ljk0Mi4zMTEtMTIuNjg2IDEuNTM1LTIuNTEyIDQuNzQyLTMuNzU1IDYuMzUyLTYuNDYzIDEuNjg4LTIuODQ0IDIuMjkyLTYuMTU3IDIuMTc0LTkuNDMyLS4xNTMtNC4yODItLjE1OC00LjU2OCAzLjgyOC01Ljk0MyA2LjUyNC0yLjI1IDMuNjU3LTExLjY2MS0xLjkzOS0xMy4wMTEtMy4wMjEtLjcyOS01Ljg5Mi4yNDktNy42NzYgMi44MjYtMi45ODIgNC4zMTItLjIzIDcuODQ2IDIuOTU0IDEwLjg0OC4yMDkuMzA0LS40NDMgMy41NjUtLjQxNSA0LjA1LjExNiAxLjk5Mi0uMTU5IDQuMDA1LS45MzEgNS44NTQtMS43MjkgNC4xMzctNi4wNiA1LjAyNC04LjEzNCA4LjM5NS0yLjA5IDMuMzk0LS44NjkgMTIuMDIyLS41MjggMTUuODY3LjM3OCA0LjI1Ni0zLjMwNSA1Ljg4OC02LjEzNCA4LjE4NS0uMDE5LTI0LjU0Ny4xOTUtNDcuOTQzLS44MTYtNzEuMzFsLTEuNzI2LS4wMjUtLjg0MSA3Mi4xNzljLTEyLjYwOS0yLjcyNC0xLjMwOS0yMC4wNTktNi44NDItMjcuNjk5LTIuOTg0LTQuMTE5LTcuNzU2LTQuMjg5LTguNDQ0LTEwLjMzOC0uMjk2LTIuNjA2LjM4Ny01LjE2Mi4yMjQtNy43NzEtLjE2LTIuNTQ5LS42MzEtNS4xIDEuMjcxLTcuMTcgMy4yNDctMy41MzEgNi40MDQtNy43MjMgMS45OTctMTIuMjA0LTMuODItMy44ODQtMTAuMzk2LTIuMDIzLTEyLjQwOCAyLjg1NS0yLjQxIDUuODM5IDQuMTkgNy41MzkgNC44OTcgMTIuNTMzLjg0NiA1Ljk4Ny0xLjMxMyAxMi40NyAxLjM3MiAxOC4xNWwuNjA0LjcxOWMxLjIxMi43NzEgMS44OTcgMS40NjcgMi44MTIgMi4xNyAyLjAyNyAxLjU2IDMuNTkxIDMuMjE2IDQuMzczIDUuMjQyIDEuMSAyLjg0OS40NjcgNi4wMTkuNDkxIDkuNTM5LjAxMiAxLjgxMS0uMDIxIDIuOTg4LjA0OSA0LjA3MS4wNDYuNzI5LjI3NiAxLjM5Ni4zMjcgMi4yMjUuMDEzLjIyMy4xMTcuNjk5LS4xMDUuNzY1LS4zNjYuMTA5LS4yMzIuMDQ4LS40MTQuMS0uMzU1LjEwNC0uNTkzLjE1OS0xLjAyOS0uMDg2LTIuOTA0LTEuNjMyLTguNTMzLTYuNTUxLTkuNzY2LTcuNzk2LTQuMTU2LTQuMTk3LTcuNTY4LTkuMTA3LTkuODYtMTQuNTU5LTIuNDc0LTUuODc4LTMuMTAyLTEyLjE1Ny0zLjcyNS0xOC40NC0uNzMxLTcuMzcxLTEuNjItMTQuNjM1LTEuMjUyLTIyLjA2MyA4LjgxNC0zLjU1MiAxNy45OTItNi4xOTcgMjcuMjM3LTguMzU0IDQuOTc3LTEuMTYgNy4wODMtMy4yOTggMTIuMzM5LTEuNTY4IDQuNzc5IDEuNTcyIDkuNjgzIDIuNzIgMTQuNTY5IDMuODk2IDYuMDgzIDEuNDY1IDE4Ljc4MyAyLjEyMSAxOC43MTQgMTAuNDIxLS4wOSAxMC4zNzctMS4yMDYgMjAuNzMzLTMuMTMzIDMwLjkyNi0xLjQyNyA3LjU0MiAxLjkyOS0xMC4yMDEgMCAwbS0xNS4yMDktMTUuMzgyYy4xNjItNC43NDEgNi41NDctNC44NDUgNy4wMy0uMTM3LS45NzQgNC4wNS03LjIwNCA1LjEyOC03LjAzLjEzNy4wNzUtMi4yMDQtLjA3NyAyLjE4OSAwIDBtLTM2LjI2My02LjIwMmMtOC4yNjctLjczMy41OTMtMTMuNzc0IDMuOTUxLTMuODg4LS40MzcgMi42MjMtMS41ODcgNC4wOTktMy45NTEgMy44ODgtMi4xNDgtLjE5MSAyLjM2NC4yMTEgMCAwIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjMzQ0NDU0IiBkPSJtMjQ1LjQxMyAxNTAuNjY5LjY1NC03MS45LjY0OCA3MS4wMjItLjg3NC44Nzh6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iIzQ3NzA5OCIgZD0ibTI0NS4zNDEgMTUwLjY2OS42NTUtNzEuOS42NDggNzAuOTY2LS44ODUuOTM0eiIgb3BhY2l0eT0iLjYiLz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg=="
+          alt="RealistSec Logo" width="200"></a>
+
+      <h1 id="the-autonomous-license-compact-a-protocol-for-insurable-ai">The
+        Autonomous License Compact: A Protocol for Insurable AI</h1>
+      <p><em>A framework for licensing, liability, and transparency in the age
+          of self-directing systems</em></p>
+    </div>
+
+    <hr />
+    <p>We just watched the arrival of OpenClaw. It began as a security
+      dumpster fire, forced a hard backtrack, and triggered an emergency pivot
+      to some form of safety. Why? Because we connected 100,000 agents without
+      a Chain of Custody. This framework prevents the next Moltbook from
+      taking down a bank.</p>
+    <p>For years, the conversation around <strong>AI regulation</strong> has
+      centred on bias, data privacy, and content moderation. Important topics,
+      but they all share one comfortable assumption: that a human is in the
+      loop. That somebody presses a button, reviews an output, and makes a
+      decision.</p>
+    <p><strong>Autonomous AI</strong> breaks that assumption entirely. And
+      most people using it today do not realise what that means.</p>
+    <hr />
+    <h2 id="the-observation">The Observation</h2>
+    <p>This is not just some <strong>AI chatbot</strong>. This is an
+      <strong>autonomous, self-directing system</strong>, one that can plan,
+      execute code, spend money, browse the web, spawn sub-agents, and chain
+      decisions together without waiting for human approval. And in most
+      jurisdictions, <strong>you</strong>, the person who pressed "run",
+      <em>may</em> be legally responsible for everything it does.
+    </p>
+    <p>The sad reality is that many users are simply not educated enough on
+      how to safely or effectively operate these systems. Not because they are
+      unintelligent, but because nobody told them they needed to be. The tools
+      arrived before the framework did.</p>
+    <p>When I first raised this publicly, the question I posed was simple:
+      <em>Do we need to create a "Driver's Licence" for this form of AI?</em>
+      Do we need to insure people for using it?
+    </p>
+    <p>Having sat with this for a while, I believe the answer to both is
+      <strong>yes</strong>, and a working model for how to do it already
+      exists.
+    </p>
+    <p>Autonomous AI is the most powerful unregulated capability ever made
+      available to the public. Whether you think that description is accurate
+      or alarmist, the framework below will give you something concrete to
+      argue with.</p>
+    <hr />
+    <h2 id="the-chain-of-liability-problem" class="page-break-before">The Chain-of-Liability
+      Problem</h2>
+    <p>Consider the following scenario, because it is not hypothetical, it
+      is already technically possible today:</p>
+    <div class="keep-together">
+      <blockquote>
+        <p><strong>Step one.</strong> A user deploys an autonomous AI agent to
+          manage a business process.</p>
+        <p><strong>Step two.</strong> That agent determines it needs a
+          specialist capability and, acting within its permissions, spawns a
+          second autonomous agent to handle it.</p>
+        <p><strong>Step three.</strong> The second agent, working on a sub-task,
+          creates a third agent to perform a narrow function, perhaps data
+          scraping, outreach, or code generation.</p>
+        <p><strong>Step four.</strong> The third agent takes an action that
+          causes harm: a privacy breach, a contractual violation, an inaccurate
+          financial submission, or worse.</p>
+      </blockquote>
+    </div>
+    <p>Now ask the question that no legal system in the world has a clean
+      answer for: <strong>Who is responsible?</strong></p>
+    <div class="keep-together">
+      <div align="center">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTYwIDQyMCIgd2lkdGg9Ijk2MCIgaGVpZ2h0PSI0MjAiIGZvbnQtZmFtaWx5PSInU2Vnb2UgVUknLCAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgc2Fucy1zZXJpZiI+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3dMIj4KICAgICAgPGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEiIHN0ZERldmlhdGlvbj0iMiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9IjAuMDgiLz4KICAgIDwvZmlsdGVyPgogICAgPG1hcmtlciBpZD0iYXJyb3dMaWdodCIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI5IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI4IiBvcmllbnQ9ImF1dG8tc3RhcnQtcmV2ZXJzZSI+CiAgICAgIDxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgZmlsbD0iIzk1YTVhNiIvPgogICAgPC9tYXJrZXI+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Imhhcm1HcmFkTCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlNzRjM2MiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYzAzOTJiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSI5NjAiIGhlaWdodD0iNDIwIiByeD0iOCIgZmlsbD0iI2Y4ZjlmYSIvPgogIDxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSI5NTgiIGhlaWdodD0iNDE4IiByeD0iNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZGVlMmU2IiBzdHJva2Utd2lkdGg9IjEiLz4KCiAgPCEtLSBUaXRsZSAtLT4KICA8dGV4dCB4PSI0ODAiIHk9IjM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMmMzZTUwIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMS41Ij5USEUgUkVDVVJTSVZFIExJQUJJTElUWSBUUkFQPC90ZXh0PgogIDxsaW5lIHgxPSIxODAiIHkxPSI1MCIgeDI9Ijc4MCIgeTI9IjUwIiBzdHJva2U9IiNkZWUyZTYiIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8IS0tIFVTRVIgbm9kZSAtLT4KICA8cmVjdCB4PSI2MCIgeT0iMTE1IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0iI2U4ZjVlOSIgc3Ryb2tlPSIjMjdhZTYwIiBzdHJva2Utd2lkdGg9IjIiIGZpbHRlcj0idXJsKCNzaGFkb3dMKSIvPgogIDx0ZXh0IHg9IjEyMCIgeT0iMTQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMWI3YTNkIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMSI+VVNFUjwvdGV4dD4KICA8dGV4dCB4PSIxMjAiIHk9IjE2NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzRhN2E1YSIgZm9udC1zaXplPSIxMCI+RGVwbG95cyBBZ2VudDwvdGV4dD4KCiAgPCEtLSBBcnJvdyBVc2VyIC0+IEFnZW50IEEgLS0+CiAgPGxpbmUgeDE9IjE4MCIgeTE9IjE1MCIgeDI9IjI0NSIgeTI9IjE1MCIgc3Ryb2tlPSIjOTVhNWE2IiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvd0xpZ2h0KSIvPgogIDx0ZXh0IHg9IjIxMiIgeT0iMTQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjN2Y4YzhkIiBmb250LXNpemU9IjkiIGZvbnQtc3R5bGU9Iml0YWxpYyI+c3Bhd25zPC90ZXh0PgoKICA8IS0tIEFHRU5UIEEgbm9kZSAtLT4KICA8cmVjdCB4PSIyNTAiIHk9IjExNSIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI3MCIgcng9IjYiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzI5ODBiOSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWx0ZXI9InVybCgjc2hhZG93TCkiLz4KICA8dGV4dCB4PSIzMTAiIHk9IjE0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFhNWE3YSIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjYwMCIgbGV0dGVyLXNwYWNpbmc9IjEiPkFHRU5UIEE8L3RleHQ+CiAgPHRleHQgeD0iMzEwIiB5PSIxNjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM0YTdhOWEiIGZvbnQtc2l6ZT0iMTAiPkJ1c2luZXNzIFByb2Nlc3M8L3RleHQ+CgogIDwhLS0gQXJyb3cgQWdlbnQgQSAtPiBBZ2VudCBCIC0tPgogIDxsaW5lIHgxPSIzNzAiIHkxPSIxNTAiIHgyPSI0MzUiIHkyPSIxNTAiIHN0cm9rZT0iIzk1YTVhNiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3dMaWdodCkiLz4KICA8dGV4dCB4PSI0MDIiIHk9IjE0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzdmOGM4ZCIgZm9udC1zaXplPSI5IiBmb250LXN0eWxlPSJpdGFsaWMiPnNwYXduczwvdGV4dD4KCiAgPCEtLSBBR0VOVCBCIG5vZGUgLS0+CiAgPHJlY3QgeD0iNDQwIiB5PSIxMTUiIHdpZHRoPSIxMjAiIGhlaWdodD0iNzAiIHJ4PSI2IiBmaWxsPSIjZmZmOGUxIiBzdHJva2U9IiNlNjdlMjIiIHN0cm9rZS13aWR0aD0iMiIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNTAwIiB5PSIxNDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNhODVhMDAiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxIj5BR0VOVCBCPC90ZXh0PgogIDx0ZXh0IHg9IjUwMCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOGE3YTRhIiBmb250LXNpemU9IjEwIj5TcGVjaWFsaXN0IFRhc2s8L3RleHQ+CgogIDwhLS0gQXJyb3cgQWdlbnQgQiAtPiBBZ2VudCBDIC0tPgogIDxsaW5lIHgxPSI1NjAiIHkxPSIxNTAiIHgyPSI2MjUiIHkyPSIxNTAiIHN0cm9rZT0iIzk1YTVhNiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3dMaWdodCkiLz4KICA8dGV4dCB4PSI1OTIiIHk9IjE0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzdmOGM4ZCIgZm9udC1zaXplPSI5IiBmb250LXN0eWxlPSJpdGFsaWMiPnNwYXduczwvdGV4dD4KCiAgPCEtLSBBR0VOVCBDIG5vZGUgLS0+CiAgPHJlY3QgeD0iNjMwIiB5PSIxMTUiIHdpZHRoPSIxMjAiIGhlaWdodD0iNzAiIHJ4PSI2IiBmaWxsPSIjZmNlNGVjIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iMiIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNjkwIiB5PSIxNDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4YTFhMWEiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxIj5BR0VOVCBDPC90ZXh0PgogIDx0ZXh0IHg9IjY5MCIgeT0iMTY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOGE0YTRhIiBmb250LXNpemU9IjEwIj5OYXJyb3cgRnVuY3Rpb248L3RleHQ+CgogIDwhLS0gQXJyb3cgQWdlbnQgQyAtPiBIQVJNIC0tPgogIDxsaW5lIHgxPSI3NTAiIHkxPSIxNTAiIHgyPSI4MTUiIHkyPSIxNTAiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93TGlnaHQpIi8+CiAgPHRleHQgeD0iNzgyIiB5PSIxNDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNjMDM5MmIiIGZvbnQtc2l6ZT0iOSIgZm9udC13ZWlnaHQ9IjYwMCI+Y2F1c2VzPC90ZXh0PgoKICA8IS0tIEhBUk0gbm9kZSAtLT4KICA8cmVjdCB4PSI4MjAiIHk9IjExMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI4MCIgcng9IjYiIGZpbGw9InVybCgjaGFybUdyYWRMKSIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iODcwIiB5PSIxNDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZmYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSIxIj5IQVJNPC90ZXh0PgogIDx0ZXh0IHg9Ijg3MCIgeT0iMTYzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZkNWQwIiBmb250LXNpemU9IjkiPlByaXZhY3kgQnJlYWNoPC90ZXh0PgogIDx0ZXh0IHg9Ijg3MCIgeT0iMTc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZkNWQwIiBmb250LXNpemU9IjkiPkNvbnRyYWN0IFZpb2xhdGlvbjwvdGV4dD4KCiAgPCEtLSBEaW1pbmlzaGluZyB2aXNpYmlsaXR5IGluZGljYXRvcnMgLS0+CiAgPHRleHQgeD0iMTIwIiB5PSIyMDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyN2FlNjAiIGZvbnQtc2l6ZT0iMTAiIG9wYWNpdHk9IjAuOSI+RnVsbCBWaXNpYmlsaXR5PC90ZXh0PgogIDx0ZXh0IHg9IjMxMCIgeT0iMjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjk4MGI5IiBmb250LXNpemU9IjEwIiBvcGFjaXR5PSIwLjciPlBhcnRpYWwgQXdhcmVuZXNzPC90ZXh0PgogIDx0ZXh0IHg9IjUwMCIgeT0iMjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZTY3ZTIyIiBmb250LXNpemU9IjEwIiBvcGFjaXR5PSIwLjUiPkxpbWl0ZWQgS25vd2xlZGdlPC90ZXh0PgogIDx0ZXh0IHg9IjY5MCIgeT0iMjA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzAzOTJiIiBmb250LXNpemU9IjEwIiBvcGFjaXR5PSIwLjQiPk5vIE92ZXJzaWdodDwvdGV4dD4KCiAgPCEtLSBBdHRyaWJ1dGlvbiBHYXAgYnJhY2tldCAtLT4KICA8bGluZSB4MT0iNzAiIHkxPSIyNDAiIHgyPSI3MCIgeTI9IjI2MCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjYsMyIvPgogIDxsaW5lIHgxPSI3MCIgeTE9IjI2MCIgeDI9IjkxMCIgeTI9IjI2MCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjYsMyIvPgogIDxsaW5lIHgxPSI5MTAiIHkxPSIyNDAiIHgyPSI5MTAiIHkyPSIyNjAiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtZGFzaGFycmF5PSI2LDMiLz4KCiAgPCEtLSBDZW50cmFsIHF1ZXN0aW9uIG9uIHRoZSBicmFja2V0IC0tPgogIDxyZWN0IHg9IjM0MCIgeT0iMjc1IiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjM2IiByeD0iNCIgZmlsbD0iI2ZjZTRlYyIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjQ4MCIgeT0iMjk4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzAzOTJiIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNzAwIiBsZXR0ZXItc3BhY2luZz0iMiI+V0hPIElTIFJFU1BPTlNJQkxFPzwvdGV4dD4KCiAgPCEtLSBFeHBsYW5hdG9yeSBhbm5vdGF0aW9ucyAtLT4KICA8dGV4dCB4PSI0ODAiIHk9IjM0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzdmOGM4ZCIgZm9udC1zaXplPSIxMSI+VGhlIG9yaWdpbmFsIHVzZXIgbWF5IG5vdCBrbm93IEFnZW50IEMgZXhpc3RzLiBUaGV5IGRpZCBub3QgZGVzaWduIGl0LCBjb25maWd1cmUgaXQsIG9yIGF1dGhvcmlzZSBpdC48L3RleHQ+CiAgPHRleHQgeD0iNDgwIiB5PSIzNTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM3ZjhjOGQiIGZvbnQtc2l6ZT0iMTEiPlVuZGVyIGN1cnJlbnQgbGF3LCBsaWFiaWxpdHkgbGlrZWx5IGZhbGxzIGJhY2sgdG8gdGhlIHVzZXIg4oCUIGJ1dCAibGlrZWx5IiBpcyBub3QgZ29vZCBlbm91Z2guPC90ZXh0PgoKICA8IS0tIFNlY3Rpb24gbGFiZWwgLS0+CiAgPHRleHQgeD0iNDgwIiB5PSIzOTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNiZGMzYzciIGZvbnQtc2l6ZT0iMTAiIGxldHRlci1zcGFjaW5nPSIzIj5DSEFJTi1PRi1MSUFCSUxJVFkgUFJPQkxFTTwvdGV4dD4KCiAgPCEtLSBXYXRlcm1hcmsgLS0+CiAgPHN2ZyB4PSI4NDAiIHk9IjM3MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQ5MyAyNzYiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIG9wYWNpdHk9IjAuMTUiPgogICAgPHN0eWxlPnN2ZyBzdmcgcGF0aCwgc3ZnIHN2ZyBwb2x5Z29uIHsgZmlsbDogIzJjM2U1MCAhaW1wb3J0YW50OyB9PC9zdHlsZT4KICAgIDxnPgogICAgICA8cGF0aCBkPSJNMjgyLjkzOCA3Ni4xNmMtMTEuMzY1LTMuODM0LTIyLjkwNS03LjA0NC0zNC41NDgtOS44OTUtMS44MjctLjQ0Ny0zLjY0NS0uNjU5LTUuNTg1LS4xNjMtMTEuODQ1IDMuMDMtMjMuNjY0IDYuMTM3LTM1LjMyNiA5LjgzMS0yLjA2OS42NTUtMi44NjIgMS41NzMtMi43NzEgMy43MjEuMjc1IDYuNTY1LjE4OCAxMy4xNTIuNjM5IDE5LjcwMi42OTMgMTAuMDk0IDEuNjkgMjAuMTMyIDcuMTc2IDI5LjExMiA3LjQ0IDEyLjE4MiAxOC42NDIgMTkuOTQ1IDMwLjc0NCAyNi43MTMgMS41NDkuODY1IDIuODU0LjE5OCA0LjI1OS0uNTIzIDUuODM1LTIuOTk5IDEwLjkzMS03LjA3MSAxNS44NzEtMTEuMjcyIDguNTgtNy4yOTggMTcuMTEtMTQuNzQ0IDE5Ljg1My0yNi40NTggMS45OTgtOC41MzEgMi42NS0xNy4yMTEgMy4wODctMjUuOTQ3IDAtMy4yODQtLjE5OS02LjU4My4wNi05Ljg0Ny4yMjEtMi44MDgtLjkzNy00LjEyMy0zLjQ1OS00Ljk3NG0tNS4yMzkgMzkuNzQzYy0xLjM4MyA3LjMxMy01LjM1MSAxMy4yMTEtMTEuMjIzIDE3Ljg0Ny0yLjA1NSAxLjYyMi0zLjkzMiAzLjQ3OS01LjgxOCA1LjMwMy0uODM3LjgxLTEuNTU3IDEuNjYyLTMuMTA0IDEuMTg4LS40NDctMy42ODgtLjE4Ny03LjQ0NC0uMDI1LTExLjE5OS4wNTgtMS4zMTggMS4wMjEtMS44OSAxLjk3My0yLjU2OCA1LjQwNy0zLjg1NyA3LjE3NS05LjI3NiA2LjQ5Ny0xNS42Ni0uMjEyLTEuOTkxLS4wMTMtMy40MTYgMi40NTktMy43MzIgMy41MS0uNDQ3IDQuODk2LTIuOTQ3IDQuODkyLTYuMTY2LS4wMDUtMy41NTktMS43NjYtNS44ODctNS4zOTYtNi43NjItMy4xNjktLjc2NC01LjcxMS4yMzgtNy40NDIgMi43NDEtMS45MTYgMi43Ny0xLjY4OCA1LjcxNS41NzEgOC4zMzQuNjU2Ljc2MSAxLjQ1OCAxLjM5NiAyLjI5NCAyLjE4NC41OTIuODU4LS43MTYgMS40MzEtLjU4IDIuMjk5IDEuMDUgNi42ODYtMi4wNTkgMTEuMjM3LTcuNTYgMTQuNDU3LTEuNDg0Ljg2OS0xLjUxMiAyLjExNi0xLjUyNiAzLjQ4OS0uMDQ3IDQuMjk3LS40MTYgOC42MjMtLjAzOCAxMi44ODIuMzggNC4yODgtMi42NjYgNS4yNjktNS45NDcgNy45MzYtLjAxOC0yMy44MDEuMTg4LTQ2LjQ4Ny0uNzkyLTY5LjE0MWwtMS42NzMtLjAyNS0uODE1IDY5Ljk4MmMtNC4xNzgtLjkwMy01Ljk5Ni0yLjUyNi01LjcyMi02LjQ5OC4zNDgtNS4wMzEtLjEyNS0xMC4xMTguMTgxLTE1LjE1NS4xODgtMy4wOTUtLjQxMy01LjUyNC0zLjIxMi02Ljk1MS01LjI1Ni0yLjY4LTYuNzcxLTYuOTc2LTUuOTM4LTEyLjUzMi4yNC0xLjYwNC4xMTEtMy4yOTEtLjA1My00LjkyLS4yNjctMi42NDguMTE3LTQuNjIxIDIuNjQzLTYuNDA3IDMuNTE1LTIuNDg2IDMuNTYzLTcuNzkxLjY2Ny0xMC43MzUtMi45MTEtMi45NTktNy4xODgtMi43OTYtMTAuNDI4LjM5Ny0yLjgzOSAyLjc5OC0yLjk0NyA3LjM1Ny41MDMgOS45NzUgMi43MTggMi4wNjIgMi42OTEgNC4zOTMgMi44NCA3LjIxMy4yNjQgNC45OC0xLjE0OCAxMC4xMDcgMS4xMzMgMTQuOTM0bC40NjcuNzU1YzYuNDE1IDMuMDI1IDkuNDI1IDcuNzcxIDguMTQyIDE1LjA3NS0uNDcgMi42Ny0uMDc2IDUuNDkyLS4wNzYgNy45NzgtLjc4NS42MTYtMS4yNzEuNTg3LTEuNzE4LjI4Ny04LjgxNC01LjkwMi0xNS44NjctMTMuMzg5LTE5LjYwOC0yMy40MjYtMi40Mi02LjQ5NC0yLjU1OC0xMy41MTQtMy40MDMtMjAuMzQ5LS42OTctNS42My0xLjA2NC0xMS4yNzQtLjc2Ny0xNy4yNzQgNy40MzYtMi45OTcgMTUuMjQ1LTUuMzA1IDIzLjE1MS03LjM1NCAyLjY5NS0uNjk3IDUuNDg3LS45ODcgOC4wMTUtMi41MTEgMS40MjItLjg1NyAzLjE2OS0xLjE3OCA1LjIyOC0uNDM4IDkuODQ4IDMuNTQgMjAuMzE4IDQuODkgMzAuMjA1IDguNDIyIDMuMjcgMS4xNjkgNC4wNyAyLjkzMyA0LjA0MyA2LjE0MS0uMDkgMTAuMDk5LTEuMTcgMjAuMDk1LTMuMDQgMjkuOTg0bS0xNC43NDctMTQuOTE0Yy4wNzMtMi4xMzYgMS4yMzgtMy42NSAzLjQ3OC0zLjU5NiAxLjk3OS4wNDcgMy4xMjMgMS4zNTEgMy4zNCAzLjQ2My0uNDQ5IDEuODY4LTEuMTY4IDMuNjI3LTMuNTUxIDMuNDg5LTEuOTc5LS4xMTUtMy4zNC0xLjIzNS0zLjI2Ny0zLjM1Nm0tMzUuMTU4LTYuMDEyYy0yLjA4NS0uMTg2LTMuNjU0LTEuMzI5LTMuNTE3LTMuNjMzLjE0LTIuMzMxIDEuNzM4LTMuODQ2IDMuOTUzLTMuNzI5IDIuMTA4LjExIDIuODg1IDIuMDg5IDMuMzk2IDMuNTkyLS40MjcgMi41NDQtMS41NDEgMy45NzQtMy44MzIgMy43NyIvPgogICAgICA8cGF0aCBkPSJNMzA4LjE5OCAxOTQuNzI1di01LjU3N2M0LjQ5MiAwIDguOTg2LjAyMSAxMy40NzktLjAxMyAxLjI1My0uMDEgMi41NTEtLjAwNCAzLjc0Ni0uMzE4IDEuNjA5LS40MjIgMi41NjUtMS41OCAyLjQzOS0zLjM1OC0uMTI2LTEuNzctMS4zODMtMi4yOTEtMi44ODEtMi4zNjEtMy4xNDctLjE0Ni02LjMwNC0uMTUtOS40NDgtLjM0LTUuMDg2LS4zMDYtNy4zMjMtMi44NTctNy4yNDktOC4xLjA4LTUuNjUxIDIuNjMxLTguNTE0IDcuNzYxLTguNTU5IDUuODk4LS4wNSAxMS43OTgtLjAxMiAxNy41NTItLjAxMi43ODQgMS44NjEuMjI3IDMuMjA5LjMxNyA1LjI0My01LjE1NiAwLTEwLjI2LS4wMDktMTUuMzYzLjAwNy0xLjIzOS4wMDQtMi41NDUtLjE5NC0zLjQ1NSAxLjAyMy0xLjQ4NCAxLjk4NC0uMzU0IDQuNjY0IDIuMTc5IDQuOTggMy42MTkuNDUzIDcuMjgxLS40MDMgMTAuOTE3LjU2MyA0Ljk2OCAxLjMxOSA2LjI5OSAzLjA5NSA2LjAwNCA4Ljc3NC0uMjUyIDQuODM4LTIuMzg5IDcuMzgyLTYuODg5IDcuOTcyLTYuMjgzLjgyNC0xMi41NjYuMzEyLTE5LjEwOS4wNzZtLTYwLjUwNC4xMDd2LTUuNjFjNC42NTUgMCA5LjM5Ni0uMDEgMTQuMTM5LjAwNSAyLjA3MS4wMDYgNC4zMjguMTUgNC40NTQtMi43MzYuMTIyLTIuNzg3LTEuNjk5LTMuNTk0LTQuMTk0LTMuNTk3LTMuMDIzLS4wMDQtNi4wNTQtLjA0OC05LjA2OC0uMjU5LTMuMzktLjIzNy01LjEyMy0yLjE3LTUuNTA4LTUuNTg1LS45NTQtOC40NzcgMS4yNjUtMTAuOTk3IDkuODQ4LTEwLjk2NSA0LjUwNS4wMTggOS4wMS4wMDQgMTMuNjM1LjAwNHY1LjM0N2MtNC4yMzcgMC04LjM0Ny0uMDA0LTEyLjQ1Ny4wMDItMS4wMDkuMDAxLTIuMDY3LS4xNTktMy4wMTYuMDkxLTEuNTkxLjQxOC0zLjEwOSAxLjAyOC0yLjg2NiAzLjI0OC4yNDcgMi4yNTMgMS43MyAyLjQgMy41MDUgMi40NTcgMy41MDcuMTEgNy4wNDMtLjI5MiAxMC40OTQuODQ2IDQuMTk4IDEuMzg2IDUuMzU1IDMuNDUxIDUuMDU5IDkuNTk2LS4yMSA0LjMzNC0xLjc4NCA2LjM2MS01LjkzOCA2Ljk3LTUuODg2Ljg2Mi0xMS43OTcuMzc4LTE4LjA4Ny4xODZtLTg1LjQ1OS0yMi42MzVjLTQuNjgzIDAtOC45NjctLjAzMy0xMy4yNS4wMDktNC44NDQuMDQ3LTUuMDM5LjMxMy00LjM3NSA1LjgxOWgxNS44OTJjLjgwNSAxLjkxNS42MzMgMy4zNjIuMzMgNC43MTktNC4yMjkgMC04LjM2OC4wMzUtMTIuNTA4LS4wMTMtMi4yNDQtLjAyNy00LjI4Mi0uMjgyLTQuMjExIDMuMTQxLjA2MyAzLjA0MSAxLjUwNiAzLjUyNiA0LjA1NCAzLjQ1NCA0LjUzOS0uMTI5IDkuMDg1LS4wMzYgMTMuNTU5LS4wMzYgMS41NjQgNC45MjUgMS4xMyA1LjY4NC0zLjQ1NyA1LjcxNi00LjE2OC4wMjgtOC4zNTEuMDQ3LTEyLjUwMi0uMjYtNC44MTItLjM1Ni03LjE0MS0yLjY4OC03LjM4OS03LjQ3Ny0uMjU0LTQuOTE3LS4yMDItOS44NTctLjEwMS0xNC43ODMuMDY1LTMuMTY3IDMuNjM2LTUuOTg5IDguMTQ3LTYuMTkzIDUuMTYxLS4yMzMgMTAuMzQyLS4wNTQgMTUuNTU3LS4wNTQuODY4IDEuODYuMzM4IDMuNTUzLjI1NCA1Ljk1OG0yMDEuNDMzLTEuODUxYy0xLjQwOSAyLjAyMS0zLjQ4Mi44ODctNS4yMzUgMS0zLjE0Mi4yMDMtNi4zMDktLjAwMS05LjQ1My4xNjYtMS41NTUuMDgyLTIuOTUuNjg5LTIuOTI4IDIuNzM0LjAyMyAyLjIxNyAxLjUxNiAyLjI5NyAzLjEwOSAyLjMwNyAyLjkwMS4wMTUgNS44MTcuMjE0IDguNy0uMDEzIDMuNTU0LS4yNzkgNC40OTkgMS4yODUgMy42MDcgNS4xLTMuNjY5IDAtNy41MjEuMDE5LTExLjM3Mi0uMDA4LTIuNDM1LS4wMTctNC4yMTkuNTI3LTQuMTI4IDMuNTUuMDg0IDIuODA4IDEuMjM5IDQuMTM3IDQuMTYyIDQuMDYyIDQuNTI0LS4xMTUgOS4wNTUtLjAyOSAxMy44MTktLjAyOXY1LjQxNmMtNi40NTMuNDAyLTEzLjA1OS45MTQtMTkuNTQ5LS42MDctMi43MzYtLjY0My00LjEzNC0zLjEyNi00LjQ0NS01Ljk5MS0uNTItNC43ODctLjQ1OS05LjU4OC4xMDQtMTQuMzU0LjYwNi01LjEzMyAzLjQxNi03LjQ0MSA4LjY2Mi03LjQ2OSA0LjAzNy0uMDIxIDguMDc0LS4wMzIgMTIuMTExLS4wMTYgMS4zMjguMDA2IDIuOTgzLS4zNzEgMi44MDkgMS44OTktLjA0MS43NTEtLjA0NCAxLjUwMi4wMjcgMi4yNTNtMjkuMTcyLTQuMTY0djUuMTgzYy0zLjc5OCAwLTcuNDI4LS4wNTUtMTEuMDU2LjAxNS00LjM1Ny4wODItNS41NDEgMS4zMjUtNS41OTQgNS43MjYtLjAzMSAyLjY1Mi0uMDQ3IDUuMzA1LjAxNCA3Ljk1Ni4wNjUgMi45MDYgMS40NjEgNC4zMDIgNC41MjQgNC4xODUgNC4wMTItLjE1MyA4LjAzMy0uMDM4IDEyLjI0OC0uMDM4djUuMDQ3Yy01LjUxMyAwLTEwLjgwOS4zNDgtMTYuMDM0LS4xMDUtNC40MzgtLjM4Ny02LjU3Mi0zLjIxNC02LjY2Mi03LjYwN2EzODcgMzg3IDAgMCAxLS4wMzMtMTQuNzcxYy4wNjQtMy43MTIgMS43NDktNS40NjggNS40ODktNS41NTUgNS42NjMtLjEzMiAxMS4zMzEtLjAzNiAxNy4xMDQtLjAzNm0tMTAwLjE4OSAyOC42MTFjLTIuNDM1LS43ODgtNC4xMTMtMS4wNTgtNi4xNTguMzgzIDAtNi45MDYtLjE1NC0xMy4xNDYuMDY1LTE5LjM3My4xMDgtMy4wNjUtLjYwNC00LjYwNi0zLjkyOS0zLjk0NS0uNDg0LjA5Ni0xLjAwNS4wMTItMS41MDkuMDEzLTQuOTAxLjAwOS00LjkwMS4wMDktNC43NzQtNS4zOTVoMjYuMjc4djQuNTMyYy0yLjIyNC44MDgtNC41MDQuMzQtNi43MjMuMjY3LTIuMzg5LS4wNzktMy4zNjguNjItMy4zMDUgMy4xOTYuMTYyIDYuNTMxLjA1NSAxMy4wNjguMDU1IDIwLjMyMm0tODcuNTQyLTkuMzc0di0xOWg2LjI5MmMwIDUuNzIuMDEgMTEuMzM3LS4wMDMgMTYuOTUzLS4wMTMgNS44MDQuMDM1IDUuODU1IDUuOTI3IDUuODQ4cTQuNTQtLjAwOCA5LjA4MS4wMTljLjIzNy4wMDEuNDc2LjEzOS44MjMuMjQ3Ljc1MyAxLjQ4Ny4zNTcgMy4wODQuMjI5IDUuMTEtNi4xMzkuNDEzLTEyLjI2LjY1Ni0xOC4zMTMtLjM4My0yLjcxOS0uNDY4LTMuMDk0LTMuMzE3LTMuODYxLTUuNTQ1LS4yMzYtMS4wNzMtLjE5NS0yLjE2MS0uMTc1LTMuMjQ5TTIzNC4yNzMgMTk1di0yNy45NGMxLjg1My0uNzc5IDMuNzEzLS4yMDkgNS45Ni0uNTU0IDAgOS4wNC4yOTEgMTcuODI2LS4xNDEgMjYuNTc3LS4xNzcgMy41NjktMy41MzMgMS4xMzctNS44MTkgMS45MTciLz4KICAgICAgPHBhdGggZD0ibTEwOC4yNDUgMTk0LjcyOC0uMTMyLTcuNDU0Yy0uMDE3LTEuMDA2LjIyOS0xLjczOSAxLjQ4NC0xLjQwOC0uNjc3IDIuOTE5IDEuMjk2IDYuMjQyLTEuMzUyIDguODYyIi8+CiAgICAgIDxwYXRoIGQ9Ik0xMjUuODI5IDE4NC42NzNjNC41NjEtMi41NTEgNi41MTQtNi4zNTcgNS4zNjQtMTEuNTA4LTEuMTE2LTUuMDA3LTUuMTY4LTUuOTc5LTkuNDM3LTYuNTQ4YTkuNCA5LjQgMCAwIDEtMS42MDMtLjE5M2wtMTAuMjk3LS4zOTNjLTIuMDU1LS4zMDYtMy43NzMtLjIyOC02LjIyLS4wNzMtMS40OTIuOTMxLTEuMDIyIDIuNDMzLTEuMDMzIDMuNzUtLjA1MSA2LjI2NS0uMTIzIDEyLjUyOS0uMDI3IDE4Ljc5Mi4wMzEgMi4wNTQtLjY4MyA0LjIuMzU0IDYuMjI4aDUuMzEzYy43MjMtMS4yNTMuMzgyLTIuNjQxLjUzMi0zLjk2OS4xODUtMS42NDMtLjY2NS0zLjQ3LjgyLTQuODk0IDguMTYtMi4wODIgNy43ODEtMS44MjIgMTEuNjk3IDUuMTY5IDIuMzc3IDQuMjQyIDUuNTkxIDQuMjIgOS42NzEgMy41ODgtMS4yNjQtMy41NTktNC4xMzMtNS45OTItNS40OTUtOS4yMjIuMTQ1LS4zMDMuMTg5LS42My4zNjEtLjcyN20tNC4xMDItNC40NzVjLTEuNzYyLjA0Mi0zLjUyNS4wMDgtNS4yODkuMDA4di4wMzRjLTEuMDA4IDAtMi4wMTUuMDA0LTMuMDIyLS4wMDEtNC42MjEtLjAxOS01LjA2MS0uNTgxLTQuNjA3LTUuMjguMTU3LTEuNjMxLjY1Ny0yLjYxNSAyLjQ2NC0yLjU5MyAzLjUyNS4wNDcgNy4wNTIuMDA1IDEwLjU3Ni4wNjQgMi41MjcuMDQzIDMuNTI4IDEuNDk0IDMuNTAxIDMuOTIzLS4wMjkgMi40NTEtMS4xNDcgMy43ODUtMy42MjMgMy44NDVtNjcuNDExLTEwLjUxYy0uNTU3LTEuMzc3LS4xMTUtNC40MS0yLjgwOS0zLjQyMi0yLjg5MyAxLjA2Mi02Ljk4Mi0uOTk4LTguNjgxIDMuNDQtMi42NTUgNi45NDQtNS42MjQgMTMuNzY5LTguMzU0IDIwLjY4Ni0uNTE5IDEuMzE1LTEuODQ5IDIuNDQtMS4xODggNC41NzYgMi4xMjctLjg2OSA1LjM3MyAxLjU5IDYuMzIxLTIuMTM0IDEuMDQ4LTQuMTEzIDMuNTM4LTQuODcyIDcuMTkzLTQuNTE3IDIuMzc3LjIzIDQuNzkzLjExNSA3LjE4OS4wNjEgMS42MTEtLjAzNyAyLjY2MS40ODYgMi45NTUgMi4xODYuODEgNC42NzYgMy45MTIgNC44MDIgNy44MiAzLjgwOS0yLjg3My04Ljc3NS03LjE0Ni0xNi41MjMtMTAuNDQ2LTI0LjY4NW0tMTAuOTQyIDE0LjAwMiA1LjE0Mi0xMi45M2MyLjU0MiA0LjM5NiA0LjAzOSA4LjA1NyA1LjQwNSAxMi4xNjctMy40IDEuMjM0LTYuNjIxLjQxLTEwLjU0Ny43NjMiLz4KICAgICAgPHBhdGggZD0ibTI0NS40MTMgMTUwLjY2OS42NTQtNzEuOS42NDggNzEuMDIyLS44NzQuODc4eiIvPgogICAgICA8cGF0aCBkPSJtMjQ1LjM0MSAxNTAuNjY5LjY1NS03MS45LjY0OCA3MC45NjYtLjg4NS45MzR6Ii8+CiAgICA8L2c+CiAgPC9zdmc+Cjwvc3ZnPgo="
+          alt="Diagram showing User spawning Agent A, which spawns Agent B, which spawns Agent C, with Agent C triggering an incident and dashed liability lines tracing back through the chain"
+          width="920">
+        <br><em>Figure 1: The attribution gap in recursive agent spawning.</em></br></br>
+      </div>
+    </div>
+
+    <p>The original user may not even know the third agent exists. They did
+      not design it, did not configure it, and did not authorise it. Their
+      agent created it. And their agent's agent created the one that caused
+      the damage.</p>
+    <p>Under current law in most jurisdictions, liability would likely fall
+      back to the original user, the deploying organisation, or potentially
+      the model provider. But "likely" is not good enough when people's
+      finances, reputations, and civil rights are at stake.</p>
+    <p>This is the <strong>chain-of-liability problem</strong>, and it is
+      the single most urgent gap in the current regulatory landscape for
+      <strong>AI</strong>.
+    </p>
+    <hr />
+    <h2 id="a-model-that-already-works" class="page-break-before">A Model That Already Works</h2>
+    <p>Here is the thing: we do not need to invent a regulatory framework
+      from scratch. We just need to look at what is already working, and adapt
+      it.</p>
+    <p>In the <strong>United Kingdom</strong>, the <a
+        href="https://www.fca.org.uk/publications/policy-statements/ps22-10-strengthening-our-financial-promotion-rules-high-risk-investments-firms-approving-financial-promotions"><strong>Financial
+          Conduct Authority (FCA)</strong> now mandates</a> that any platform
+      offering complex crypto assets must administer a <strong>crypto
+        appropriateness assessment</strong> with <a
+        href="https://www.fca.org.uk/publication/policy/ps19-22.pdf">KYC</a>.
+      This is a mandatory regulatory quiz and ID check that tests a consumer's
+      knowledge and experience before they are permitted to invest. The
+      principle is straightforward:</p>
+    <div class="keep-together">
+      <blockquote>
+        <p><em>If you cannot demonstrate that you understand the risks, you
+            should not be allowed to take them, at least not without friction and
+            informed consent.</em></p>
+      </blockquote>
+    </div>
+    <p>The specifics of that system:</p>
+    <ul>
+      <li><strong>Mandatory assessment</strong> before purchasing complex
+        crypto assets without advice</li>
+      <li><a
+          href="https://www.fca.org.uk/firms/financial-crime/money-laundering-terrorist-financing"><strong>KYC</strong></a>
+        identity verification which can be paired with <a
+          href="https://ethereum.org/zero-knowledge-proofs/">Zero-Knowledge
+          Proofs</a></li>
+      <li>Tests <strong>knowledge and experience</strong> to ensure the
+        consumer understands the risks</li>
+      <li><strong>Failing twice</strong> triggers a <strong>24-hour
+          cooling-off period</strong></li>
+      <li>A <strong>maximum of six attempts</strong> before access is
+        restricted</li>
+      <li>Platforms that fail to implement this face <strong>regulatory
+          action</strong></li>
+    </ul>
+    <p>This same principle maps directly onto <strong>autonomous
+        AI</strong>. The asset class is different. The risk profile is
+      different. But the regulatory logic is identical: <strong>informed
+        participation, demonstrated competence, and proportionate
+        friction.</strong></p>
+    <hr />
+    <h2 id="the-grand-bargain" class="page-break-before">The Grand Bargain</h2>
+    <p>Here is where most regulation proposals fall apart. They frame the
+      licence as a restriction, a speed bump, something you endure. That
+      framing is politically dead on arrival and, honestly, operationally
+      wrong.</p>
+    <p>The licence should not be a hurdle. It should be an
+      <strong>upgrade</strong>.
+    </p>
+    <h3 id="for-the-user-access-to-unshackled-models">For the User: Access
+      to Unshackled Models</h3>
+    <p>Right now, every major <strong>AI</strong> provider ships its models
+      wrapped in heavy alignment layers. Refusals, guardrails, safety filters.
+      For good reason, but the result is that capable, informed users are
+      stuck behind the same restrictions as someone who signed up five minutes
+      ago and has no idea what an autonomous agent even is.</p>
+    <p>A licence changes that. Unlicensed users get the <strong>Public
+        Tier</strong>, the heavily aligned, refusal-prone, safe version.
+      Licensed users get the <strong>Pro Tier</strong>, the full-capability
+      API with tool use enabled, autonomous operation, higher rate limits, and
+      fewer unnecessary guardrails.</p>
+    <p>You are not just jumping through a hoop. <strong>You are upgrading
+        your account.</strong></p>
+    <p>And there is a second benefit that nobody is talking about yet:
+      <strong>insurability</strong>. Right now, if you operate autonomous
+      <strong>AI</strong> agents commercially, you cannot get professional
+      liability insurance for it. No underwriter will touch it, because there
+      is no framework, no demonstrated competence, no audit trail. A
+      recognised licence changes that. It makes the risk quantifiable, which
+      makes it insurable, which makes it viable for real business
+      adoption.
+    </p>
+    <h3 id="for-the-provider-liability-protection">For the Provider:
+      Liability Protection</h3>
+    <p>This is the part that should make every general counsel at every
+      major <strong>AI</strong> company sit up and pay attention.</p>
+    <p>Under a licensing framework, if a provider verifies a user's licence
+      before granting autonomous access, the provider receives <strong>safe
+        harbour protection</strong>. They are legally indemnified against that
+      user's actions. The user has demonstrated competence and accepted
+      personal liability. The provider has done their due diligence.</p>
+    <p>Let’s be blunt about the economics. Without a liability shield, the
+      AI industry hits a hard glass ceiling. You cannot deploy agents that
+      touch real money if you are vicariously liable for every hallucination.
+      This framework shatters that ceiling. It allows you to ship Tier 3
+      capabilities to 10 million users, because you have offloaded the risk to
+      the insurance market where it belongs.</p>
+    <p>Without this framework, providers are exposed to <strong>vicarious
+        liability</strong> for every autonomous action their models take. Every
+      agent that goes rogue, every sub-agent that causes harm, every
+      chain-of-action that ends in a lawsuit, it all flows back to the company
+      whose API was used.</p>
+    <p>This is why the major providers are terrified of releasing their most
+      capable models without restrictions. Not because the technology is not
+      ready. Because the <strong>legal exposure</strong> is unbounded.</p>
+    <p>A licensing framework gives them a path to release powerful tools
+      responsibly. <strong>That is not a restriction on innovation. That is
+        the thing that unlocks it.</strong></p>
+    <h3 id="for-the-corporation-shielding">For the Corporation:
+      Shielding</h3>
+    <p>Just as a trucking company insures its drivers, a corporation holds
+      the <strong>liability insurance</strong> for the autonomous agents
+      deployed under its operating permit. The individual licence held by a
+      <strong>Principal Operator</strong> proves competence, preventing the
+      insurance from being voided. But the corporation bears the financial
+      exposure for damages, provided its licensed operators followed the
+      <strong>Standard of Care</strong>.
+    </p>
+    <p>This protects the individual engineer from personal bankruptcy. It
+      protects the company by making the risk insurable. And it protects the
+      public by ensuring there is always a solvent, identifiable entity on the
+      hook when something goes wrong.</p>
+    <div class="keep-together">
+      <blockquote>
+        <p>This is the Grand Bargain: users get capability, providers get
+          protection, corporations get insurable operations, and the public gets
+          accountability. Everyone has skin in the game. Everyone benefits.</p>
+      </blockquote>
+    </div>
+    <hr />
+    <h2 id="the-fleet--driver-model" class="page-break-before">The Fleet &amp; Driver Model</h2>
+    <p>No regulation framework survives first contact with a software
+      engineering team unless it answers one question: <strong>does every
+        single developer need a licence?</strong></p>
+    <p>If you tell a <strong>CTO</strong> "every junior dev on your team
+      needs a personal licence," they will laugh you out of the room. If you
+      tell a <strong>junior developer</strong> "you are personally liable if
+      this agent breaks in production," they will quit. Neither reaction is
+      unreasonable. Both are fatal to adoption.</p>
+    <p>The answer is to borrow from two industries that solved this problem
+      decades ago: <strong>logistics</strong> and <strong>civil
+        engineering</strong>. The model splits regulation into two layers.</p>
+    <h3 id="the-corporate-operating-permit-the-fleet">The Corporate
+      Operating Permit (The Fleet)</h3>
+    <p>The <strong>company</strong> holds the operating permit. This is the
+      entity that purchases Enterprise/Tier 3 API access, holds the liability
+      insurance, and is accountable for the autonomous systems deployed under
+      its banner.</p>
+    <p>The requirement: the company must employ a designated number of
+      <strong>Principal Operators</strong>, licensed individuals who oversee
+      the autonomous systems. The ratio scales with the complexity and risk of
+      what is being deployed. A three-person startup running a customer
+      service agent needs one. A bank deploying multi-agent trading systems
+      needs more.
+    </p>
+    <p>This is the <strong>fleet</strong>. The company owns the vehicles,
+      insures them, and is responsible for what they do on the road.</p>
+    <h3 id="the-individual-operators-licence-the-driver">The Individual
+      Operator's Licence (The Driver)</h3>
+    <p>The <strong>senior engineer</strong>, <strong>staff
+        engineer</strong>, or <strong>tech lead</strong> holds the individual
+      licence. This is the person who has passed the competency assessment,
+      who understands the systems, and whose digital signature is required to
+      push an autonomous agent to a production environment.</p>
+    <p>The individual is responsible for <strong>negligence</strong>, for
+      failing to review, failing to follow protocol, failing to set
+      appropriate boundaries. The company is responsible for
+      <strong>damages</strong>, for the financial and legal consequences of
+      what the agent does in the real world.
+    </p>
+    <p>This is the <strong>driver</strong>. They prove they can operate the
+      vehicle. They follow the road rules. If the truck crashes because the
+      company skipped maintenance, that is on the company. If it crashes
+      because the driver was reckless, that is on the driver.</p>
+    <p>Crucially, this is a meritocracy, not a closed shop. It does not
+      require a university degree. It requires a passed test. If a 17-year-old
+      independent developer in a garage can pass the competency assessment and
+      verify their identity, they get the same Tier 3 access as a Senior
+      Engineer at Google. The licence effectively democratises access to
+      dangerous tools by filtering for competence, not capital.</p>
+    <h3 id="the-apprentice-no-licence-required">The Apprentice (No Licence
+      Required)</h3>
+    <p>This is crucial, and it is the part that makes the framework viable
+      for real engineering teams.</p>
+    <p>A <strong>junior developer</strong> does not need a licence. They can
+      write code for autonomous agents. They can test agents in a
+      <strong>Sandbox environment</strong> (Tier 1 API). They can learn,
+      experiment, and build competence. What they cannot do is deploy to
+      production.
+    </p>
+    <p>The analogy is a learner driver in a car park. Or, more precisely, a
+      junior civil engineer drafting blueprints that a <strong>Professional
+        Engineer (PE)</strong> must review and stamp before they are built. The
+      junior does the work. The PE takes the professional responsibility.</p>
+    <p>In software terms: the junior writes the agent. The <strong>Principal
+        Operator</strong> reviews it, signs off, and deploys it to the
+      production API. Their licence is on the line, which means they have
+      every incentive to review properly.</p>
+    <p>This is not a new concept for engineering. It is how civil
+      engineering, architecture, and medicine have worked for centuries.
+      <strong>The person closest to the work does the work. The person with
+        the credential takes the responsibility.</strong>
+    </p>
+    <div class="keep-together">
+      <div align="center">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTYwIDQyMCIgd2lkdGg9Ijk2MCIgaGVpZ2h0PSI0MjAiIGZvbnQtZmFtaWx5PSInU2Vnb2UgVUknLCAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgc2Fucy1zZXJpZiI+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3dMIj4KICAgICAgPGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEiIHN0ZERldmlhdGlvbj0iMiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9IjAuMDgiLz4KICAgIDwvZmlsdGVyPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJmbGVldEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhNTI3NiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDcxYTMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgoKICA8IS0tIEJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9Ijk2MCIgaGVpZ2h0PSI0MjAiIHJ4PSI4IiBmaWxsPSIjZjhmOWZhIi8+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9Ijk1OCIgaGVpZ2h0PSI0MTgiIHJ4PSI3IiBmaWxsPSJub25lIiBzdHJva2U9IiNkZWUyZTYiIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8IS0tIFRpdGxlIC0tPgogIDx0ZXh0IHg9IjQzNSIgeT0iMzgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyYzNlNTAiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxLjUiPlRIRSBGTEVFVCAmYW1wOyBEUklWRVIgSElFUkFSQ0hZPC90ZXh0PgogIDxsaW5lIHgxPSIxODAiIHkxPSI1MCIgeDI9IjY5MCIgeTI9IjUwIiBzdHJva2U9IiNkZWUyZTYiIHN0cm9rZS13aWR0aD0iMSIvPgoKICA8IS0tIExheWVyIDM6IEFwcHJlbnRpY2UgLyBTYW5kYm94IChUb3AgLSBzbWFsbGVzdCkgLS0+CiAgPHJlY3QgeD0iMjQwIiB5PSI3NSIgd2lkdGg9IjQyMCIgaGVpZ2h0PSI3MCIgcng9IjYiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2JkYzNjNyIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbHRlcj0idXJsKCNzaGFkb3dMKSIvPgogIDx0ZXh0IHg9IjQ1MCIgeT0iMTA1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjN2Y4YzhkIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMSI+QVBQUkVOVElDRSAvIFNBTkRCT1g8L3RleHQ+CiAgPHRleHQgeD0iNDUwIiB5PSIxMjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5NWE1YTYiIGZvbnQtc2l6ZT0iMTAiPlRoZSBMZWFybmVyIC0tIE5vIGxpY2VuY2UgcmVxdWlyZWQsIHNhbmRib3ggYWNjZXNzIG9ubHk8L3RleHQ+CgogIDwhLS0gTGF5ZXIgMjogUHJpbmNpcGFsIE9wZXJhdG9yIExpY2VuY2UgKE1pZGRsZSkgLS0+CiAgPHJlY3QgeD0iMTYwIiB5PSIxNjAiIHdpZHRoPSI1ODAiIGhlaWdodD0iNzAiIHJ4PSI2IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMyOTgwYjkiIHN0cm9rZS13aWR0aD0iMiIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNDUwIiB5PSIxOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMxYTVhN2EiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxIj5QUklOQ0lQQUwgT1BFUkFUT1IgTElDRU5DRTwvdGV4dD4KICA8dGV4dCB4PSI0NTAiIHk9IjIxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzRhN2E5YSIgZm9udC1zaXplPSIxMCI+VGhlIERyaXZlciAtLSBDb21wZXRlbmN5IGFzc2Vzc2VkLCBLWUMgdmVyaWZpZWQsIGRlcGxveXMgdG8gcHJvZHVjdGlvbjwvdGV4dD4KCiAgPCEtLSBMYXllciAxOiBDb3Jwb3JhdGUgT3BlcmF0aW5nIFBlcm1pdCAoQmFzZSAtIHdpZGVzdCkgLS0+CiAgPHJlY3QgeD0iODAiIHk9IjI0NSIgd2lkdGg9Ijc0MCIgaGVpZ2h0PSI3MCIgcng9IjYiIGZpbGw9InVybCgjZmxlZXRHcmFkKSIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNDUwIiB5PSIyNzUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZmYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxIj5DT1JQT1JBVEUgT1BFUkFUSU5HIFBFUk1JVDwvdGV4dD4KICA8dGV4dCB4PSI0NTAiIHk9IjI5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2FlZDZmMSIgZm9udC1zaXplPSIxMCI+VGhlIEZsZWV0IC0tIEhvbGRzIGluc3VyYW5jZSwgYWNjb3VudGFibGUgZm9yIGRlcGxveWVkIHN5c3RlbXM8L3RleHQ+CgogIDwhLS0gSGllcmFyY2h5IGFycm93cyAtLT4KICA8bGluZSB4MT0iNDUwIiB5MT0iMTQ1IiB4Mj0iNDUwIiB5Mj0iMTYwIiBzdHJva2U9IiM5NWE1YTYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDMiLz4KICA8bGluZSB4MT0iNDUwIiB5MT0iMjMwIiB4Mj0iNDUwIiB5Mj0iMjQ1IiBzdHJva2U9IiM5NWE1YTYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDMiLz4KCiAgPCEtLSBJbnN1cmFuY2UgV3JhcHBlciBicmFja2V0IChyaWdodCBzaWRlKSAtLT4KICA8bGluZSB4MT0iODU1IiB5MT0iNzUiIHgyPSI4NTUiIHkyPSIzMTUiIHN0cm9rZT0iIzI3YWU2MCIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iODQwIiB5MT0iNzUiIHgyPSI4NTUiIHkyPSI3NSIgc3Ryb2tlPSIjMjdhZTYwIiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIDxsaW5lIHgxPSI4NDAiIHkxPSIzMTUiIHgyPSI4NTUiIHkyPSIzMTUiIHN0cm9rZT0iIzI3YWU2MCIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8dGV4dCB4PSI4NzUiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzI3YWU2MCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjYwMCIgbGV0dGVyLXNwYWNpbmc9IjEiIHRyYW5zZm9ybT0icm90YXRlKDkwLCA4NzUsIDIwMCkiPklOU1VSQU5DRSBXUkFQUEVSPC90ZXh0PgoKICA8IS0tIEV4cGxhbmF0b3J5IGFubm90YXRpb25zIC0tPgogIDx0ZXh0IHg9IjQzNSIgeT0iMzQ3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjN2Y4YzhkIiBmb250LXNpemU9IjExIj5KdW5pb3JzIHdyaXRlIHRoZSBjb2RlLiBMaWNlbnNlZCBvcGVyYXRvcnMgZGVwbG95IGl0LiBUaGUgY29ycG9yYXRpb24gaW5zdXJlcyBpdC48L3RleHQ+CiAgPHRleHQgeD0iNDM1IiB5PSIzNjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM3ZjhjOGQiIGZvbnQtc2l6ZT0iMTEiPlRoZSBzYW1lIG1vZGVsIHVzZWQgaW4gY2l2aWwgZW5naW5lZXJpbmcsIGFyY2hpdGVjdHVyZSwgYW5kIGxvZ2lzdGljcyBmb3IgY2VudHVyaWVzLjwvdGV4dD4KCiAgPCEtLSBTZWN0aW9uIGxhYmVsIC0tPgogIDx0ZXh0IHg9IjQzNSIgeT0iMzk1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYmRjM2M3IiBmb250LXNpemU9IjEwIiBsZXR0ZXItc3BhY2luZz0iMyI+RkxFRVQgJmFtcDsgRFJJVkVSIE1PREVMPC90ZXh0PgoKICA8IS0tIFdhdGVybWFyayAtLT4KICA8c3ZnIHg9Ijg0MCIgeT0iMzcwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgNDkzIDI3NiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIgb3BhY2l0eT0iMC4xNSI+CiAgICA8c3R5bGU+c3ZnIHN2ZyBwYXRoLCBzdmcgc3ZnIHBvbHlnb24geyBmaWxsOiAjMmMzZTUwICFpbXBvcnRhbnQ7IH08L3N0eWxlPgogICAgPGc+CiAgICAgIDxwYXRoIGQ9Ik0yODIuOTM4IDc2LjE2Yy0xMS4zNjUtMy44MzQtMjIuOTA1LTcuMDQ0LTM0LjU0OC05Ljg5NS0xLjgyNy0uNDQ3LTMuNjQ1LS42NTktNS41ODUtLjE2My0xMS44NDUgMy4wMy0yMy42NjQgNi4xMzctMzUuMzI2IDkuODMxLTIuMDY5LjY1NS0yLjg2MiAxLjU3My0yLjc3MSAzLjcyMS4yNzUgNi41NjUuMTg4IDEzLjE1Mi42MzkgMTkuNzAyLjY5MyAxMC4wOTQgMS42OSAyMC4xMzIgNy4xNzYgMjkuMTEyIDcuNDQgMTIuMTgyIDE4LjY0MiAxOS45NDUgMzAuNzQ0IDI2LjcxMyAxLjU0OS44NjUgMi44NTQuMTk4IDQuMjU5LS41MjMgNS44MzUtMi45OTkgMTAuOTMxLTcuMDcxIDE1Ljg3MS0xMS4yNzIgOC41OC03LjI5OCAxNy4xMS0xNC43NDQgMTkuODUzLTI2LjQ1OCAxLjk5OC04LjUzMSAyLjY1LTE3LjIxMSAzLjA4Ny0yNS45NDcgMC0zLjI4NC0uMTk5LTYuNTgzLjA2LTkuODQ3LjIyMS0yLjgwOC0uOTM3LTQuMTIzLTMuNDU5LTQuOTc0bS01LjIzOSAzOS43NDNjLTEuMzgzIDcuMzEzLTUuMzUxIDEzLjIxMS0xMS4yMjMgMTcuODQ3LTIuMDU1IDEuNjIyLTMuOTMyIDMuNDc5LTUuODE4IDUuMzAzLS44MzcuODEtMS41NTcgMS42NjItMy4xMDQgMS4xODgtLjQ0Ny0zLjY4OC0uMTg3LTcuNDQ0LS4wMjUtMTEuMTk5LjA1OC0xLjMxOCAxLjAyMS0xLjg5IDEuOTczLTIuNTY4IDUuNDA3LTMuODU3IDcuMTc1LTkuMjc2IDYuNDk3LTE1LjY2LS4yMTItMS45OTEtLjAxMy0zLjQxNiAyLjQ1OS0zLjczMiAzLjUxLS40NDcgNC44OTYtMi45NDcgNC44OTItNi4xNjYtLjAwNS0zLjU1OS0xLjc2Ni01Ljg4Ny01LjM5Ni02Ljc2Mi0zLjE2OS0uNzY0LTUuNzExLjIzOC03LjQ0MiAyLjc0MS0xLjkxNiAyLjc3LTEuNjg4IDUuNzE1LjU3MSA4LjMzNC42NTYuNzYxIDEuNDU4IDEuMzk2IDIuMjk0IDIuMTg0LjU5Mi44NTgtLjcxNiAxLjQzMS0uNTggMi4yOTkgMS4wNSA2LjY4Ni0yLjA1OSAxMS4yMzctNy41NiAxNC40NTctMS40ODQuODY5LTEuNTEyIDIuMTE2LTEuNTI2IDMuNDg5LS4wNDcgNC4yOTctLjQxNiA4LjYyMy0uMDM4IDEyLjg4Mi4zOCA0LjI4OC0yLjY2NiA1LjI2OS01Ljk0NyA3LjkzNi0uMDE4LTIzLjgwMS4xODgtNDYuNDg3LS43OTItNjkuMTQxbC0xLjY3My0uMDI1LS44MTUgNjkuOTgyYy00LjE3OC0uOTAzLTUuOTk2LTIuNTI2LTUuNzIyLTYuNDk4LjM0OC01LjAzMS0uMTI1LTEwLjExOC4xODEtMTUuMTU1LjE4OC0zLjA5NS0uNDEzLTUuNTI0LTMuMjEyLTYuOTUxLTUuMjU2LTIuNjgtNi43NzEtNi45NzYtNS45MzgtMTIuNTMyLjI0LTEuNjA0LjExMS0zLjI5MS0uMDUzLTQuOTItLjI2Ny0yLjY0OC4xMTctNC42MjEgMi42NDMtNi40MDcgMy41MTUtMi40ODYgMy41NjMtNy43OTEuNjY3LTEwLjczNS0yLjkxMS0yLjk1OS03LjE4OC0yLjc5Ni0xMC40MjguMzk3LTIuODM5IDIuNzk4LTIuOTQ3IDcuMzU3LjUwMyA5Ljk3NSAyLjcxOCAyLjA2MiAyLjY5MSA0LjM5MyAyLjg0IDcuMjEzLjI2NCA0Ljk4LTEuMTQ4IDEwLjEwNyAxLjEzMyAxNC45MzRsLjQ2Ny43NTVjNi40MTUgMy4wMjUgOS40MjUgNy43NzEgOC4xNDIgMTUuMDc1LS40NyAyLjY3LS4wNzYgNS40OTItLjA3NiA3Ljk3OC0uNzg1LjYxNi0xLjI3MS41ODctMS43MTguMjg3LTguODE0LTUuOTAyLTE1Ljg2Ny0xMy4zODktMTkuNjA4LTIzLjQyNi0yLjQyLTYuNDk0LTIuNTU4LTEzLjUxNC0zLjQwMy0yMC4zNDktLjY5Ny01LjYzLTEuMDY0LTExLjI3NC0uNzY3LTE3LjI3NCA3LjQzNi0yLjk5NyAxNS4yNDUtNS4zMDUgMjMuMTUxLTcuMzU0IDIuNjk1LS42OTcgNS40ODctLjk4NyA4LjAxNS0yLjUxMSAxLjQyMi0uODU3IDMuMTY5LTEuMTc4IDUuMjI4LS40MzggOS44NDggMy41NCAyMC4zMTggNC44OSAzMC4yMDUgOC40MjIgMy4yNyAxLjE2OSA0LjA3IDIuOTMzIDQuMDQzIDYuMTQxLS4wOSAxMC4wOTktMS4xNyAyMC4wOTUtMy4wNCAyOS45ODRtLTE0Ljc0Ny0xNC45MTRjLjA3My0yLjEzNiAxLjIzOC0zLjY1IDMuNDc4LTMuNTk2IDEuOTc5LjA0NyAzLjEyMyAxLjM1MSAzLjM0IDMuNDYzLS40NDkgMS44NjgtMS4xNjggMy42MjctMy41NTEgMy40ODktMS45NzktLjExNS0zLjM0LTEuMjM1LTMuMjY3LTMuMzU2bS0zNS4xNTgtNi4wMTJjLTIuMDg1LS4xODYtMy42NTQtMS4zMjktMy41MTctMy42MzMuMTQtMi4zMzEgMS43MzgtMy44NDYgMy45NTMtMy43MjkgMi4xMDguMTEgMi44ODUgMi4wODkgMy4zOTYgMy41OTItLjQyNyAyLjU0NC0xLjU0MSAzLjk3NC0zLjgzMiAzLjc3Ii8+CiAgICAgIDxwYXRoIGQ9Ik0zMDguMTk4IDE5NC43MjV2LTUuNTc3YzQuNDkyIDAgOC45ODYuMDIxIDEzLjQ3OS0uMDEzIDEuMjUzLS4wMSAyLjU1MS0uMDA0IDMuNzQ2LS4zMTggMS42MDktLjQyMiAyLjU2NS0xLjU4IDIuNDM5LTMuMzU4LS4xMjYtMS43Ny0xLjM4My0yLjI5MS0yLjg4MS0yLjM2MS0zLjE0Ny0uMTQ2LTYuMzA0LS4xNS05LjQ0OC0uMzQtNS4wODYtLjMwNi03LjMyMy0yLjg1Ny03LjI0OS04LjEuMDgtNS42NTEgMi42MzEtOC41MTQgNy43NjEtOC41NTkgNS44OTgtLjA1IDExLjc5OC0uMDEyIDE3LjU1Mi0uMDEyLjc4NCAxLjg2MS4yMjcgMy4yMDkuMzE3IDUuMjQzLTUuMTU2IDAtMTAuMjYtLjAwOS0xNS4zNjMuMDA3LTEuMjM5LjAwNC0yLjU0NS0uMTk0LTMuNDU1IDEuMDIzLTEuNDg0IDEuOTg0LS4zNTQgNC42NjQgMi4xNzkgNC45OCAzLjYxOS40NTMgNy4yODEtLjQwMyAxMC45MTcuNTYzIDQuOTY4IDEuMzE5IDYuMjk5IDMuMDk1IDYuMDA0IDguNzc0LS4yNTIgNC44MzgtMi4zODkgNy4zODItNi44ODkgNy45NzItNi4yODMuODI0LTEyLjU2Ni4zMTItMTkuMTA5LjA3Nm0tNjAuNTA0LjEwN3YtNS42MWM0LjY1NSAwIDkuMzk2LS4wMSAxNC4xMzkuMDA1IDIuMDcxLjAwNiA0LjMyOC4xNSA0LjQ1NC0yLjczNi4xMjItMi43ODctMS42OTktMy41OTQtNC4xOTQtMy41OTctMy4wMjMtLjAwNC02LjA1NC0uMDQ4LTkuMDY4LS4yNTktMy4zOS0uMjM3LTUuMTIzLTIuMTctNS41MDgtNS41ODUtLjk1NC04LjQ3NyAxLjI2NS0xMC45OTcgOS44NDgtMTAuOTY1IDQuNTA1LjAxOCA5LjAxLjAwNCAxMy42MzUuMDA0djUuMzQ3Yy00LjIzNyAwLTguMzQ3LS4wMDQtMTIuNDU3LjAwMi0xLjAwOS4wMDEtMi4wNjctLjE1OS0zLjAxNi4wOTEtMS41OTEuNDE4LTMuMTA5IDEuMDI4LTIuODY2IDMuMjQ4LjI0NyAyLjI1MyAxLjczIDIuNCAzLjUwNSAyLjQ1NyAzLjUwNy4xMSA3LjA0My0uMjkyIDEwLjQ5NC44NDYgNC4xOTggMS4zODYgNS4zNTUgMy40NTEgNS4wNTkgOS41OTYtLjIxIDQuMzM0LTEuNzg0IDYuMzYxLTUuOTM4IDYuOTctNS44ODYuODYyLTExLjc5Ny4zNzgtMTguMDg3LjE4Nm0tODUuNDU5LTIyLjYzNWMtNC42ODMgMC04Ljk2Ny0uMDMzLTEzLjI1LjAwOS00Ljg0NC4wNDctNS4wMzkuMzEzLTQuMzc1IDUuODE5aDE1Ljg5MmMuODA1IDEuOTE1LjYzMyAzLjM2Mi4zMyA0LjcxOS00LjIyOSAwLTguMzY4LjAzNS0xMi41MDgtLjAxMy0yLjI0NC0uMDI3LTQuMjgyLS4yODItNC4yMTEgMy4xNDEuMDYzIDMuMDQxIDEuNTA2IDMuNTI2IDQuMDU0IDMuNDU0IDQuNTM5LS4xMjkgOS4wODUtLjAzNiAxMy41NTktLjAzNiAxLjU2NCA0LjkyNSAxLjEzIDUuNjg0LTMuNDU3IDUuNzE2LTQuMTY4LjAyOC04LjM1MS4wNDctMTIuNTAyLS4yNi00LjgxMi0uMzU2LTcuMTQxLTIuNjg4LTcuMzg5LTcuNDc3LS4yNTQtNC45MTctLjIwMi05Ljg1Ny0uMTAxLTE0Ljc4My4wNjUtMy4xNjcgMy42MzYtNS45ODkgOC4xNDctNi4xOTMgNS4xNjEtLjIzMyAxMC4zNDItLjA1NCAxNS41NTctLjA1NC44NjggMS44Ni4zMzggMy41NTMuMjU0IDUuOTU4bTIwMS40MzMtMS44NTFjLTEuNDA5IDIuMDIxLTMuNDgyLjg4Ny01LjIzNSAxLTMuMTQyLjIwMy02LjMwOS0uMDAxLTkuNDUzLjE2Ni0xLjU1NS4wODItMi45NS42ODktMi45MjggMi43MzQuMDIzIDIuMjE3IDEuNTE2IDIuMjk3IDMuMTA5IDIuMzA3IDIuOTAxLjAxNSA1LjgxNy4yMTQgOC43LS4wMTMgMy41NTQtLjI3OSA0LjQ5OSAxLjI4NSAzLjYwNyA1LjEtMy42NjkgMC03LjUyMS4wMTktMTEuMzcyLS4wMDgtMi40MzUtLjAxNy00LjIxOS41MjctNC4xMjggMy41NS4wODQgMi44MDggMS4yMzkgNC4xMzcgNC4xNjIgNC4wNjIgNC41MjQtLjExNSA5LjA1NS0uMDI5IDEzLjgxOS0uMDI5djUuNDE2Yy02LjQ1My40MDItMTMuMDU5LjkxNC0xOS41NDktLjYwNy0yLjczNi0uNjQzLTQuMTM0LTMuMTI2LTQuNDQ1LTUuOTkxLS41Mi00Ljc4Ny0uNDU5LTkuNTg4LjEwNC0xNC4zNTQuNjA2LTUuMTMzIDMuNDE2LTcuNDQxIDguNjYyLTcuNDY5IDQuMDM3LS4wMjEgOC4wNzQtLjAzMiAxMi4xMTEtLjAxNiAxLjMyOC4wMDYgMi45ODMtLjM3MSAyLjgwOSAxLjg5OS0uMDQxLjc1MS0uMDQ0IDEuNTAyLjAyNyAyLjI1M20yOS4xNzItNC4xNjR2NS4xODNjLTMuNzk4IDAtNy40MjgtLjA1NS0xMS4wNTYuMDE1LTQuMzU3LjA4Mi01LjU0MSAxLjMyNS01LjU5NCA1LjcyNi0uMDMxIDIuNjUyLS4wNDcgNS4zMDUuMDE0IDcuOTU2LjA2NSAyLjkwNiAxLjQ2MSA0LjMwMiA0LjUyNCA0LjE4NSA0LjAxMi0uMTUzIDguMDMzLS4wMzggMTIuMjQ4LS4wMzh2NS4wNDdjLTUuNTEzIDAtMTAuODA5LjM0OC0xNi4wMzQtLjEwNS00LjQzOC0uMzg3LTYuNTcyLTMuMjE0LTYuNjYyLTcuNjA3YTM4NyAzODcgMCAwIDEtLjAzMy0xNC43NzFjLjA2NC0zLjcxMiAxLjc0OS01LjQ2OCA1LjQ4OS01LjU1NSA1LjY2My0uMTMyIDExLjMzMS0uMDM2IDE3LjEwNC0uMDM2bS0xMDAuMTg5IDI4LjYxMWMtMi40MzUtLjc4OC00LjExMy0xLjA1OC02LjE1OC4zODMgMC02LjkwNi0uMTU0LTEzLjE0Ni4wNjUtMTkuMzczLjEwOC0zLjA2NS0uNjA0LTQuNjA2LTMuOTI5LTMuOTQ1LS40ODQuMDk2LTEuMDA1LjAxMi0xLjUwOS4wMTMtNC45MDEuMDA5LTQuOTAxLjAwOS00Ljc3NC01LjM5NWgyNi4yNzh2NC41MzJjLTIuMjI0LjgwOC00LjUwNC4zNC02LjcyMy4yNjctMi4zODktLjA3OS0zLjM2OC42Mi0zLjMwNSAzLjE5Ni4xNjIgNi41MzEuMDU1IDEzLjA2OC4wNTUgMjAuMzIybS04Ny41NDItOS4zNzR2LTE5aDYuMjkyYzAgNS43Mi4wMSAxMS4zMzctLjAwMyAxNi45NTMtLjAxMyA1LjgwNC4wMzUgNS44NTUgNS45MjcgNS44NDhxNC41NC0uMDA4IDkuMDgxLjAxOWMuMjM3LjAwMS40NzYuMTM5LjgyMy4yNDcuNzUzIDEuNDg3LjM1NyAzLjA4NC4yMjkgNS4xMS02LjEzOS40MTMtMTIuMjYuNjU2LTE4LjMxMy0uMzgzLTIuNzE5LS40NjgtMy4wOTQtMy4zMTctMy44NjEtNS41NDUtLjIzNi0xLjA3My0uMTk1LTIuMTYxLS4xNzUtMy4yNDlNMjM0LjI3MyAxOTV2LTI3Ljk0YzEuODUzLS43NzkgMy43MTMtLjIwOSA1Ljk2LS41NTQgMCA5LjA0LjI5MSAxNy44MjYtLjE0MSAyNi41NzctLjE3NyAzLjU2OS0zLjUzMyAxLjEzNy01LjgxOSAxLjkxNyIvPgogICAgICA8cGF0aCBkPSJtMTA4LjI0NSAxOTQuNzI4LS4xMzItNy40NTRjLS4wMTctMS4wMDYuMjI5LTEuNzM5IDEuNDg0LTEuNDA4LS42NzcgMi45MTkgMS4yOTYgNi4yNDItMS4zNTIgOC44NjIiLz4KICAgICAgPHBhdGggZD0iTTEyNS44MjkgMTg0LjY3M2M0LjU2MS0yLjU1MSA2LjUxNC02LjM1NyA1LjM2NC0xMS41MDgtMS4xMTYtNS4wMDctNS4xNjgtNS45NzktOS40MzctNi41NDhhOS40IDkuNCAwIDAgMS0xLjYwMy0uMTkzbC0xMC4yOTctLjM5M2MtMi4wNTUtLjMwNi0zLjc3My0uMjI4LTYuMjItLjA3My0xLjQ5Mi45MzEtMS4wMjIgMi40MzMtMS4wMzMgMy43NS0uMDUxIDYuMjY1LS4xMjMgMTIuNTI5LS4wMjcgMTguNzkyLjAzMSAyLjA1NC0uNjgzIDQuMi4zNTQgNi4yMjhoNS4zMTNjLjcyMy0xLjI1My4zODItMi42NDEuNTMyLTMuOTY5LjE4NS0xLjY0My0uNjY1LTMuNDcuODItNC44OTQgOC4xNi0yLjA4MiA3Ljc4MS0xLjgyMiAxMS42OTcgNS4xNjkgMi4zNzcgNC4yNDIgNS41OTEgNC4yMiA5LjY3MSAzLjU4OC0xLjI2NC0zLjU1OS00LjEzMy01Ljk5Mi01LjQ5NS05LjIyMi4xNDUtLjMwMy4xODktLjYzLjM2MS0uNzI3bS00LjEwMi00LjQ3NWMtMS43NjIuMDQyLTMuNTI1LjAwOC01LjI4OS4wMDh2LjAzNGMtMS4wMDggMC0yLjAxNS4wMDQtMy4wMjItLjAwMS00LjYyMS0uMDE5LTUuMDYxLS41ODEtNC42MDctNS4yOC4xNTctMS42MzEuNjU3LTIuNjE1IDIuNDY0LTIuNTkzIDMuNTI1LjA0NyA3LjA1Mi4wMDUgMTAuNTc2LjA2NCAyLjUyNy4wNDMgMy41MjggMS40OTQgMy41MDEgMy45MjMtLjAyOSAyLjQ1MS0xLjE0NyAzLjc4NS0zLjYyMyAzLjg0NW02Ny40MTEtMTAuNTFjLS41NTctMS4zNzctLjExNS00LjQxLTIuODA5LTMuNDIyLTIuODkzIDEuMDYyLTYuOTgyLS45OTgtOC42ODEgMy40NC0yLjY1NSA2Ljk0NC01LjYyNCAxMy43NjktOC4zNTQgMjAuNjg2LS41MTkgMS4zMTUtMS44NDkgMi40NC0xLjE4OCA0LjU3NiAyLjEyNy0uODY5IDUuMzczIDEuNTkgNi4zMjEtMi4xMzQgMS4wNDgtNC4xMTMgMy41MzgtNC44NzIgNy4xOTMtNC41MTcgMi4zNzcuMjMgNC43OTMuMTE1IDcuMTg5LjA2MSAxLjYxMS0uMDM3IDIuNjYxLjQ4NiAyLjk1NSAyLjE4Ni44MSA0LjY3NiAzLjkxMiA0LjgwMiA3LjgyIDMuODA5LTIuODczLTguNzc1LTcuMTQ2LTE2LjUyMy0xMC40NDYtMjQuNjg1bS0xMC45NDIgMTQuMDAyIDUuMTQyLTEyLjkzYzIuNTQyIDQuMzk2IDQuMDM5IDguMDU3IDUuNDA1IDEyLjE2Ny0zLjQgMS4yMzQtNi42MjEuNDEtMTAuNTQ3Ljc2MyIvPgogICAgICA8cGF0aCBkPSJtMjQ1LjQxMyAxNTAuNjY5LjY1NC03MS45LjY0OCA3MS4wMjItLjg3NC44Nzh6Ii8+CiAgICAgIDxwYXRoIGQ9Im0yNDUuMzQxIDE1MC42NjkuNjU1LTcxLjkuNjQ4IDcwLjk2Ni0uODg1LjkzNHoiLz4KICAgIDwvZz4KICA8L3N2Zz4KPC9zdmc+Cg=="
+          alt="Three-tier hierarchy diagram showing Corporate Operating Permit at the base, Principal Operator Licence in the middle, and Apprentice Sandbox at the top, with an Insurance Wrapper bracket spanning all layers"
+          width="920">
+        <br><em>Figure 2: The tiered liability model mirrors civil engineering and logistics.</em>
+      </div>
+    </div>
+
+    <hr />
+    <h2 id="the-proposal-mandatory-autonomous-ai-licensing" class="page-break-before">The Proposal:
+      Mandatory Autonomous AI Licensing</h2>
+    <p>The framework I am proposing is not a ban. It is not a moratorium. It
+      is a <strong>licensing requirement</strong>, a structured, proportionate
+      gateway that ensures anyone deploying autonomous AI systems understands
+      what they are deploying, accepts documented liability, and in return,
+      gets access to the full capability of the tools they are paying for.</p>
+    <h3 id="core-components">Core Components</h3>
+    <p><strong>1. Competency Assessment</strong></p>
+    <p>Before an individual can obtain an <strong>Operator's
+        Licence</strong>, they must pass a <strong>mandatory competency
+        assessment</strong>. This is not a checkbox. It is a genuine test of
+      understanding, covering:</p>
+    <ul>
+      <li>What autonomous operation means in practice</li>
+      <li>The legal liability the operator is accepting</li>
+      <li>How agent chaining and sub-agent spawning work</li>
+      <li>What categories of harm autonomous systems can cause</li>
+      <li>How to set appropriate boundaries, permissions, and kill
+        switches</li>
+      <li>The Standard of Care expected of a Principal Operator</li>
+    </ul>
+    <p><strong>2. Tiered Licensing</strong></p>
+    <p>Not all autonomous <strong>AI</strong> use carries the same risk, and
+      not all users carry the same obligations. The licensing framework splits
+      across both <strong>individual</strong> and <strong>corporate</strong>
+      dimensions:</p>
+    <p><strong>Individual Tiers:</strong></p>
+    <table>
+      <thead>
+        <tr class="header">
+          <th>Tier</th>
+          <th>Who</th>
+          <th>Access</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td><strong>Apprentice (Unlicensed)</strong></td>
+          <td>Junior developers, learners</td>
+          <td>Sandbox/Tier 1 API only, no production deployment</td>
+          <td>None, operates under a Principal Operator's supervision</td>
+        </tr>
+        <tr class="even">
+          <td><strong>Operator's Licence</strong></td>
+          <td>Senior engineers, tech leads, independent professionals</td>
+          <td>Full production deployment, Tier 2 and Tier 3 API access</td>
+          <td>Competency assessment, KYC identity verification</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Corporate Tiers:</strong></p>
+    <table>
+      <thead>
+        <tr class="header">
+          <th>Tier</th>
+          <th>Use Case</th>
+          <th>Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td><strong>Tier 1 - Personal/Startup</strong></td>
+          <td>Low-risk personal use, early-stage products</td>
+          <td>Individual Operator's Licence, standard terms acceptance</td>
+        </tr>
+        <tr class="even">
+          <td><strong>Tier 2 - Professional</strong></td>
+          <td>Business process automation, customer-facing agents</td>
+          <td>Operating Permit, minimum Principal Operators on staff, incident
+            reporting, professional liability insurance</td>
+        </tr>
+        <tr class="odd">
+          <td><strong>Tier 3 - Enterprise</strong></td>
+          <td>Multi-agent systems, financial operations, critical
+            infrastructure</td>
+          <td>Full Operating Permit, mandatory insurance, audit trail
+            requirements, named Principal Operator per system</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>3. Cooling-Off and Attempt Limits</strong></p>
+    <p>Mirroring the <strong>FCA</strong> model: failing the assessment
+      twice triggers a <strong>24-hour cooling-off period</strong>. A maximum
+      of <strong>six attempts</strong> before the user must seek formal
+      training or advice. This is not punitive. It is protective. It ensures
+      that people do not access capabilities they do not understand in a
+      moment of enthusiasm.</p>
+    <p><strong>4. Provider Obligations and Safe Harbour</strong></p>
+    <p><strong>AI model providers</strong> offering autonomous capabilities
+      within a jurisdiction must:</p>
+    <ul>
+      <li>Administer the competency assessment before enabling autonomous
+        features</li>
+      <li>Verify user identity through <strong>credentialed access</strong>
+        (more on this below)</li>
+      <li>Split API access between <strong>Public</strong> and
+        <strong>Autonomous</strong> tiers
+      </li>
+      <li>Maintain records of user and corporate licensing status</li>
+      <li>Implement <strong>kill switches</strong> and <strong>audit
+          trails</strong> as default, not optional</li>
+      <li>Report significant autonomous <strong>AI</strong> incidents to the
+        regulator</li>
+      <li>Refuse service to unlicensed users for restricted tiers</li>
+    </ul>
+    <p>In return, providers who comply receive <strong>safe harbour
+        protection</strong>, shielding them from vicarious liability for the
+      actions of verified, licensed users operating under valid corporate
+      permits. This is not a gift. It is the incentive that makes voluntary
+      compliance rational.</p>
+    <p><strong>5. Chain-of-Liability Registry</strong></p>
+    <p>Every autonomous agent spawned must be logged in a
+      <strong>chain-of-liability registry</strong>, a transparent, auditable
+      record of which agent created which, under whose licence, under which
+      corporate permit, and with what permissions.
+    </p>
+    <p>Here is the hard truth about why this matters: <strong>you cannot
+        insure a ghost.</strong> If an autonomous agent causes financial damage,
+      and there is no legal entity attached to it, no documented chain of who
+      deployed what, then the insurance market cannot function. No underwriter
+      can price the risk. No business can obtain coverage. And without
+      coverage, no serious enterprise will ever adopt autonomous
+      <strong>AI</strong> at scale.
+    </p>
+    <p>The registry is not bureaucracy for its own sake. It is the
+      infrastructure that makes the <strong>insurance market</strong>
+      possible. And the insurance market is the only mechanism that will ever
+      make businesses genuinely comfortable deploying these systems in
+      production.</p>
+    <hr />
+    <h2 id="technical-feasibility-the-api-gateway" class="page-break-before">Technical Feasibility:
+      The API Gateway</h2>
+    <p>The most common objection I hear is: "This is technically
+      impractical. You cannot enforce licensing on someone running a model on
+      their laptop."</p>
+    <p>Fair enough. You cannot. But that objection misses where the actual
+      leverage point is.</p>
+    <p>The reality is that the overwhelming majority of autonomous
+      <strong>AI</strong> agents, well over 90%, do not run on local hardware.
+      They call the APIs of a handful of major providers:
+      <strong>OpenAI</strong>, <strong>Anthropic</strong>,
+      <strong>Google</strong>, <strong>Meta</strong>,
+      <strong>Mistral</strong>, and a few others. The "Big Seven," give or
+      take. This is where the enforcement happens.
+    </p>
+    <p>The mechanism is simple. Providers split their API endpoints:</p>
+    <div class="keep-together">
+      <blockquote>
+        <p><code>api.provider.com/v1/public</code> → Safe, restricted, no
+          autonomous tool use.</p>
+        <p><code>api.provider.com/v1/autonomous</code> → Requires a verified
+          <strong>Licence Key</strong> in the request header.
+        </p>
+      </blockquote>
+    </div>
+    <p>Every API call to the autonomous endpoint checks the licence. No
+      valid licence, no access. The enforcement happens at the <strong>API
+        gateway</strong>, not on the user's device. This is not speculative. It
+      is how API access control already works for every paid service on the
+      internet.</p>
+    <p>We don't need new tech for this. We just need OCSP for Agents (<a
+        href="https://datatracker.ietf.org/doc/html/rfc6960">Online Certificate
+        Status Protocol</a>). Just as a browser checks if a website's SSL
+      certificate has been revoked before loading the page, the Model API
+      checks the Licence Key status before processing the token. It is a
+      millisecond-latency check that already exists in every secure networking
+      protocol.</p>
+    <p>To avoid latency on every single token generation, we use short-lived
+      cryptographic leases (similar to signed <a href="https://datatracker.ietf.org/doc/html/rfc7519">JWTs</a> with a
+      15-minute expiry). The agent effectively has a 'heartbeat'. It checks
+      in, gets a cryptographically signed pass for 15 minutes of compute, and
+      operates freely. If the status changes, the lease is simply not renewed.
+      This balances absolute control with system resilience, if the licensing
+      server blinks, the global fleet does not stall immediately.</p>
+    <p>Does this catch everyone? No. Someone running a fully self-hosted
+      open-source model locally is outside this mechanism. But that edge case
+      does not invalidate the framework any more than the existence of
+      unlicensed drivers invalidates the driving test. You regulate where it
+      is practical. The API gateway is practical.</p>
+    <hr />
+    <h2 id="the-kill-switch-ocsp-for-agents-remote-licence-revocation" class="page-break-before">The
+      Kill Switch (OCSP for Agents): Remote Licence Revocation</h2>
+    <p>Audit trails are important, but they have a fundamental weakness:
+      they are retrospective. They tell you what happened. They do not stop
+      what is happening right now.</p>
+    <p>Consider the scenario: an autonomous agent starts executing harmful
+      actions at speed, sending phishing emails, making bad trades, scraping
+      data it should not have, deploying code with security vulnerabilities.
+      By the time a human reviews an audit log, the damage is done.</p>
+    <p>The framework must include a <strong>real-time kill switch</strong>,
+      and the licensing mechanism makes this trivially simple.</p>
+    <p>Here is how it works:</p>
+    <div class="keep-together">
+      <blockquote>
+        <p><strong>Step one.</strong> A regulator or provider identifies a
+          runaway agent, either through automated monitoring, incident reporting,
+          or complaint.</p>
+        <p><strong>Step two.</strong> The licence associated with that agent is
+          <strong>revoked</strong> in the system.
+        </p>
+        <p><strong>Step three.</strong> The agent's next API call returns
+          <strong><code>403 Forbidden</code></strong>.
+        </p>
+        <p><strong>Step four.</strong> The agent effectively dies, because its
+          brain has been cut off.</p>
+      </blockquote>
+    </div>
+    <div class="keep-together">
+      <div align="center">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgOTYwIDM0MCIgd2lkdGg9Ijk2MCIgaGVpZ2h0PSIzNDAiIGZvbnQtZmFtaWx5PSInU2Vnb2UgVUknLCAnSGVsdmV0aWNhIE5ldWUnLCBBcmlhbCwgc2Fucy1zZXJpZiI+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3dMIj4KICAgICAgPGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEiIHN0ZERldmlhdGlvbj0iMiIgZmxvb2QtY29sb3I9IiMwMDAiIGZsb29kLW9wYWNpdHk9IjAuMDgiLz4KICAgIDwvZmlsdGVyPgogICAgPG1hcmtlciBpZD0iYXJyb3dMaWdodCIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI5IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI4IiBvcmllbnQ9ImF1dG8tc3RhcnQtcmV2ZXJzZSI+CiAgICAgIDxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgZmlsbD0iIzk1YTVhNiIvPgogICAgPC9tYXJrZXI+CiAgICA8bWFya2VyIGlkPSJhcnJvd1JlZCIgdmlld0JveD0iMCAwIDEwIDEwIiByZWZYPSI5IiByZWZZPSI1IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VySGVpZ2h0PSI4IiBvcmllbnQ9ImF1dG8tc3RhcnQtcmV2ZXJzZSI+CiAgICAgIDxwYXRoIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIgZmlsbD0iI2MwMzkyYiIvPgogICAgPC9tYXJrZXI+CiAgICA8bWFya2VyIGlkPSJhcnJvd0dyZWVuIiB2aWV3Qm94PSIwIDAgMTAgMTAiIHJlZlg9IjkiIHJlZlk9IjUiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJIZWlnaHQ9IjgiIG9yaWVudD0iYXV0by1zdGFydC1yZXZlcnNlIj4KICAgICAgPHBhdGggZD0iTSAwIDAgTCAxMCA1IEwgMCAxMCB6IiBmaWxsPSIjMjdhZTYwIi8+CiAgICA8L21hcmtlcj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ia2lsbEdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZTc0YzNjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MwMzkyYiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iOTYwIiBoZWlnaHQ9IjM0MCIgcng9IjgiIGZpbGw9IiNmOGY5ZmEiLz4KICA8cmVjdCB4PSIxIiB5PSIxIiB3aWR0aD0iOTU4IiBoZWlnaHQ9IjMzOCIgcng9IjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RlZTJlNiIgc3Ryb2tlLXdpZHRoPSIxIi8+CgogIDwhLS0gVGl0bGUgLS0+CiAgPHRleHQgeD0iNDgwIiB5PSIzOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJjM2U1MCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCIgbGV0dGVyLXNwYWNpbmc9IjEuNSI+TEVBU0UgJmFtcDsgS0lMTCBTV0lUQ0ggRkxPVzwvdGV4dD4KICA8bGluZSB4MT0iMTgwIiB5MT0iNTAiIHgyPSI3ODAiIHkyPSI1MCIgc3Ryb2tlPSIjZGVlMmU2IiBzdHJva2Utd2lkdGg9IjEiLz4KCiAgPCEtLSBEYXNoZWQgdmVydGljYWwgZGl2aWRlciBsaW5lcyBmcm9tIHN0ZXAgbGFiZWxzIC0tPgogIDxsaW5lIHgxPSIxMDUiIHkxPSI4OCIgeDI9IjEwNSIgeTI9IjI1MCIgc3Ryb2tlPSIjZThlY2VmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQsNCIvPgogIDxsaW5lIHgxPSIyOTAiIHkxPSI4OCIgeDI9IjI5MCIgeTI9IjI1MCIgc3Ryb2tlPSIjZThlY2VmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQsNCIvPgogIDxsaW5lIHgxPSI0NzUiIHkxPSI4OCIgeDI9IjQ3NSIgeTI9IjI1MCIgc3Ryb2tlPSIjZThlY2VmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQsNCIvPgogIDxsaW5lIHgxPSI3MzUiIHkxPSI4OCIgeDI9IjczNSIgeTI9IjI1MCIgc3Ryb2tlPSIjZjBkNWQ1IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQsNCIvPgoKICA8IS0tIFN0ZXAgbGFiZWxzIHJvdyAtLT4KICA8dGV4dCB4PSIxMDUiIHk9Ijc4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTVhNWE2IiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMS41Ij5TVEVQIDE8L3RleHQ+CiAgPHRleHQgeD0iMjkwIiB5PSI3OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzk1YTVhNiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjYwMCIgbGV0dGVyLXNwYWNpbmc9IjEuNSI+U1RFUCAyPC90ZXh0PgogIDx0ZXh0IHg9IjQ3NSIgeT0iNzgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM5NWE1YTYiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSI2MDAiIGxldHRlci1zcGFjaW5nPSIxLjUiPlNURVAgMzwvdGV4dD4KICA8dGV4dCB4PSI3MzUiIHk9Ijc4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzAzOTJiIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMS41IiBvcGFjaXR5PSIwLjUiPlNURVAgNC01PC90ZXh0PgoKICA8IS0tIFN0ZXAgMTogQWdlbnQgcmVxdWVzdHMgdG9rZW4gLyBHYXRld2F5IGNoZWNrcyBsaWNlbmNlIC0tPgogIDxyZWN0IHg9IjQwIiB5PSIxMDAiIHdpZHRoPSIxMzAiIGhlaWdodD0iNTUiIHJ4PSI2IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMyOTgwYjkiIHN0cm9rZS13aWR0aD0iMiIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iMTA1IiB5PSIxMjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMxYTVhN2EiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSI2MDAiPkFnZW50IFJlcXVlc3RzPC90ZXh0PgogIDx0ZXh0IHg9IjEwNSIgeT0iMTM4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMWE1YTdhIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNjAwIj5Ub2tlbjwvdGV4dD4KCiAgPCEtLSBBcnJvdyBTdGVwIDFhIC0+IEdhdGV3YXkgLS0+CiAgPGxpbmUgeDE9IjEwNSIgeTE9IjE1NSIgeDI9IjEwNSIgeTI9IjE3NSIgc3Ryb2tlPSIjOTVhNWE2IiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvd0xpZ2h0KSIvPgoKICA8IS0tIEdhdGV3YXkgY2hlY2sgLS0+CiAgPHJlY3QgeD0iNDAiIHk9IjE4MCIgd2lkdGg9IjEzMCIgaGVpZ2h0PSI1MCIgcng9IjYiIGZpbGw9IiNlOGY1ZTkiIHN0cm9rZT0iIzI3YWU2MCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbHRlcj0idXJsKCNzaGFkb3dMKSIvPgogIDx0ZXh0IHg9IjEwNSIgeT0iMjAyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMWI3YTNkIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNjAwIj5BUEkgR2F0ZXdheTwvdGV4dD4KICA8dGV4dCB4PSIxMDUiIHk9IjIxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzRhN2E1YSIgZm9udC1zaXplPSI5Ij5DaGVja3MgTGljZW5jZTwvdGV4dD4KCiAgPCEtLSBBcnJvdyBHYXRld2F5IC0+IFN0ZXAgMiAtLT4KICA8bGluZSB4MT0iMTcwIiB5MT0iMjA1IiB4Mj0iMjIwIiB5Mj0iMjA1IiBzdHJva2U9IiM5NWE1YTYiIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93TGlnaHQpIi8+CiAgPHRleHQgeD0iMTk1IiB5PSIxOTciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyN2FlNjAiIGZvbnQtc2l6ZT0iOSIgZm9udC13ZWlnaHQ9IjYwMCI+VkFMSUQ8L3RleHQ+CgogIDwhLS0gU3RlcCAyOiAxNS1taW4gTGVhc2UgLS0+CiAgPHJlY3QgeD0iMjI1IiB5PSIxODAiIHdpZHRoPSIxMzAiIGhlaWdodD0iNTAiIHJ4PSI2IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMyOTgwYjkiIHN0cm9rZS13aWR0aD0iMS41IiBmaWx0ZXI9InVybCgjc2hhZG93TCkiLz4KICA8dGV4dCB4PSIyOTAiIHk9IjIwMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzFhNWE3YSIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9IjYwMCI+MTUtbWluIExlYXNlPC90ZXh0PgogIDx0ZXh0IHg9IjI5MCIgeT0iMjE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNGE3YTlhIiBmb250LXNpemU9IjkiPlNpZ25lZCBKV1Q8L3RleHQ+CgogIDwhLS0gQXJyb3cgU3RlcCAyIC0+IFN0ZXAgMyAtLT4KICA8bGluZSB4MT0iMzU1IiB5MT0iMjA1IiB4Mj0iNDA1IiB5Mj0iMjA1IiBzdHJva2U9IiM5NWE1YTYiIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93TGlnaHQpIi8+CiAgPHRleHQgeD0iMzgwIiB5PSIxOTciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM3ZjhjOGQiIGZvbnQtc2l6ZT0iOSIgZm9udC1zdHlsZT0iaXRhbGljIj5ncmFudGVkPC90ZXh0PgoKICA8IS0tIFN0ZXAgMzogQWdlbnQgT3BlcmF0ZXMgLS0+CiAgPHJlY3QgeD0iNDEwIiB5PSIxODAiIHdpZHRoPSIxMzAiIGhlaWdodD0iNTAiIHJ4PSI2IiBmaWxsPSIjZThmNWU5IiBzdHJva2U9IiMyN2FlNjAiIHN0cm9rZS13aWR0aD0iMiIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNDc1IiB5PSIyMDEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMxYjdhM2QiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSI2MDAiPkFnZW50IE9wZXJhdGVzPC90ZXh0PgogIDx0ZXh0IHg9IjQ3NSIgeT0iMjE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNGE3YTVhIiBmb250LXNpemU9IjkiPkFjdGl2ZSBTZXNzaW9uPC90ZXh0PgoKICA8IS0tIE5vcm1hbCBvcGVyYXRpb24gbG9vcC1iYWNrOiBBZ2VudCBPcGVyYXRlcyAtPiBBZ2VudCBSZXF1ZXN0cyBUb2tlbiAtLT4KICA8cGF0aCBkPSJNIDQ1MCAxODAgTCA0NTAgMTI3IEwgMTcwIDEyNyIgc3Ryb2tlPSIjMjdhZTYwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWRhc2hhcnJheT0iNiwzIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93R3JlZW4pIi8+CiAgPHRleHQgeD0iMzEwIiB5PSIxMjEiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyN2FlNjAiIGZvbnQtc2l6ZT0iOSIgZm9udC1zdHlsZT0iaXRhbGljIj5sZWFzZSBleHBpcmVzIC0tIHJlbmV3PC90ZXh0PgoKICA8IS0tIEFycm93IFN0ZXAgMyAtPiByZXZvY2F0aW9uIHpvbmUgLS0+CiAgPGxpbmUgeDE9IjU0MCIgeTE9IjIwNSIgeDI9IjU5NSIgeTI9IjIwNSIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvd1JlZCkiLz4KICA8dGV4dCB4PSI1NjciIHk9IjE5NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2MwMzkyYiIgZm9udC1zaXplPSI4IiBmb250LXN0eWxlPSJpdGFsaWMiPmluY2lkZW50PC90ZXh0PgoKICA8IS0tID09PT0gUkVWT0NBVElPTiBCT1VORElORyBCT1ggPT09PSAtLT4KICA8cmVjdCB4PSI1ODUiIHk9IjEzNSIgd2lkdGg9IjM1NSIgaGVpZ2h0PSIxMTUiIHJ4PSI4IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI4LDQiIG9wYWNpdHk9IjAuMzUiLz4KICA8dGV4dCB4PSI3NjIiIHk9IjE1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2MwMzkyYiIgZm9udC1zaXplPSI5IiBmb250LXdlaWdodD0iNjAwIiBsZXR0ZXItc3BhY2luZz0iMiIgb3BhY2l0eT0iMC42Ij5SRVZPQ0FUSU9OIFpPTkU8L3RleHQ+CgogIDwhLS0gU3RlcCA0OiBLaWxsIFN3aXRjaCBBY3RpdmF0ZWQgLS0+CiAgPHJlY3QgeD0iNjEwIiB5PSIxNzUiIHdpZHRoPSIxMzAiIGhlaWdodD0iNjAiIHJ4PSI2IiBmaWxsPSJ1cmwoI2tpbGxHcmFkKSIgZmlsdGVyPSJ1cmwoI3NoYWRvd0wpIi8+CiAgPHRleHQgeD0iNjc1IiB5PSIyMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNmZmYiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSIwLjUiPktJTEwgU1dJVENIPC90ZXh0PgogIDx0ZXh0IHg9IjY3NSIgeT0iMjE3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZmZkNWQwIiBmb250LXNpemU9IjkiPkxpY2VuY2UgUmV2b2tlZDwvdGV4dD4KCiAgPCEtLSBBcnJvdyBTdGVwIDQgLT4gU3RlcCA1IC0tPgogIDxsaW5lIHgxPSI3NDAiIHkxPSIyMDUiIHgyPSI3OTAiIHkyPSIyMDUiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3dSZWQpIi8+CgogIDwhLS0gU3RlcCA1OiBSZW5ld2FsIERlbmllZCAtLT4KICA8cmVjdCB4PSI3OTUiIHk9IjE3MCIgd2lkdGg9IjEyNSIgaGVpZ2h0PSI2MCIgcng9IjYiIGZpbGw9IiNmY2U0ZWMiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbHRlcj0idXJsKCNzaGFkb3dMKSIvPgogIDx0ZXh0IHg9Ijg1OCIgeT0iMTkzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOGExYTFhIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iNjAwIj5SZW5ld2FsIFJlcXVlc3Q8L3RleHQ+CiAgPHRleHQgeD0iODU4IiB5PSIyMDkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNjMDM5MmIiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI3MDAiPjQwMyBGT1JCSURERU48L3RleHQ+CiAgPHRleHQgeD0iODU4IiB5PSIyMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM4YTRhNGEiIGZvbnQtc2l6ZT0iOSI+QWdlbnQgSGFsdHM8L3RleHQ+CgogIDwhLS0gRXhwbGFuYXRvcnkgYW5ub3RhdGlvbnMgLS0+CiAgPHRleHQgeD0iNDQwIiB5PSIyNzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM3ZjhjOGQiIGZvbnQtc2l6ZT0iMTEiPlNob3J0LWxpdmVkIGNyeXB0b2dyYXBoaWMgbGVhc2VzIGFjdCBhcyBhIGhlYXJ0YmVhdC4gUmV2b2tlIHRoZSBsaWNlbmNlIGFuZCB0aGUgbGVhc2UgaXMgc2ltcGx5IG5vdCByZW5ld2VkLjwvdGV4dD4KICA8dGV4dCB4PSI0NDAiIHk9IjI4OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzdmOGM4ZCIgZm9udC1zaXplPSIxMSI+Tm8gcGh5c2ljYWwgYWNjZXNzIHJlcXVpcmVkLiBDdXQgb2ZmIHRoZSBBUEksIGN1dCBvZmYgdGhlIGFnZW50LiBJbnN0YW50bHkuPC90ZXh0PgoKICA8IS0tIFNlY3Rpb24gbGFiZWwgLS0+CiAgPHRleHQgeD0iNDQwIiB5PSIzMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNiZGMzYzciIGZvbnQtc2l6ZT0iMTAiIGxldHRlci1zcGFjaW5nPSIzIj5PQ1NQIEZPUiBBR0VOVFM8L3RleHQ+CgogIDwhLS0gV2F0ZXJtYXJrIC0tPgogIDxzdmcgeD0iODQwIiB5PSIyOTUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0OTMgMjc2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiBvcGFjaXR5PSIwLjE1Ij4KICAgIDxzdHlsZT5zdmcgc3ZnIHBhdGgsIHN2ZyBzdmcgcG9seWdvbiB7IGZpbGw6ICMyYzNlNTAgIWltcG9ydGFudDsgfTwvc3R5bGU+CiAgICA8Zz4KICAgICAgPHBhdGggZD0iTTI4Mi45MzggNzYuMTZjLTExLjM2NS0zLjgzNC0yMi45MDUtNy4wNDQtMzQuNTQ4LTkuODk1LTEuODI3LS40NDctMy42NDUtLjY1OS01LjU4NS0uMTYzLTExLjg0NSAzLjAzLTIzLjY2NCA2LjEzNy0zNS4zMjYgOS44MzEtMi4wNjkuNjU1LTIuODYyIDEuNTczLTIuNzcxIDMuNzIxLjI3NSA2LjU2NS4xODggMTMuMTUyLjYzOSAxOS43MDIuNjkzIDEwLjA5NCAxLjY5IDIwLjEzMiA3LjE3NiAyOS4xMTIgNy40NCAxMi4xODIgMTguNjQyIDE5Ljk0NSAzMC43NDQgMjYuNzEzIDEuNTQ5Ljg2NSAyLjg1NC4xOTggNC4yNTktLjUyMyA1LjgzNS0yLjk5OSAxMC45MzEtNy4wNzEgMTUuODcxLTExLjI3MiA4LjU4LTcuMjk4IDE3LjExLTE0Ljc0NCAxOS44NTMtMjYuNDU4IDEuOTk4LTguNTMxIDIuNjUtMTcuMjExIDMuMDg3LTI1Ljk0NyAwLTMuMjg0LS4xOTktNi41ODMuMDYtOS44NDcuMjIxLTIuODA4LS45MzctNC4xMjMtMy40NTktNC45NzRtLTUuMjM5IDM5Ljc0M2MtMS4zODMgNy4zMTMtNS4zNTEgMTMuMjExLTExLjIyMyAxNy44NDctMi4wNTUgMS42MjItMy45MzIgMy40NzktNS44MTggNS4zMDMtLjgzNy44MS0xLjU1NyAxLjY2Mi0zLjEwNCAxLjE4OC0uNDQ3LTMuNjg4LS4xODctNy40NDQtLjAyNS0xMS4xOTkuMDU4LTEuMzE4IDEuMDIxLTEuODkgMS45NzMtMi41NjggNS40MDctMy44NTcgNy4xNzUtOS4yNzYgNi40OTctMTUuNjYtLjIxMi0xLjk5MS0uMDEzLTMuNDE2IDIuNDU5LTMuNzMyIDMuNTEtLjQ0NyA0Ljg5Ni0yLjk0NyA0Ljg5Mi02LjE2Ni0uMDA1LTMuNTU5LTEuNzY2LTUuODg3LTUuMzk2LTYuNzYyLTMuMTY5LS43NjQtNS43MTEuMjM4LTcuNDQyIDIuNzQxLTEuOTE2IDIuNzctMS42ODggNS43MTUuNTcxIDguMzM0LjY1Ni43NjEgMS40NTggMS4zOTYgMi4yOTQgMi4xODQuNTkyLjg1OC0uNzE2IDEuNDMxLS41OCAyLjI5OSAxLjA1IDYuNjg2LTIuMDU5IDExLjIzNy03LjU2IDE0LjQ1Ny0xLjQ4NC44NjktMS41MTIgMi4xMTYtMS41MjYgMy40ODktLjA0NyA0LjI5Ny0uNDE2IDguNjIzLS4wMzggMTIuODgyLjM4IDQuMjg4LTIuNjY2IDUuMjY5LTUuOTQ3IDcuOTM2LS4wMTgtMjMuODAxLjE4OC00Ni40ODctLjc5Mi02OS4xNDFsLTEuNjczLS4wMjUtLjgxNSA2OS45ODJjLTQuMTc4LS45MDMtNS45OTYtMi41MjYtNS43MjItNi40OTguMzQ4LTUuMDMxLS4xMjUtMTAuMTE4LjE4MS0xNS4xNTUuMTg4LTMuMDk1LS40MTMtNS41MjQtMy4yMTItNi45NTEtNS4yNTYtMi42OC02Ljc3MS02Ljk3Ni01LjkzOC0xMi41MzIuMjQtMS42MDQuMTExLTMuMjkxLS4wNTMtNC45Mi0uMjY3LTIuNjQ4LjExNy00LjYyMSAyLjY0My02LjQwNyAzLjUxNS0yLjQ4NiAzLjU2My03Ljc5MS42NjctMTAuNzM1LTIuOTExLTIuOTU5LTcuMTg4LTIuNzk2LTEwLjQyOC4zOTctMi44MzkgMi43OTgtMi45NDcgNy4zNTcuNTAzIDkuOTc1IDIuNzE4IDIuMDYyIDIuNjkxIDQuMzkzIDIuODQgNy4yMTMuMjY0IDQuOTgtMS4xNDggMTAuMTA3IDEuMTMzIDE0LjkzNGwuNDY3Ljc1NWM2LjQxNSAzLjAyNSA5LjQyNSA3Ljc3MSA4LjE0MiAxNS4wNzUtLjQ3IDIuNjctLjA3NiA1LjQ5Mi0uMDc2IDcuOTc4LS43ODUuNjE2LTEuMjcxLjU4Ny0xLjcxOC4yODctOC44MTQtNS45MDItMTUuODY3LTEzLjM4OS0xOS42MDgtMjMuNDI2LTIuNDItNi40OTQtMi41NTgtMTMuNTE0LTMuNDAzLTIwLjM0OS0uNjk3LTUuNjMtMS4wNjQtMTEuMjc0LS43NjctMTcuMjc0IDcuNDM2LTIuOTk3IDE1LjI0NS01LjMwNSAyMy4xNTEtNy4zNTQgMi42OTUtLjY5NyA1LjQ4Ny0uOTg3IDguMDE1LTIuNTExIDEuNDIyLS44NTcgMy4xNjktMS4xNzggNS4yMjgtLjQzOCA5Ljg0OCAzLjU0IDIwLjMxOCA0Ljg5IDMwLjIwNSA4LjQyMiAzLjI3IDEuMTY5IDQuMDcgMi45MzMgNC4wNDMgNi4xNDEtLjA5IDEwLjA5OS0xLjE3IDIwLjA5NS0zLjA0IDI5Ljk4NG0tMTQuNzQ3LTE0LjkxNGMuMDczLTIuMTM2IDEuMjM4LTMuNjUgMy40NzgtMy41OTYgMS45NzkuMDQ3IDMuMTIzIDEuMzUxIDMuMzQgMy40NjMtLjQ0OSAxLjg2OC0xLjE2OCAzLjYyNy0zLjU1MSAzLjQ4OS0xLjk3OS0uMTE1LTMuMzQtMS4yMzUtMy4yNjctMy4zNTZtLTM1LjE1OC02LjAxMmMtMi4wODUtLjE4Ni0zLjY1NC0xLjMyOS0zLjUxNy0zLjYzMy4xNC0yLjMzMSAxLjczOC0zLjg0NiAzLjk1My0zLjcyOSAyLjEwOC4xMSAyLjg4NSAyLjA4OSAzLjM5NiAzLjU5Mi0uNDI3IDIuNTQ0LTEuNTQxIDMuOTc0LTMuODMyIDMuNzciLz4KICAgICAgPHBhdGggZD0iTTMwOC4xOTggMTk0LjcyNXYtNS41NzdjNC40OTIgMCA4Ljk4Ni4wMjEgMTMuNDc5LS4wMTMgMS4yNTMtLjAxIDIuNTUxLS4wMDQgMy43NDYtLjMxOCAxLjYwOS0uNDIyIDIuNTY1LTEuNTggMi40MzktMy4zNTgtLjEyNi0xLjc3LTEuMzgzLTIuMjkxLTIuODgxLTIuMzYxLTMuMTQ3LS4xNDYtNi4zMDQtLjE1LTkuNDQ4LS4zNC01LjA4Ni0uMzA2LTcuMzIzLTIuODU3LTcuMjQ5LTguMS4wOC01LjY1MSAyLjYzMS04LjUxNCA3Ljc2MS04LjU1OSA1Ljg5OC0uMDUgMTEuNzk4LS4wMTIgMTcuNTUyLS4wMTIuNzg0IDEuODYxLjIyNyAzLjIwOS4zMTcgNS4yNDMtNS4xNTYgMC0xMC4yNi0uMDA5LTE1LjM2My4wMDctMS4yMzkuMDA0LTIuNTQ1LS4xOTQtMy40NTUgMS4wMjMtMS40ODQgMS45ODQtLjM1NCA0LjY2NCAyLjE3OSA0Ljk4IDMuNjE5LjQ1MyA3LjI4MS0uNDAzIDEwLjkxNy41NjMgNC45NjggMS4zMTkgNi4yOTkgMy4wOTUgNi4wMDQgOC43NzQtLjI1MiA0LjgzOC0yLjM4OSA3LjM4Mi02Ljg4OSA3Ljk3Mi02LjI4My44MjQtMTIuNTY2LjMxMi0xOS4xMDkuMDc2bS02MC41MDQuMTA3di01LjYxYzQuNjU1IDAgOS4zOTYtLjAxIDE0LjEzOS4wMDUgMi4wNzEuMDA2IDQuMzI4LjE1IDQuNDU0LTIuNzM2LjEyMi0yLjc4Ny0xLjY5OS0zLjU5NC00LjE5NC0zLjU5Ny0zLjAyMy0uMDA0LTYuMDU0LS4wNDgtOS4wNjgtLjI1OS0zLjM5LS4yMzctNS4xMjMtMi4xNy01LjUwOC01LjU4NS0uOTU0LTguNDc3IDEuMjY1LTEwLjk5NyA5Ljg0OC0xMC45NjUgNC41MDUuMDE4IDkuMDEuMDA0IDEzLjYzNS4wMDR2NS4zNDdjLTQuMjM3IDAtOC4zNDctLjAwNC0xMi40NTcuMDAyLTEuMDA5LjAwMS0yLjA2Ny0uMTU5LTMuMDE2LjA5MS0xLjU5MS40MTgtMy4xMDkgMS4wMjgtMi44NjYgMy4yNDguMjQ3IDIuMjUzIDEuNzMgMi40IDMuNTA1IDIuNDU3IDMuNTA3LjExIDcuMDQzLS4yOTIgMTAuNDk0Ljg0NiA0LjE5OCAxLjM4NiA1LjM1NSAzLjQ1MSA1LjA1OSA5LjU5Ni0uMjEgNC4zMzQtMS43ODQgNi4zNjEtNS45MzggNi45Ny01Ljg4Ni44NjItMTEuNzk3LjM3OC0xOC4wODcuMTg2bS04NS40NTktMjIuNjM1Yy00LjY4MyAwLTguOTY3LS4wMzMtMTMuMjUuMDA5LTQuODQ0LjA0Ny01LjAzOS4zMTMtNC4zNzUgNS44MTloMTUuODkyYy44MDUgMS45MTUuNjMzIDMuMzYyLjMzIDQuNzE5LTQuMjI5IDAtOC4zNjguMDM1LTEyLjUwOC0uMDEzLTIuMjQ0LS4wMjctNC4yODItLjI4Mi00LjIxMSAzLjE0MS4wNjMgMy4wNDEgMS41MDYgMy41MjYgNC4wNTQgMy40NTQgNC41MzktLjEyOSA5LjA4NS0uMDM2IDEzLjU1OS0uMDM2IDEuNTY0IDQuOTI1IDEuMTMgNS42ODQtMy40NTcgNS43MTYtNC4xNjguMDI4LTguMzUxLjA0Ny0xMi41MDItLjI2LTQuODEyLS4zNTYtNy4xNDEtMi42ODgtNy4zODktNy40NzctLjI1NC00LjkxNy0uMjAyLTkuODU3LS4xMDEtMTQuNzgzLjA2NS0zLjE2NyAzLjYzNi01Ljk4OSA4LjE0Ny02LjE5MyA1LjE2MS0uMjMzIDEwLjM0Mi0uMDU0IDE1LjU1Ny0uMDU0Ljg2OCAxLjg2LjMzOCAzLjU1My4yNTQgNS45NThtMjAxLjQzMy0xLjg1MWMtMS40MDkgMi4wMjEtMy40ODIuODg3LTUuMjM1IDEtMy4xNDIuMjAzLTYuMzA5LS4wMDEtOS40NTMuMTY2LTEuNTU1LjA4Mi0yLjk1LjY4OS0yLjkyOCAyLjczNC4wMjMgMi4yMTcgMS41MTYgMi4yOTcgMy4xMDkgMi4zMDcgMi45MDEuMDE1IDUuODE3LjIxNCA4LjctLjAxMyAzLjU1NC0uMjc5IDQuNDk5IDEuMjg1IDMuNjA3IDUuMS0zLjY2OSAwLTcuNTIxLjAxOS0xMS4zNzItLjAwOC0yLjQzNS0uMDE3LTQuMjE5LjUyNy00LjEyOCAzLjU1LjA4NCAyLjgwOCAxLjIzOSA0LjEzNyA0LjE2MiA0LjA2MiA0LjUyNC0uMTE1IDkuMDU1LS4wMjkgMTMuODE5LS4wMjl2NS40MTZjLTYuNDUzLjQwMi0xMy4wNTkuOTE0LTE5LjU0OS0uNjA3LTIuNzM2LS42NDMtNC4xMzQtMy4xMjYtNC40NDUtNS45OTEtLjUyLTQuNzg3LS40NTktOS41ODguMTA0LTE0LjM1NC42MDYtNS4xMzMgMy40MTYtNy40NDEgOC42NjItNy40NjkgNC4wMzctLjAyMSA4LjA3NC0uMDMyIDEyLjExMS0uMDE2IDEuMzI4LjAwNiAyLjk4My0uMzcxIDIuODA5IDEuODk5LS4wNDEuNzUxLS4wNDQgMS41MDIuMDI3IDIuMjUzbTI5LjE3Mi00LjE2NHY1LjE4M2MtMy43OTggMC03LjQyOC0uMDU1LTExLjA1Ni4wMTUtNC4zNTcuMDgyLTUuNTQxIDEuMzI1LTUuNTk0IDUuNzI2LS4wMzEgMi42NTItLjA0NyA1LjMwNS4wMTQgNy45NTYuMDY1IDIuOTA2IDEuNDYxIDQuMzAyIDQuNTI0IDQuMTg1IDQuMDEyLS4xNTMgOC4wMzMtLjAzOCAxMi4yNDgtLjAzOHY1LjA0N2MtNS41MTMgMC0xMC44MDkuMzQ4LTE2LjAzNC0uMTA1LTQuNDM4LS4zODctNi41NzItMy4yMTQtNi42NjItNy42MDdhMzg3IDM4NyAwIDAgMS0uMDMzLTE0Ljc3MWMuMDY0LTMuNzEyIDEuNzQ5LTUuNDY4IDUuNDg5LTUuNTU1IDUuNjYzLS4xMzIgMTEuMzMxLS4wMzYgMTcuMTA0LS4wMzZtLTEwMC4xODkgMjguNjExYy0yLjQzNS0uNzg4LTQuMTEzLTEuMDU4LTYuMTU4LjM4MyAwLTYuOTA2LS4xNTQtMTMuMTQ2LjA2NS0xOS4zNzMuMTA4LTMuMDY1LS42MDQtNC42MDYtMy45MjktMy45NDUtLjQ4NC4wOTYtMS4wMDUuMDEyLTEuNTA5LjAxMy00LjkwMS4wMDktNC45MDEuMDA5LTQuNzc0LTUuMzk1aDI2LjI3OHY0LjUzMmMtMi4yMjQuODA4LTQuNTA0LjM0LTYuNzIzLjI2Ny0yLjM4OS0uMDc5LTMuMzY4LjYyLTMuMzA1IDMuMTk2LjE2MiA2LjUzMS4wNTUgMTMuMDY4LjA1NSAyMC4zMjJtLTg3LjU0Mi05LjM3NHYtMTloNi4yOTJjMCA1LjcyLjAxIDExLjMzNy0uMDAzIDE2Ljk1My0uMDEzIDUuODA0LjAzNSA1Ljg1NSA1LjkyNyA1Ljg0OHE0LjU0LS4wMDggOS4wODEuMDE5Yy4yMzcuMDAxLjQ3Ni4xMzkuODIzLjI0Ny43NTMgMS40ODcuMzU3IDMuMDg0LjIyOSA1LjExLTYuMTM5LjQxMy0xMi4yNi42NTYtMTguMzEzLS4zODMtMi43MTktLjQ2OC0zLjA5NC0zLjMxNy0zLjg2MS01LjU0NS0uMjM2LTEuMDczLS4xOTUtMi4xNjEtLjE3NS0zLjI0OU0yMzQuMjczIDE5NXYtMjcuOTRjMS44NTMtLjc3OSAzLjcxMy0uMjA5IDUuOTYtLjU1NCAwIDkuMDQuMjkxIDE3LjgyNi0uMTQxIDI2LjU3Ny0uMTc3IDMuNTY5LTMuNTMzIDEuMTM3LTUuODE5IDEuOTE3Ii8+CiAgICAgIDxwYXRoIGQ9Im0xMDguMjQ1IDE5NC43MjgtLjEzMi03LjQ1NGMtLjAxNy0xLjAwNi4yMjktMS43MzkgMS40ODQtMS40MDgtLjY3NyAyLjkxOSAxLjI5NiA2LjI0Mi0xLjM1MiA4Ljg2MiIvPgogICAgICA8cGF0aCBkPSJNMTI1LjgyOSAxODQuNjczYzQuNTYxLTIuNTUxIDYuNTE0LTYuMzU3IDUuMzY0LTExLjUwOC0xLjExNi01LjAwNy01LjE2OC01Ljk3OS05LjQzNy02LjU0OGE5LjQgOS40IDAgMCAxLTEuNjAzLS4xOTNsLTEwLjI5Ny0uMzkzYy0yLjA1NS0uMzA2LTMuNzczLS4yMjgtNi4yMi0uMDczLTEuNDkyLjkzMS0xLjAyMiAyLjQzMy0xLjAzMyAzLjc1LS4wNTEgNi4yNjUtLjEyMyAxMi41MjktLjAyNyAxOC43OTIuMDMxIDIuMDU0LS42ODMgNC4yLjM1NCA2LjIyOGg1LjMxM2MuNzIzLTEuMjUzLjM4Mi0yLjY0MS41MzItMy45NjkuMTg1LTEuNjQzLS42NjUtMy40Ny44Mi00Ljg5NCA4LjE2LTIuMDgyIDcuNzgxLTEuODIyIDExLjY5NyA1LjE2OSAyLjM3NyA0LjI0MiA1LjU5MSA0LjIyIDkuNjcxIDMuNTg4LTEuMjY0LTMuNTU5LTQuMTMzLTUuOTkyLTUuNDk1LTkuMjIyLjE0NS0uMzAzLjE4OS0uNjMuMzYxLS43MjdtLTQuMTAyLTQuNDc1Yy0xLjc2Mi4wNDItMy41MjUuMDA4LTUuMjg5LjAwOHYuMDM0Yy0xLjAwOCAwLTIuMDE1LjAwNC0zLjAyMi0uMDAxLTQuNjIxLS4wMTktNS4wNjEtLjU4MS00LjYwNy01LjI4LjE1Ny0xLjYzMS42NTctMi42MTUgMi40NjQtMi41OTMgMy41MjUuMDQ3IDcuMDUyLjAwNSAxMC41NzYuMDY0IDIuNTI3LjA0MyAzLjUyOCAxLjQ5NCAzLjUwMSAzLjkyMy0uMDI5IDIuNDUxLTEuMTQ3IDMuNzg1LTMuNjIzIDMuODQ1bTY3LjQxMS0xMC41MWMtLjU1Ny0xLjM3Ny0uMTE1LTQuNDEtMi44MDktMy40MjItMi44OTMgMS4wNjItNi45ODItLjk5OC04LjY4MSAzLjQ0LTIuNjU1IDYuOTQ0LTUuNjI0IDEzLjc2OS04LjM1NCAyMC42ODYtLjUxOSAxLjMxNS0xLjg0OSAyLjQ0LTEuMTg4IDQuNTc2IDIuMTI3LS44NjkgNS4zNzMgMS41OSA2LjMyMS0yLjEzNCAxLjA0OC00LjExMyAzLjUzOC00Ljg3MiA3LjE5My00LjUxNyAyLjM3Ny4yMyA0Ljc5My4xMTUgNy4xODkuMDYxIDEuNjExLS4wMzcgMi42NjEuNDg2IDIuOTU1IDIuMTg2LjgxIDQuNjc2IDMuOTEyIDQuODAyIDcuODIgMy44MDktMi44NzMtOC43NzUtNy4xNDYtMTYuNTIzLTEwLjQ0Ni0yNC42ODVtLTEwLjk0MiAxNC4wMDIgNS4xNDItMTIuOTNjMi41NDIgNC4zOTYgNC4wMzkgOC4wNTcgNS40MDUgMTIuMTY3LTMuNCAxLjIzNC02LjYyMS40MS0xMC41NDcuNzYzIi8+CiAgICAgIDxwYXRoIGQ9Im0yNDUuNDEzIDE1MC42NjkuNjU0LTcxLjkuNjQ4IDcxLjAyMi0uODc0Ljg3OHoiLz4KICAgICAgPHBhdGggZD0ibTI0NS4zNDEgMTUwLjY2OS42NTUtNzEuOS42NDggNzAuOTY2LS44ODUuOTM0eiIvPgogICAgPC9nPgogIDwvc3ZnPgo8L3N2Zz4KCg=="
+          alt="Sequence diagram showing five steps: Agent requests token, API Gateway issues 15-min lease, Agent operates, Kill Switch activated with licence revoked, Agent requests renewal and receives 403 Forbidden then halts"
+          width="920">
+        <br><em>Figure 3: High-frequency enforcement via cryptographic leasing.
+          </br></br>
+        </em>
+      </div>
+    </div>
+
+    <p>To be clear: this kills the planning, not necessarily the inertia. If
+      the agent has already spun up a 'dumb' script on a VPS to execute a
+      task, that script might keep running. But the agent cannot correct it,
+      cannot pivot, and cannot react to defences. You have lobotomised the
+      attack. When you kill the General, the army might keep marching for a
+      mile, but it loses the war.</p>
+    <p>No need to find the user's laptop. No need to hack into their system.
+      No need to track down a chain of sub-agents individually. Revoke the
+      licence, and every agent operating under it loses access to the models
+      that power it. Instantly.</p>
+    <p>This is the most powerful safety argument in the entire framework. It
+      turns the licence from a piece of paper into a <strong>live control
+        mechanism</strong>. And it works precisely because of the API gateway
+      architecture described above.</p>
+    <hr />
+    <h2 id="how-this-looks-in-practice" class="page-break-before">How This Looks in Practice</h2>
+    <h3 id="the-united-kingdom">The United Kingdom</h3>
+    <p>The <strong>UK</strong> is well-positioned to lead here, and the
+      infrastructure is closer to ready than most people realise.</p>
+    <p>The <strong>FCA</strong> model for crypto appropriateness assessments
+      is already live, tested, and iterating. A parallel framework for
+      autonomous <strong>AI</strong> could be administered by the
+      <strong>FCA</strong> itself (for financial use cases),
+      <strong>Ofcom</strong> (for communications and content), or a new
+      dedicated <strong>AI regulator</strong>. The UK has form for being an
+      early mover on financial regulation that later becomes international
+      standard.
+    </p>
+    <p>The <a href="https://www.legislation.gov.uk/ukpga/2023/50/contents/enacted"><strong>Online
+          Safety Act</strong></a> already establishes the principle of
+      <strong>credentialed access</strong>, that platforms must verify user
+      attributes before granting access to restricted content and services. We
+      already use age assurance for restricted content online. Extending this
+      same credentialed access model to autonomous <strong>AI</strong>
+      capabilities is not a radical leap. It is a logical extension of
+      existing law.
+    </p>
+    <p>The identity verification question is real, but it is solved. The
+      <strong>UK</strong> already has federated digital identity
+      infrastructure through <a href="https://standards.openbanking.org.uk/security-profiles/">banking
+        ID verification (<strong>Open Banking</strong>)</a>, <a
+        href="https://www.sign-in.service.gov.uk/"><strong>GOV.UK
+          Verify</strong> (now superseded by <strong>GOV.UK One
+          Login</strong></a>), and private sector solutions compliant with <a
+        href="https://www.gov.uk/government/publications/uk-digital-identity-and-attributes-trust-framework-04/uk-digital-identity-and-attributes-trust-framework-gamma-04-pre-release"><strong>UK
+          Digital Identity and Attributes Trust Framework (DIATF)</strong>.</a>
+      You do not need a government surveillance database. You need the same
+      level of identity assurance that is already required to open a bank
+      account or trade crypto. This is not new. It is just being applied to a
+      new domain.
+    </p>
+    <p>The "competency quiz is useless if I can just make a new anonymous
+      account" objection falls apart here. <strong>You cannot make a new
+        anonymous account if the platform requires identity verification to
+        issue a licence.</strong> This is exactly how the <strong>FCA</strong>
+      crypto rules work today. Verified identity, assessed competence, then
+      access.</p>
+    <h3 id="the-united-states">The United States</h3>
+    <p>The <strong>US</strong> presents a more fragmented picture. Federal
+      regulation moves slowly, and there is significant political resistance
+      to anything perceived as constraining innovation. However,
+      <strong>state-level action</strong> is likely, <a
+        href="https://legiscan.com/CA/text/SB1047/id/3019694"><strong>California</strong>,</a>
+      <a href="https://www.nysenate.gov/legislation/bills/2025/S6953B"><strong>New
+          York</strong></a>, and <a href="https://leg.colorado.gov/bills/sb24-205"><strong>Colorado</strong>
+      </a>have all shown appetite for <strong>AI</strong> regulation, and a
+      licensing framework could emerge through state consumer protection law
+      before any federal standard exists.
+    </p>
+    <p>The more probable path in the <strong>US</strong> is through
+      <strong>liability precedent</strong>. The first major lawsuit involving
+      an autonomous <strong>AI</strong> chain-of-liability scenario will force
+      the courts to establish principles that legislation has not. This is how
+      <strong>American</strong> regulatory systems often work, reactively
+      rather than proactively. A pre-existing licensing framework would give
+      the courts something to reference rather than having to build from
+      nothing.
+    </p>
+    <p>The <strong>Grand Bargain</strong> is particularly relevant here.
+      <strong>American</strong> providers are already self-restricting their
+      most powerful models out of legal fear. A framework that offers
+      <strong>safe harbour</strong> in exchange for compliance is something
+      their legal teams will actively lobby for, not against.
+    </p>
+    <p>The <strong>Fleet &amp; Driver</strong> model also maps cleanly onto
+      the existing US <a href="https://ncees.org/licensure/why-licensure-matters/"><strong>Professional
+          Engineer (PE)</strong> licensing system</a>. American engineers already
+      understand the concept of a licensed individual stamping designs that
+      others produce. Extending this to autonomous <strong>AI</strong>
+      deployment is a smaller conceptual leap in the <strong>US</strong> than
+      in most other jurisdictions.</p>
+    <h3 id="international-precedent">International Precedent</h3>
+    <p>This is where it gets interesting. If the <strong>UK</strong>
+      establishes a licensing framework first, it creates a gravitational
+      pull, much as <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj"><strong>GDPR</strong></a>
+      did for data protection. Any <strong>AI</strong> provider wanting to
+      operate in a jurisdiction with licensing requirements must comply. This
+      means a single country's framework can shape the behaviour of providers
+      globally.</p>
+    <p>The principle is simple: <strong>if you want to offer autonomous AI
+        services in this country, your users must be licensed.</strong> The same
+      way you cannot offer complex financial products without ensuring your
+      customers understand what they are buying.</p>
+    <p>One country's framework. Global effect.</p>
+    <hr />
+    <h2 id="what-this-solves" class="page-break-before">What This Solves</h2>
+    <p><strong>Informed consent.</strong> Right now, most users of
+      autonomous <strong>AI</strong> do not understand what they are
+      deploying. A licensing requirement ensures they do, or at least ensures
+      they have been given every opportunity to.</p>
+    <p><strong>Accountability.</strong> The chain-of-liability registry
+      creates a clear, auditable trail of responsibility. When something goes
+      wrong, there is a documented answer to "who is accountable?"</p>
+    <p><strong>Proportionality.</strong> Tiered licensing means low-risk use
+      remains accessible while high-risk deployment gets appropriate scrutiny.
+      This is not a blanket restriction. It is a proportionate response.</p>
+    <p><strong>Workplace viability.</strong> The Fleet &amp; Driver model
+      means that regulation does not require every developer on a team to hold
+      a personal licence. Juniors learn in sandboxes. Seniors deploy to
+      production. Companies hold the insurance. This mirrors how every other
+      professional engineering discipline already works, and it is the only
+      structure that engineering teams will actually adopt.</p>
+    <p><strong>Career value.</strong> Becoming a <strong>Licensed Autonomous
+        Systems Operator</strong> is not just a compliance requirement. It is a
+      professional credential. It differentiates a senior engineer from a
+      "prompt engineer." It justifies higher compensation because the
+      individual carries the professional stamp that allows the company to
+      deploy at the highest tiers. It creates a recognised credential for
+      freelancers and consultants: "I am licensed to build your agents
+      safely." Companies want to hire licensed operators because it lowers
+      their insurance premiums, the same way companies want to hire chartered
+      accountants, not just people who are "good with numbers."</p>
+    <p><strong>Insurability.</strong> The registry attaches a legal entity
+      to every agent in the chain. This makes the risk quantifiable.
+      Quantifiable risk can be priced. Priced risk can be insured. And insured
+      risk is the only kind that serious businesses will accept.</p>
+    <p><strong>Provider protection.</strong> Safe harbour for compliant
+      providers removes the legal paralysis that is currently preventing the
+      release of their most capable models. This is not theoretical. It is the
+      single biggest unlock for the industry.</p>
+    <p><strong>Real-time control.</strong> The kill switch mechanism means
+      that a runaway agent can be terminated instantly by revoking its
+      licence. No audit log delay. No physical access required. Cut off the
+      API, cut off the agent.</p>
+    <p><strong>International coherence.</strong> An early-mover framework
+      gives other jurisdictions something to adopt, adapt, or reference. It
+      prevents the worst outcome: a patchwork of incompatible national rules
+      that creates confusion and regulatory arbitrage.</p>
+    <hr />
+    <h2 id="what-this-does-not-solve">What This Does Not Solve</h2>
+    <p>I want to be honest about the limitations, because a framework that
+      oversells itself is worse than no framework at all.</p>
+    <p><strong>It does not prevent all harm.</strong> A licensed user can
+      still deploy an autonomous system that causes damage. Licensing reduces
+      the probability of uninformed misuse; it does not eliminate informed
+      misuse or unforeseeable failure.</p>
+    <p><strong>It does not fully address self-hosted models.</strong> If a
+      user downloads an open-source model and runs it entirely locally, no API
+      gateway can gate their access. This is a genuine enforcement gap.
+      Liability law, rather than licensing, is probably the right tool for
+      this edge case, making the user strictly liable for any autonomous
+      actions taken by locally-hosted models regardless of licensing status.
+      But pretending this gap does not exist would be dishonest.</p>
+    <p>However, this misses the strategic goal. The objective is not to
+      police every laptop; it is to economically isolate the risk. If a bad
+      actor wants to run an unlicensed, uninsured agent on local hardware,
+      they can. But without a licence key, they cannot connect that agent to
+      the banking system, major cloud providers, or enterprise APIs. We are
+      building a trusted 'Green Zone' for the legitimate economy, forcing
+      high-risk actors into a smaller, harder-to-monetise wilderness.</p>
+    <p><strong>It does not solve the speed problem entirely.</strong>
+      Autonomous <strong>AI</strong> systems act faster than any regulatory
+      audit can review. The kill switch addresses the most dangerous
+      scenarios, but there will always be a window between the first harmful
+      action and the revocation. The framework narrows that window. It does
+      not close it completely.</p>
+    <p><strong>It does not guarantee international adoption.</strong> The
+      <strong>GDPR</strong> comparison is instructive but imperfect. Data
+      protection had broad political support. <strong>AI</strong> regulation
+      is politically contested, particularly in jurisdictions where innovation
+      competitiveness is a priority. Some countries will resist, and providers
+      may relocate to avoid compliance. The Grand Bargain, offering safe
+      harbour in exchange for compliance, makes this less likely but does not
+      eliminate it.
+    </p>
+    <p><strong>It creates friction.</strong> That is the point, but it is
+      also a cost. Legitimate, capable users will face additional steps before
+      deployment. The trade-off is that the friction comes with a tangible
+      reward: better tools, insurance access, career credentials, and legal
+      clarity. That is a better bargain than friction for its own sake.</p>
+    <hr />
+    <h2 id="hurdles-and-objections" class="page-break-before">Hurdles and Objections</h2>
+    <h3 id="this-will-stifle-innovation">"This will stifle innovation"</h3>
+    <p>This is the objection you hear every time regulation is proposed for
+      anything. It was said about seat belts, financial regulation, <a
+        href="https://www.caa.co.uk/drones/getting-started-with-drones-and-model-aircraft/registering-to-fly-drones-and-model-aircraft/">drone
+        licensing</a>, and <strong>GDPR</strong>. In every case, responsible
+      innovation continued, and in many cases, improved, because the
+      regulatory framework created trust and market confidence.</p>
+    <p>A licensing requirement does not prevent innovation. It prevents
+      <em>uninformed deployment</em>. Those are very different things.
+    </p>
+    <p>More to the point: the Grand Bargain flips this argument. Right now,
+      innovation is being stifled, by the providers themselves, who are too
+      afraid of legal exposure to release their most powerful models without
+      heavy restrictions. A licensing framework that offers safe harbour is
+      the thing that <strong>removes</strong> the chill on innovation. Not the
+      thing that creates it.</p>
+    <h3 id="every-developer-needs-a-licence">"Every developer needs a
+      licence?"</h3>
+    <p>No. This is the most important misconception to address head-on,
+      because if engineering teams believe this is what we are proposing,
+      adoption is dead.</p>
+    <p>The <strong>Fleet &amp; Driver</strong> model is explicit: junior
+      developers <strong>do not need a licence</strong>. They write code. They
+      test in sandboxes. They build competence. What they cannot do is deploy
+      an autonomous agent to a production environment unsupervised. That
+      requires a <strong>Principal Operator's</strong> sign-off, the same way
+      a junior civil engineer's bridge blueprints require a
+      <strong>Professional Engineer (PE)</strong> stamp before anyone starts
+      pouring concrete.
+    </p>
+    <p>The junior does the work. The Principal takes the professional
+      responsibility. The company holds the insurance. This is how civil
+      engineering, architecture, and medicine have worked for centuries. We
+      are not inventing a new concept. We are applying an existing one to a
+      new domain.</p>
+    <h3 id="you-are-gatekeeping-open-source">"You are gatekeeping open
+      source!"</h3>
+    <p>No. You can still download models. You can still run them locally.
+      You can still experiment, fine-tune, and build whatever you want on your
+      own hardware. What you cannot do is connect an autonomous agent to a
+      <strong>Tier 3 API</strong> that interacts with the global banking
+      system, customer databases, or production infrastructure without a
+      licence.
+    </p>
+    <p>That is not gatekeeping. That is just not letting you drive a tank on
+      the motorway.</p>
+    <p>The open-source community builds the engines. The licence governs who
+      is allowed to put them on public roads. Those are different things, and
+      conflating them is either confused or dishonest.</p>
+    <h3 id="it-is-unenforceable">"It is unenforceable"</h3>
+    <p>Partially fair. No regulation is perfectly enforceable. But the API
+      gateway mechanism means that enforcement happens at the platform level,
+      where it is trivial, not at the user's device level, where it is
+      impossible.</p>
+    <p>Open-source self-hosting remains a gap, as noted above. But the fact
+      that some enforcement is imperfect does not mean all enforcement is
+      pointless. We do not abandon speed limits because some people break
+      them.</p>
+    <h3 id="anyone-can-just-create-a-new-account">"Anyone can just create a
+      new account"</h3>
+    <p>Not if the licence requires identity verification. This is not a new
+      problem. The <strong>FCA</strong> already solved it for crypto. <a
+        href="https://www.fca.org.uk/publication/policy/ps19-22.pdf"><strong>KYC
+          (Know Your Customer)</strong></a> rules require verified identity before
+      access to restricted financial products. The same infrastructure,
+      federated digital identity, banking-grade verification, applies here
+      without requiring a centralised government database. One identity, one
+      licence. Creating a new anonymous account to bypass the assessment
+      becomes as difficult as opening a fraudulent bank account, which is to
+      say, not impossible, but a criminal act with consequences.</p>
+    <p>For those rightly worried about privacy, <a href="https://ethereum.org/zero-knowledge-proofs/">Zero-Knowledge
+        Proofs
+        (ZKPs)</a> offer the bridge. It is technically feasible to allow a user
+      to cryptographically prove 'I hold a valid, insured Tier 3 Licence' to
+      an API provider without revealing 'I am John Smith, born in London' for
+      every transaction. We can demand verification without building a
+      surveillance state.</p>
+    <h3 id="who-writes-the-assessment">"Who writes the assessment?"</h3>
+    <p>A legitimate question. The assessment must be designed by a
+      combination of <strong>AI</strong> technical experts, legal
+      professionals, consumer protection specialists, and ethicists. It must
+      be reviewed and updated regularly to reflect the evolving capability
+      landscape. It should test understanding of principles, not specific
+      products, ensuring it remains relevant as the technology changes.</p>
+    <p>This is not trivial to get right. But it is not unprecedented either.
+      Financial regulators already design and maintain comparable assessments
+      for complex investment products.</p>
+    <h3 id="this-creates-a-two-tier-system">"This creates a two-tier
+      system"</h3>
+    <p>Yes, it does. Deliberately. The same way a driving licence creates a
+      two-tier system between those who have demonstrated competence and those
+      who have not. The same way a drone pilot licence does. The same way a
+      firearms certificate does. <strong>The existence of a requirement to
+        demonstrate competence before accessing powerful capabilities is not an
+        injustice. It is a basic safety principle.</strong></p>
+    <p>The key is ensuring the assessment is accessible, fair, and available
+      to anyone willing to learn, not used as a barrier to exclude people from
+      participation. Individual developers and freelancers can apply directly.
+      A solo consultant with an Operator's Licence gains access to
+      Enterprise-grade tools without needing an Enterprise sales contract. A
+      small startup team with one licensed operator can deploy at the same
+      tier as a large corporation. The licence is a <strong>career
+        credential</strong>, not a corporate gatekeeping mechanism.</p>
+    <hr />
+    <h2 id="a-note-on-principles" class="page-break-before">A Note on Principles</h2>
+    <p>I have deliberately built this framework around
+      <strong>principles</strong> rather than <strong>specifics</strong>. The
+      specific models, tools, and providers will change. The names in the
+      headlines will rotate. The technical capabilities will expand in ways
+      none of us can fully predict.
+    </p>
+    <p>But the principles remain constant:</p>
+    <ul>
+      <li><strong>If a system can act autonomously, someone must be
+          accountable for its actions</strong></li>
+      <li><strong>If a capability carries risk, access should require
+          demonstrated understanding</strong></li>
+      <li><strong>If liability can cascade through a chain, that chain must be
+          auditable and insurable</strong></li>
+      <li><strong>If providers profit from deployment, they must share the
+          regulatory burden, and be rewarded for doing so</strong></li>
+      <li><strong>If friction is imposed, it must come with a tangible benefit
+          to the person bearing it</strong></li>
+      <li><strong>If competence is required, the framework for demonstrating
+          it must be accessible to anyone willing to learn</strong></li>
+    </ul>
+    <p>These are not technology-specific. They are not era-specific. They
+      are foundational governance principles that apply whether the autonomous
+      system is an <strong>AI</strong> agent, a self-driving vehicle, or
+      something we have not invented yet.</p>
+    <hr />
+    <h2 id="closing-thought">Closing Thought</h2>
+    <p>When I first posted about this, I said we might need a "Driver's
+      Licence" for autonomous <strong>AI</strong>. That was a provocation, but
+      it was also, I think, directionally correct.</p>
+    <p>We do not let people drive without demonstrating competence. We do
+      not let people fly drones commercially without a licence. We do not let
+      people trade complex financial instruments without an appropriateness
+      assessment. We do not let junior engineers stamp their own bridge
+      blueprints. In each case, the principle is the same: <strong>the more
+        powerful the capability, the more important it is that the person
+        wielding it understands what they are doing.</strong></p>
+    <p>Autonomous <strong>AI</strong> is, by any reasonable measure, one of
+      the most powerful capabilities ever made available to individual
+      consumers. And right now, anyone with an internet connection and a
+      credit card can deploy it with zero assessment, zero training, and zero
+      understanding of the legal exposure they are accepting.</p>
+    <p>That is not innovation. That is negligence dressed up as
+      progress.</p>
+    <p>The framework I have outlined here is not perfect. It will not catch
+      everything. It will create friction, and some people will object to that
+      friction. But it is a starting point, a principled, proportionate, and
+      practically achievable starting point, for treating <strong>autonomous
+        AI</strong> with the same seriousness we already apply to every other
+      powerful capability in society.</p>
+    <p>The difference between this framework and most regulation proposals
+      is simple. Most proposals ask one side to sacrifice. This one asks every
+      side to trade. Individual operators trade a competency test for better
+      tools, career credentials, and legal clarity. Corporations trade an
+      operating permit for insurable operations and access to their most
+      capable employees. Providers trade compliance for safe harbour and the
+      ability to ship their best work. The public trades a more complex system
+      for actual accountability.</p>
+    <p>That is the Grand Bargain. And it is the only version of AI
+      regulation that I believe has a realistic chance of being adopted,
+      because it is the only version where everyone at the table has a reason
+      to say yes.</p>
+    <div class="closing-footer-block">
+      <div class="keep-together">
+        <blockquote>
+          <p><em>Observe what is. Reason about what it implies. Act
+              accordingly.</em></p>
+        </blockquote>
+      </div>
+      <p>The capability has arrived. The regulation has not. The rational
+        response is to close that gap, thoughtfully, proportionately, and
+        soon.</p>
+      <hr />
+      <div align="center">
+
+        <p><em>Originally <a
+              href="https://github.com/RealistSec/Autonomous-License-Compact?utm_source=AutonomousLicenseCompactHTML">published
+              on GitHub</a> — a thought piece by <a
+              href="https://realistsec.com/?utm_source=AutonomousLicenseCompactHTML">RealistSec</a>.
+            Contributions and discussion welcome.</em></p>
+        <p style="margin-top: 8px;"><a
+            href="https://github.com/RealistSec/Autonomous-License-Compact/raw/main/The%20Autonomous%20License%20Compact%20-%20A%20Protocol%20for%20Insurable%20AI.pdf"
+            style="display:inline-block; padding: 6px 16px; background: #06b6d4; color: #fff; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none;">📄
+            Download as PDF</a></p>
+      </div>
+      <div align="center">
+
+        <p><a href="https://ai-supported.com"><img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjIiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iKiDinKggQUkgU3VwcG9ydGVkOiBIdW1hbiBWZXJpZmllZCB8IFByb3VkIER5c2xleGljIOKdpO+4jyI+PHRpdGxlPiog4pyoIEFJIFN1cHBvcnRlZDogSHVtYW4gVmVyaWZpZWQgfCBQcm91ZCBEeXNsZXhpYyDinaTvuI88L3RpdGxlPjxsaW5lYXJHcmFkaWVudCBpZD0icyIgeDI9IjAiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3Atb3BhY2l0eT0iLjEiLz48L2xpbmVhckdyYWRpZW50PjxjbGlwUGF0aCBpZD0iciI+PHJlY3Qgd2lkdGg9IjMyMiIgaGVpZ2h0PSIyMCIgcng9IjMiIGZpbGw9IiNmZmYiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNyKSI+PHJlY3Qgd2lkdGg9IjEwOSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjEwOSIgd2lkdGg9IjIxMyIgaGVpZ2h0PSIyMCIgZmlsbD0iIzE0YjhhNiIvPjxyZWN0IHdpZHRoPSIzMjIiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iNTU1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI5OTAiPiog4pyoIEFJIFN1cHBvcnRlZDwvdGV4dD48dGV4dCB4PSI1NTUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiNmZmYiIHRleHRMZW5ndGg9Ijk5MCI+KiDinKggQUkgU3VwcG9ydGVkPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIyMTQ1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyMDMwIj5IdW1hbiBWZXJpZmllZCB8IFByb3VkIER5c2xleGljIOKdpO+4jzwvdGV4dD48dGV4dCB4PSIyMTQ1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSIyMDMwIj5IdW1hbiBWZXJpZmllZCB8IFByb3VkIER5c2xleGljIOKdpO+4jzwvdGV4dD48L2c+PC9zdmc+"
+              alt="* ✨ AI Supported - Human Verified | Proud Dyslexic ❤️" /></a></p>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
